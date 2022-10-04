@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@vuepress/client': 2.0.0-beta.51
   artplayer: ^4.5.7
+  artplayer-plugin-danmuku: ^4.4.10
   chokidar: ^3.5.3
   dplayer: ^1.27.0
   fs-extra: ^10.1.0
@@ -13,6 +14,7 @@ specifiers:
 devDependencies:
   '@vuepress/client': 2.0.0-beta.51
   artplayer: 4.5.7
+  artplayer-plugin-danmuku: 4.4.10
   chokidar: 3.5.3
   dplayer: 1.27.0
   fs-extra: 10.1.0
@@ -1948,6 +1950,10 @@ packages:
 
   /argparse/2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
+    dev: true
+
+  /artplayer-plugin-danmuku/4.4.10:
+    resolution: {integrity: sha512-NMfpkwsp4kxDKd4VuEMGnpkavllJZysyReIF09LEnRCr3D72R1f22byG5y7tcdSNRr/9I/bRCyfXioTn326cPw==}
     dev: true
 
   /artplayer/4.5.7:

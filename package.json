@@ -5,13 +5,14 @@
   "license": "CC BY-NC-SA 4.0",
   "type": "module",
   "scripts": {
-    "build": "vuepress build docs ",
+    "build": "vuepress build docs --clean-cache --clean-temp",
     "clean-dev": "vuepress dev docs --clean-cache",
     "dev": "vuepress dev docs --clean-cache --clean-temp"
   },
   "devDependencies": {
     "@vuepress/client": "2.0.0-beta.51",
     "artplayer": "^4.5.7",
+    "artplayer-plugin-danmuku": "^4.4.10",
     "chokidar": "^3.5.3",
     "dplayer": "^1.27.0",
     "fs-extra": "^10.1.0",

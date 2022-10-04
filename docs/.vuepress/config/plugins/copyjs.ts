@@ -1,12 +1,15 @@
 import { path } from "@vuepress/utils";
-import { watch } from "chokidar";
+import { watch, FSWatcher } from "chokidar";
 import fs from "fs-extra";
 import { App } from "vuepress";
 
+let jsWatcher: FSWatcher;
+
 export default {
   name: "vuepress-plugin-copyjs",
-  onWatched: (app: App, watchers) => {
-    const jsWatcher = watch(path.join(app.dir.source(), "/**/*.js"), {
+
+  onPrepared: (app: App) => {
+    jsWatcher = watch(path.join(app.dir.source(), "/**/*.js"), {
       ignored: /(^|[\/\\])\../,
     });
 
@@ -16,18 +19,11 @@ export default {
         "pages",
         path.relative(app.dir.source(), sourceFilePath)
       );
-      fs.copy(sourceFilePath, tempFilePath, { overwrite: true });
+      fs.copySync(sourceFilePath, tempFilePath, { overwrite: true });
     });
+  },
 
-    jsWatcher.on("change", (sourceFilePath) => {
-      let tempFilePath = path.join(
-        app.dir.temp(),
-        "pages",
-        path.relative(app.dir.source(), sourceFilePath)
-      );
-      fs.copy(sourceFilePath, tempFilePath, { overwrite: true });
-    });
-
-    watchers.push(jsWatcher);
+  onGenerated: async (app: App) => {
+    await jsWatcher.close();
   },
 };
