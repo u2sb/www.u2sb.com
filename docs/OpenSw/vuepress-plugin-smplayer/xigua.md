@@ -26,6 +26,7 @@ oldlink:
   xid="7004391080330428964"
   id=""
   :autoplay="false"
+  :startTime="0"
   :sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"
   :allowfullscreen="allowfullscreen"
   width="100%"
@@ -33,7 +34,8 @@ oldlink:
 />
 ```
 
-height 为播放器高度，对应 css 高度计算为：`width * height[0] + height[1]`
+- width : 播放器宽度，类似 css 属性，`100%` 或 `960px`
+- height :播放器高度，对应 css 高度计算为：`width * height[0] + height[1]`
 
 ## 配置
 

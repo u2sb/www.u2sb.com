@@ -25,6 +25,7 @@ oldlink:
 <Bilibili
   bvid="BV1zt411t79A"
   :page="1"
+  :t="0"
   :danmaku="true"
   :sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups"
   :allowfullscreen="allowfullscreen"
@@ -33,7 +34,11 @@ oldlink:
 />
 ```
 
-height 为播放器高度，对应 css 高度计算为：`width * height[0] + height[1]`
+- page : 分 P
+- t : 开始时间，秒
+- danmaku : 弹幕开关
+- width : 播放器宽度，类似 css 属性，`100%` 或 `960px`
+- height :播放器高度，对应 css 高度计算为：`width * height[0] + height[1]`
 
 ## 配置
 
@@ -49,6 +54,7 @@ export default defineUserConfig({
       bilibili: {
         page: 1,
         danmaku: !0,
+        t: 0,
         allowfullscreen: "allowfullscreen",
         sandbox:
           "allow-top-navigation allow-same-origin allow-forms allow-scripts allow-popups",
