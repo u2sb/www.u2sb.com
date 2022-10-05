@@ -24,6 +24,10 @@ oldlink:
 
 1. [基本介绍](vuepress-plugin-smplayer/README.md)
 2. [安装](vuepress-plugin-smplayer/install.md)
+3. [MetingJS](vuepress-plugin-smplayer/meting.md)
+4. [APlayer](vuepress-plugin-smplayer/aplayer.md)
+5. [哔哩哔哩](vuepress-plugin-smplayer/bilibili.md)
+6. [西瓜视频](vuepress-plugin-smplayer/xigua.md)
 
 ## MetingJS.Server
 
