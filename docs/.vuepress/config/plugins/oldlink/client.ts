@@ -1,4 +1,5 @@
 import { defineClientConfig } from "@vuepress/client";
+// @ts-ignore：
 import oldlink from "@temp/oldlink.json";
 
 export default defineClientConfig({

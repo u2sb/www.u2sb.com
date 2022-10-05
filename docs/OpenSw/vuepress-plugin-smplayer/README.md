@@ -15,12 +15,12 @@ date: 2022-01-24 14:17:12
 
 - [x] [Aplayer](https://github.com/DIYgod/APlayer)
 - [x] [MetingJS](https://github.com/metowolf/MetingJS)
-- [x] [Dplayer](https://github.com/DIYgod/DPlayer)
+- [x] ~~[Dplayer](https://github.com/DIYgod/DPlayer)~~
 - [x] [哔哩哔哩](https://www.bilibili.com/)
 - [x] [西瓜视频](https://www.ixigua.com/)
 - [ ] [YouTube]()
-- [x] [ArtPlayer](https://github.com/zhw2590582/ArtPlayer)
-- [x] [xgplayer](https://github.com/bytedance/xgplayer)
+- [x] ~~[ArtPlayer](https://github.com/zhw2590582/ArtPlayer)~~
+- [x] ~~[xgplayer](https://github.com/bytedance/xgplayer)~~
 
 ## 感谢
 

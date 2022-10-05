@@ -1,6 +1,5 @@
 ---
 title: MetingJS.Server
-author: MonoLogueChi
 date: 2021-02-23 12:41:58
 oldlink:
   - /pages/7c33e5/
