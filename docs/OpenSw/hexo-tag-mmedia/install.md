@@ -29,25 +29,27 @@ hexo-tag-mmedia 插件和其他 hexo 插件使用方法类似，诸如 如何启
 
 ### 安装
 
-<code-group>
-  <code-block title="NPM">
-  ```bash
-  npm install hexo-tag-mmedia@1 --save
-  ```
-  </code-block>
-  
-  <code-block title="PNPM" active>
-  ```bash
-  pnpm install hexo-tag-mmedia@1 --save
-  ```
-  </code-block>
+::: tabs
 
-  <code-block title="YARN">
-  ```bash
-  yarn add hexo-tag-mmedia@1 --save
-  ```
-  </code-block>
-</code-group>
+@tab:active NPM
+
+```bash
+ npm install hexo-tag-mmedia@1 --save
+```
+
+@tab PNPM
+
+```bash
+pnpm add hexo-tag-mmedia@1 --save
+```
+
+@tab YARN
+
+```bash
+yarn add hexo-tag-mmedia@1 --save
+```
+
+:::
 
 ### 配置
 

@@ -70,6 +70,7 @@ export default sidebar({
             "aplayer",
             "bilibili",
             "xigua",
+            "artplayer",
             "faq",
           ],
         },

@@ -11,14 +11,16 @@ export default {
           danmaku: {
             api: "https://danmu.u2sb.com/api/dplayer/",
             id: "cENuyhsT2rMOCohK",
-            addition: ["https://danmu.u2sb.com/api/dplayer/v3/bilibili/BV1zt411t79A"],
+            addition: [
+              "https://danmu.u2sb.com/api/dplayer/v3/bilibili/BV1zt411t79A",
+            ],
           },
-        })
+        });
       });
-    })
+    });
   },
 
-  beforeDestroy() {
+  beforeUnmount() {
     this.dp.destroy();
-  }
-}
+  },
+};

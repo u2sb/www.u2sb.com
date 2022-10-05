@@ -3,6 +3,13 @@ const danmakuApi = "https://danmu.u2sb.com/api/artplayer/v1";
 const bilibiliDanmaku = `${danmakuApi}/bilibili/BV1zt411t79A.json`;
 
 export default {
+  data() {
+    return {
+      art0: null,
+      art1: null,
+      art2: null,
+    };
+  },
   mounted() {
     this.$nextTick(() => {
       Promise.all([
@@ -10,11 +17,19 @@ export default {
         import("artplayer-plugin-danmuku"),
       ]).then(
         ([{ default: ArtPlayer }, { default: artplayerPluginDanmuku }]) => {
-          this.art = new ArtPlayer({
+          this.art0 = new ArtPlayer({
             fullscreen: true,
             autoSize: true,
             setting: true,
-            container: this.$refs.art,
+            container: this.$refs.art0,
+            url: "/assets/video/s_720.mp4",
+          });
+
+          this.art1 = new ArtPlayer({
+            fullscreen: true,
+            autoSize: true,
+            setting: true,
+            container: this.$refs.art1,
             url: "/assets/video/s_720.mp4",
             plugins: [
               artplayerPluginDanmuku({
@@ -61,7 +76,7 @@ export default {
             ],
           });
 
-          this.art.on("artplayerPluginDanmuku:emit", (danmu) => {
+          this.art1.on("artplayerPluginDanmuku:emit", (danmu) => {
             fetch(danmakuApi, {
               method: "POST",
               headers: {
@@ -75,19 +90,66 @@ export default {
               }),
             });
           });
+
+          this.art2 = new ArtPlayer({
+            fullscreen: true,
+            autoSize: true,
+            setting: true,
+            container: this.$refs.art2,
+            url: "/assets/video/dash/master.m3u8",
+            type: "customHls",
+            customType: {
+              customHls: function (mediaElement, src, player) {
+                import("hls.js").then(({ default: Hls }) => {
+                  if (
+                    mediaElement.canPlayType("application/x-mpegURL") ||
+                    mediaElement.canPlayType("application/vnd.apple.mpegURL")
+                  ) {
+                    mediaElement.src = src;
+                  } else if (Hls.isSupported()) {
+                    const hls = new Hls();
+                    hls.attachMedia(mediaElement);
+                    hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+                      hls.loadSource(src);
+                    });
+
+                    player.on("destroy", function () {
+                      hls.destroy();
+                    });
+                  }
+                });
+              },
+            },
+          });
         }
       );
 
       // 设置样式
-      this.$refs.art.style.width = "100%";
-      this.$refs.art.style.height =
-        (this.$refs.art.scrollWidth / 16) * 9 + "px";
+      this.$refs.art0.style.width = "100%";
+      this.$refs.art0.style.height =
+        (this.$refs.art0.scrollWidth / 16) * 9 + "px";
+
+      this.$refs.art1.style.width = "100%";
+      this.$refs.art1.style.height =
+        (this.$refs.art1.scrollWidth / 16) * 9 + "px";
+
+      this.$refs.art2.style.width = "100%";
+      this.$refs.art2.style.height =
+        (this.$refs.art2.scrollWidth / 16) * 9 + "px";
     });
   },
 
   beforeUnmount() {
-    if (this.art) {
-      this.art.destroy();
+    if (this.art0 && this.art0.destroy) {
+      this.art0.destroy(false);
+    }
+
+    if (this.art1 && this.art1.destroy) {
+      this.art1.destroy(false);
+    }
+
+    if (this.art2 && this.art2.destroy) {
+      this.art2.destroy(false);
     }
   },
 };
