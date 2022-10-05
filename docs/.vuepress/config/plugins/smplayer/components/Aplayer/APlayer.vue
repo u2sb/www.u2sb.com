@@ -17,6 +17,12 @@ export default defineComponent({
     },
   },
 
+  data() {
+    return {
+      player: null,
+    }
+  },
+
   mounted() {
     let src = {
       ...merge(APLAYER.src, this.src),
@@ -25,17 +31,15 @@ export default defineComponent({
 
     this.$nextTick(() => {
       Promise.all([
-        import(/* webpackChunkName: "aplayer" */ "aplayer"),
-        import(
-          /* webpackChunkName: "aplayer" */ "aplayer/dist/APlayer.min.css"
-        ),
-      ]).then(async ([{ default: aplayer }]) => {
+        import("aplayer"),
+        import("aplayer/dist/APlayer.min.css"),
+      ]).then(([{ default: aplayer }]) => {
         this.player = new aplayer(src);
       });
     });
   },
 
-  beforeDestroy() {
+  beforeUnmount() {
     if (this.player) {
       this.player.destroy();
     }
