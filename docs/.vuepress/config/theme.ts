@@ -42,11 +42,11 @@ export default hopeTheme({
       /**
        * Using Giscus
        */
-      // provider: "Giscus",
-      // repo: "vuepress-theme-hope/giscus-discussions",
-      // repoId: "R_kgDOG_Pt2A",
-      // category: "Announcements",
-      // categoryId: "DIC_kwDOG_Pt2M4COD69",
+      provider: "Giscus",
+      repo: "u2sb/www.u2sb.com",
+      repoId: "R_kgDOIIUHaA",
+      category: "Giscus",
+      categoryId: "DIC_kwDOIIUHaM4CRzf3",
     },
 
     // Disable features you don't want here

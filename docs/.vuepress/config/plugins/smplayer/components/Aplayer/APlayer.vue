@@ -36,7 +36,7 @@ export default defineComponent({
   },
 
   beforeDestroy() {
-    if (this.player && !src?.fixed) {
+    if (this.player) {
       this.player.destroy();
     }
   },
