@@ -28,6 +28,7 @@ oldlink:
 4. [APlayer](vuepress-plugin-smplayer/aplayer.md)
 5. [哔哩哔哩](vuepress-plugin-smplayer/bilibili.md)
 6. [西瓜视频](vuepress-plugin-smplayer/xigua.md)
+7. [ArtPlayer](vuepress-plugin-smplayer/artplayer.md)
 
 ## MetingJS.Server
 

@@ -9,6 +9,10 @@ oldlink:
 本插件不再提供 ArtPlayer 快速接入功能，并建议用户使用 js 直接引入，详情见下方示例。
 :::
 
+:::tip
+详细配置说明见 [ArtPlayer 文档](https://artplayer.org/document/)
+:::
+
 ## 安装
 
 ::: tabs
@@ -60,6 +64,7 @@ yarn add -D artplayer artplayer-plugin-danmuku
               fullscreen: true,
               autoSize: true,
               setting: true,
+              whitelist: ["*"],
               container: this.$refs.art0,
               url: "/assets/video/s_720.mp4",
             });
@@ -109,6 +114,7 @@ yarn add -D artplayer artplayer-plugin-danmuku
               fullscreen: true,
               autoSize: true,
               setting: true,
+              whitelist: ["*"],
               container: this.$refs.art1,
               url: "/assets/video/s_720.mp4",
               plugins: [
@@ -219,6 +225,7 @@ npm install -D hls.js
             fullscreen: true,
             autoSize: true,
             setting: true,
+            whitelist: ["*"],
             container: this.$refs.art2,
             url: "/assets/video/dash/master.m3u8",
             type: "customHls",

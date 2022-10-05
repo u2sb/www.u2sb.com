@@ -21,6 +21,7 @@ export default {
             fullscreen: true,
             autoSize: true,
             setting: true,
+            whitelist: ["*"],
             container: this.$refs.art0,
             url: "/assets/video/s_720.mp4",
           });
@@ -29,6 +30,7 @@ export default {
             fullscreen: true,
             autoSize: true,
             setting: true,
+            whitelist: ["*"],
             container: this.$refs.art1,
             url: "/assets/video/s_720.mp4",
             plugins: [
@@ -95,6 +97,7 @@ export default {
             fullscreen: true,
             autoSize: true,
             setting: true,
+            whitelist: ["*"],
             container: this.$refs.art2,
             url: "/assets/video/dash/master.m3u8",
             type: "customHls",
