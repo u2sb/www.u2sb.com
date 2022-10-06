@@ -8,8 +8,8 @@ export default navbar([
     prefix: "/OpenSw/",
     children: [
       {
-        text:"开源软件",
-        link:""
+        text: "开源软件",
+        link: "",
       },
       {
         text: "弹幕服务器",
@@ -43,12 +43,16 @@ export default navbar([
     prefix: "/OpenHw/",
     children: [
       {
-        text:"开源硬件",
-        link:""
+        text: "开源硬件",
+        link: "",
       },
       {
         text: "OBS导播键盘",
         link: "#OBS导播键盘",
+      },
+      {
+        text: "相机电池",
+        link: "#相机电池",
       },
     ],
   },

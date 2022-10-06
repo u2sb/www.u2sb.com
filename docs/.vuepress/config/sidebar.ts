@@ -115,8 +115,13 @@ export default sidebar({
       children: [
         {
           text: "OBS导播键盘",
-          prefix: "OBS导播键盘/",
+          prefix: "ObsKeyboard/",
           children: ["SB00"],
+        },
+        {
+          text: "相机电池",
+          prefix: "CameraBattery",
+          children: ["DMW-BLK22"],
         },
       ],
     },
