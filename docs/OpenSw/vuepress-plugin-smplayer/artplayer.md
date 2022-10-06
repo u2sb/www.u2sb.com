@@ -20,19 +20,19 @@ oldlink:
 @tab:active NPM
 
 ```bash
-npm install -D artplayer artplayer-plugin-danmuku
+npm install -D artplayer
 ```
 
 @tab PNPM
 
 ```bash
-pnpm add -D artplayer artplayer-plugin-danmuku
+pnpm add -D artplayer
 ```
 
 @tab YARN
 
 ```bash
-yarn add -D artplayer artplayer-plugin-danmuku
+yarn add -D artplayer
 ```
 
 :::
@@ -90,6 +90,15 @@ yarn add -D artplayer artplayer-plugin-danmuku
 ### 弹幕
 
 <div ref="art1"></div>
+
+::: tip
+需安装 `artplayer-plugin-danmuku`
+
+```bash
+npm install -D artplayer-plugin-danmuku
+```
+
+:::
 
 ```html
 <script>
@@ -209,7 +218,7 @@ npm install -D hls.js
 :::
 
 ```html
-<div ref="art1"></div>
+<div ref="art2"></div>
 
 <script>
   export default {
@@ -264,6 +273,202 @@ npm install -D hls.js
     beforeUnmount() {
       if (this.art2 && this.art2.destroy) {
         this.art2.destroy(false);
+      }
+    },
+  };
+</script>
+```
+
+### FLV
+
+<div ref="art3"></div>
+
+::: tip
+需安装 `mpegts.js`
+
+```bash
+npm install -D mpegts.js
+```
+
+:::
+
+```html
+<div ref="art3"></div>
+
+<script>
+  export default {
+    data() {
+      return {
+        art3: null,
+      };
+    },
+    mounted() {
+      this.$nextTick(() => {
+        Promise.all([import("artplayer")]).then(([{ default: ArtPlayer }]) => {
+          this.art3 = new ArtPlayer({
+            fullscreen: true,
+            autoSize: true,
+            setting: true,
+            whitelist: ["*"],
+            container: this.$refs.art3,
+            url: "/assets/video/s_720.flv",
+            type: "customFLV",
+            customType: {
+              customFLV: function (mediaElement, src, player) {
+                import("mpegts.js").then(({ default: mpegts }) => {
+                  const flvPlayer = mpegts.createPlayer({
+                    type: "flv",
+                    url: src,
+                  });
+                  flvPlayer.attachMediaElement(mediaElement);
+                  flvPlayer.load();
+                  player.on("destroy", function () {
+                    flvPlayer.destroy();
+                  });
+                });
+              },
+            },
+          });
+        });
+
+        // 设置样式
+        this.$refs.art3.style.width = "100%";
+        this.$refs.art3.style.height =
+          (this.$refs.art3.scrollWidth / 16) * 9 + "px";
+      });
+    },
+
+    beforeUnmount() {
+      if (this.art3 && this.art3.destroy) {
+        this.art3.destroy(false);
+      }
+    },
+  };
+</script>
+```
+
+### DASH
+
+<div ref="art4"></div>
+
+::: tip
+需安装 `dashjs`
+
+```bash
+npm install -D dashjs
+```
+
+:::
+
+```html
+<div ref="art4"></div>
+
+<script>
+  export default {
+    data() {
+      return {
+        art4: null,
+      };
+    },
+    mounted() {
+      this.$nextTick(() => {
+        Promise.all([import("artplayer")]).then(([{ default: ArtPlayer }]) => {
+          this.art4 = new ArtPlayer({
+            fullscreen: true,
+            autoSize: true,
+            setting: true,
+            whitelist: ["*"],
+            container: this.$refs.art4,
+            url: "/assets/video/dash/stream.mpd",
+            type: "customDASH",
+            customType: {
+              customDASH: function (mediaElement, src, player) {
+                import("dashjs").then(({ default: dashjs }) => {
+                  const dashPlayer = dashjs.MediaPlayer().create();
+                  dashPlayer.initialize(mediaElement, src, false);
+                  player.on("destroy", function () {
+                    dashPlayer.reset();
+                  });
+                });
+              },
+            },
+          });
+        });
+
+        // 设置样式
+        this.$refs.art4.style.width = "100%";
+        this.$refs.art4.style.height =
+          (this.$refs.art4.scrollWidth / 16) * 9 + "px";
+      });
+    },
+
+    beforeUnmount() {
+      if (this.art4 && this.art4.destroy) {
+        this.art4.destroy(false);
+      }
+    },
+  };
+</script>
+```
+
+### ShakaDash
+
+<div ref="art5"></div>
+
+::: tip
+需安装 `shaka-player`
+
+```bash
+npm install -D shaka-player
+```
+
+:::
+
+```html
+<div ref="art5"></div>
+
+<script>
+  export default {
+    data() {
+      return {
+        art5: null,
+      };
+    },
+    mounted() {
+      this.$nextTick(() => {
+        Promise.all([import("artplayer")]).then(([{ default: ArtPlayer }]) => {
+          this.art5 = new ArtPlayer({
+            fullscreen: true,
+            autoSize: true,
+            setting: true,
+            whitelist: ["*"],
+            container: this.$refs.art5,
+            url: "/assets/video/dash/stream.mpd",
+            type: "customShakaDash",
+            customType: {
+              customShakaDash: function (mediaElement, src, player) {
+                import("shaka-player").then(({ default: shaka }) => {
+                  const shakaPlayer = new shaka.Player(mediaElement);
+                  shakaPlayer.load(src);
+                  player.on("destroy", function () {
+                    shakaPlayer.destroy();
+                  });
+                });
+              },
+            },
+          });
+        });
+
+        // 设置样式
+        this.$refs.art5.style.width = "100%";
+        this.$refs.art5.style.height =
+          (this.$refs.art5.scrollWidth / 16) * 9 + "px";
+      });
+    },
+
+    beforeUnmount() {
+      if (this.art5 && this.art5.destroy) {
+        this.art5.destroy(false);
       }
     },
   };

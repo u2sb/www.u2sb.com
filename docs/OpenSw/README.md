@@ -29,9 +29,12 @@ oldlink:
 5. [哔哩哔哩](vuepress-plugin-smplayer/bilibili.md)
 6. [西瓜视频](vuepress-plugin-smplayer/xigua.md)
 7. [ArtPlayer](vuepress-plugin-smplayer/artplayer.md)
+8. [DPlayer](vuepress-plugin-smplayer/dplayer.md)
 
 ## MetingJS.Server
 
 1. [安装](MetingJS.Server/README.md)
 
 ## hexo-tag-mmedia
+
+目录，略

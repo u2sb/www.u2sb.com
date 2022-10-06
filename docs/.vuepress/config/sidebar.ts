@@ -71,6 +71,7 @@ export default sidebar({
             "bilibili",
             "xigua",
             "artplayer",
+            "dplayer",
             "faq",
           ],
         },

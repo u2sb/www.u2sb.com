@@ -8,6 +8,9 @@ export default {
       art0: null,
       art1: null,
       art2: null,
+      art3: null,
+      art4: null,
+      art5: null,
     };
   },
   mounted() {
@@ -124,6 +127,73 @@ export default {
               },
             },
           });
+
+          this.art3 = new ArtPlayer({
+            fullscreen: true,
+            autoSize: true,
+            setting: true,
+            whitelist: ["*"],
+            container: this.$refs.art3,
+            url: "/assets/video/s_720.flv",
+            type: "customFLV",
+            customType: {
+              customFLV: function (mediaElement, src, player) {
+                import("mpegts.js").then(({ default: mpegts }) => {
+                  const flvPlayer = mpegts.createPlayer({
+                    type: "flv",
+                    url: src,
+                  });
+                  flvPlayer.attachMediaElement(mediaElement);
+                  flvPlayer.load();
+                  player.on("destroy", function () {
+                    flvPlayer.destroy();
+                  });
+                });
+              },
+            },
+          });
+
+          this.art4 = new ArtPlayer({
+            fullscreen: true,
+            autoSize: true,
+            setting: true,
+            whitelist: ["*"],
+            container: this.$refs.art4,
+            url: "/assets/video/dash/stream.mpd",
+            type: "customDASH",
+            customType: {
+              customDASH: function (mediaElement, src, player) {
+                import("dashjs").then(({ default: dashjs }) => {
+                  const dashPlayer = dashjs.MediaPlayer().create();
+                  dashPlayer.initialize(mediaElement, src, false);
+                  player.on("destroy", function () {
+                    dashPlayer.reset();
+                  });
+                });
+              },
+            },
+          });
+
+          this.art5 = new ArtPlayer({
+            fullscreen: true,
+            autoSize: true,
+            setting: true,
+            whitelist: ["*"],
+            container: this.$refs.art5,
+            url: "/assets/video/dash/stream.mpd",
+            type: "customShakaDash",
+            customType: {
+              customShakaDash: function (mediaElement, src, player) {
+                import("shaka-player").then(({ default: shaka }) => {
+                  const shakaPlayer = new shaka.Player(mediaElement);
+                  shakaPlayer.load(src);
+                  player.on("destroy", function () {
+                    shakaPlayer.destroy();
+                  });
+                });
+              },
+            },
+          });
         }
       );
 
@@ -139,6 +209,18 @@ export default {
       this.$refs.art2.style.width = "100%";
       this.$refs.art2.style.height =
         (this.$refs.art2.scrollWidth / 16) * 9 + "px";
+
+      this.$refs.art3.style.width = "100%";
+      this.$refs.art3.style.height =
+        (this.$refs.art3.scrollWidth / 16) * 9 + "px";
+
+      this.$refs.art4.style.width = "100%";
+      this.$refs.art4.style.height =
+        (this.$refs.art4.scrollWidth / 16) * 9 + "px";
+
+      this.$refs.art5.style.width = "100%";
+      this.$refs.art5.style.height =
+        (this.$refs.art5.scrollWidth / 16) * 9 + "px";
     });
   },
 
@@ -153,6 +235,18 @@ export default {
 
     if (this.art2 && this.art2.destroy) {
       this.art2.destroy(false);
+    }
+
+    if (this.art3 && this.art3.destroy) {
+      this.art3.destroy(false);
+    }
+
+    if (this.art4 && this.art4.destroy) {
+      this.art4.destroy(false);
+    }
+
+    if (this.art5 && this.art5.destroy) {
+      this.art5.destroy(false);
     }
   },
 };
