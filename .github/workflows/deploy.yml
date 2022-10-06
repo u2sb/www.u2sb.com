@@ -40,10 +40,14 @@ jobs:
           pnpm run build
 
       # 部署
-      - name: Deploy
+      - name: Deploy gh-page
         uses: peaceiris/actions-gh-pages@v3
         with:
           publish_dir: ./dist
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
+
+      - name: Deploy vps
+        run: |
+          curl "https://www.u2sb.com/hook-update"

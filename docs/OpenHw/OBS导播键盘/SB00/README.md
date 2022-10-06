@@ -52,3 +52,7 @@ oldlink:
 ### 上位机
 
 上位机软件，使用 WPF 编写。
+
+## 简介视频
+
+<Bilibili bvid="BV1VU4y1R75y" />
