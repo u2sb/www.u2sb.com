@@ -15,6 +15,7 @@ specifiers:
   shaka-player: ^4.2.1
   vue: ^3.2.29
   vuepress: 2.0.0-beta.51
+  vuepress-plugin-full-text-search2: ^0.4.0
   vuepress-theme-hope: 2.0.0-beta.106
 
 devDependencies:
@@ -32,6 +33,7 @@ devDependencies:
   shaka-player: 4.2.1
   vue: 3.2.40
   vuepress: 2.0.0-beta.51_cf67x7swsxhuhjarakslfn5yh4
+  vuepress-plugin-full-text-search2: 0.4.0
   vuepress-theme-hope: 2.0.0-beta.106
 
 packages:
@@ -2943,6 +2945,14 @@ packages:
       entities: 2.2.0
     dev: true
 
+  /dom-serializer/2.0.0:
+    resolution: {integrity: sha512-wIkAryiqt/nV5EQKqQpo3SToSOV9J0DnbJqwK7Wv/Trc92zIAYZ4FlMu+JPFW1DfGFt81ZTCGgDEabffXeLyJg==}
+    dependencies:
+      domelementtype: 2.3.0
+      domhandler: 5.0.3
+      entities: 4.4.0
+    dev: true
+
   /domelementtype/2.3.0:
     resolution: {integrity: sha512-OLETBj6w0OsagBwdXnPdN0cnMfF9opN69co+7ZrbfPGrdpPVNBUj02spi6B1N7wChLQiPn4CSH/zJvXw56gmHw==}
     dev: true
@@ -2961,6 +2971,13 @@ packages:
       domelementtype: 2.3.0
     dev: true
 
+  /domhandler/5.0.3:
+    resolution: {integrity: sha512-cgwlv/1iFQiFnU96XXgROh8xTeetsnJiDsTc7TYCLFd9+/WNkIqPTxiM/8pSd8VIrhXGTf1Ny1q1hquVqDJB5w==}
+    engines: {node: '>= 4'}
+    dependencies:
+      domelementtype: 2.3.0
+    dev: true
+
   /dompurify/2.4.0:
     resolution: {integrity: sha512-Be9tbQMZds4a3C6xTmz68NlMfeONA//4dOavl/1rNw50E+/QO0KVpbcU0PcaW0nsQxurXls9ZocqFxk8R2mWEA==}
     dev: true
@@ -2971,6 +2988,14 @@ packages:
       dom-serializer: 1.4.1
       domelementtype: 2.3.0
       domhandler: 4.3.1
+    dev: true
+
+  /domutils/3.0.1:
+    resolution: {integrity: sha512-z08c1l761iKhDFtfXO04C7kTdPBLi41zwOZl00WS8b5eiaebNpY00HKbztwBq+e3vyqWNwWF3mP9YLUeqIrF+Q==}
+    dependencies:
+      dom-serializer: 2.0.0
+      domelementtype: 2.3.0
+      domhandler: 5.0.3
     dev: true
 
   /dplayer/1.27.0:
@@ -3013,6 +3038,11 @@ packages:
 
   /entities/3.0.1:
     resolution: {integrity: sha512-WiyBqoomrwMdFG1e0kqvASYfnlb0lp8M5o5Fw2OFq1hNZxxcNk8Ik0Xm7LxzBhuidnZB/UtBqVCgUz3kBOP51Q==}
+    engines: {node: '>=0.12'}
+    dev: true
+
+  /entities/4.4.0:
+    resolution: {integrity: sha512-oYp7156SP8LkeGD0GF85ad1X9Ai79WtRsZ2gxJqtBuzH+98YUV6jkHEKlZkMbcrjJjIVJNIDP/3WL9wQkoPbWA==}
     engines: {node: '>=0.12'}
     dev: true
 
@@ -3831,6 +3861,15 @@ packages:
       domhandler: 4.3.1
       domutils: 2.8.0
       entities: 2.2.0
+    dev: true
+
+  /htmlparser2/8.0.1:
+    resolution: {integrity: sha512-4lVbmc1diZC7GUJQtRQ5yBAeUCL1exyMwmForWkRLnwyzWBFxN633SALPMGYaWZvKe9j1pRZJpauvmxENSp/EA==}
+    dependencies:
+      domelementtype: 2.3.0
+      domhandler: 5.0.3
+      domutils: 3.0.1
+      entities: 4.4.0
     dev: true
 
   /human-signals/3.0.1:
@@ -5312,6 +5351,19 @@ packages:
       '@vuepress/utils': 2.0.0-beta.51
       vuepress-shared: 2.0.0-beta.106
       xml-js: 1.6.11
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /vuepress-plugin-full-text-search2/0.4.0:
+    resolution: {integrity: sha512-/MrCn32tkoGrjguLRBa4+nJfQAFXSPZVx4t6eRsIytlDLQkZogHLr61pyAKkIyIE1J9mUWPWprJzvRwqpQKWpQ==}
+    dependencies:
+      '@vuepress/client': 2.0.0-beta.51
+      '@vuepress/core': 2.0.0-beta.51
+      '@vuepress/utils': 2.0.0-beta.51
+      chokidar: 3.5.3
+      htmlparser2: 8.0.1
+      vue: 3.2.40
     transitivePeerDependencies:
       - supports-color
     dev: true
