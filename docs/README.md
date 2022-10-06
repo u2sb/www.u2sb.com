@@ -11,7 +11,7 @@ actions:
     type: primary
 
   - text: 组织简介
-    link: /guide/
+    link: /pages/About.html
 
 features:
   - title: 开源软件
