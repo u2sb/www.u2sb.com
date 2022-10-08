@@ -78,7 +78,24 @@ sudo chmod +x DanMu
       "UserName": "王二麻子",
       "Password": "123456"
     }
-  ]
+  ],
+  "Meting": {
+    "DefaultServerProvider": "Tencent",
+    "Url": "https://danmu.u2sb.com/api/meting",
+    "Replace": {
+      "Url": [
+        ["http://", "https://"],
+        ["ws.stream.qqmusic.qq.com", "dl.stream.qqmusic.qq.com"]
+      ],
+      "Pic": [["http://", "https://"]]
+    },
+    "CachingTime": {
+      "Base": 600,
+      "Url": 600,
+      "Pic": 600,
+      "Lrc": 43200
+    }
+  }
 }
 ```
 

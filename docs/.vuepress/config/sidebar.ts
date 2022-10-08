@@ -48,6 +48,7 @@ export default sidebar({
             "raw-danmu",
             "artplayer-danmu",
             "dplayer-danmu",
+            "meting",
           ],
         },
       ],
