@@ -10,7 +10,7 @@ export default <PluginConfig>[
   oldrouter,
   smplayer({
     meting: {
-      api: "https://sm.sm9.top/api/meting?server=:server&type=:type&id=:id&r=:r",
+      api: "https://meting.u2sb.com/api/music?server=:server&type=:type&id=:id&r=:r",
     },
   }),
 ];

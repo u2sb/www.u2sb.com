@@ -27,7 +27,8 @@ oldlink:
 ## MetingJs 后端服务器
 
 - 状态：正在服务
-- 地址：`https://sm.sm9.top/api/music` (需要自己想办法找跨域代理)
+- 地址：`https://meting.u2sb.com/api/music`
+- 配置：`https://meting.u2sb.com/api/music?server=:server&type=:type&id=:id&r=:r`
 - 项目：[https://github.com/u2sb/MetingJS.Server](https://github.com/u2sb/MetingJS.Server)
 - 文档：[MetingJs.Server](../MetingJS.Server/README.md)
 
