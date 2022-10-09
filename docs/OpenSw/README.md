@@ -19,6 +19,7 @@ oldlink:
 4. [原始弹幕](Danmu.Server/raw-danmu.md)
 5. [在 ArtPlayer 使用](Danmu.Server/artplayer-danmu.md)
 6. [在 Dplayer 使用](Danmu.Server/dplayer-danmu.md)
+7. [MetingJS.Server](Danmu.Server/meting.md)
 
 ## vuepress-plugin-smplayer
 
