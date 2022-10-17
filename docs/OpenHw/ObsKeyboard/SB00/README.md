@@ -56,3 +56,9 @@ oldlink:
 ## 简介视频
 
 <Bilibili bvid="BV1VU4y1R75y" />
+
+## 固件及上位机下载
+
+下载上位机请加入我们的 [QQ 群](https://shang.qq.com/wpa/qunwpa?idkey=f2a6dba8d97899969101dd29210d972f04febd0ff8cf08ed50dd27790f23c9a9) 159891059
+
+![](/assets/img/2020/qq.png =300x300)

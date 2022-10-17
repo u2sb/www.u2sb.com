@@ -12,8 +12,8 @@
   "devDependencies": {
     "@vuepress/client": "2.0.0-beta.51",
     "aplayer": "^1.10.1",
-    "artplayer": "^4.5.7",
-    "artplayer-plugin-danmuku": "^4.4.10",
+    "artplayer": "^4.5.8",
+    "artplayer-plugin-danmuku": "^4.4.11",
     "chokidar": "^3.5.3",
     "dashjs": "^4.5.0",
     "deepmerge-ts": "^4.2.2",
@@ -22,7 +22,7 @@
     "hls.js": "^1.2.4",
     "mpegts.js": "^1.6.10",
     "shaka-player": "^4.2.2",
-    "vue": "^3.2.40",
+    "vue": "^3.2.41",
     "vuepress": "2.0.0-beta.51",
     "vuepress-plugin-full-text-search2": "^0.4.0",
     "vuepress-theme-hope": "2.0.0-beta.108"
