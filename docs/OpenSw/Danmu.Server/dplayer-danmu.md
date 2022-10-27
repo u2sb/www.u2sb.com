@@ -64,11 +64,11 @@ oldlink:
 ```
 
 ```js
-@include(./dplayerDemo.js)
+@include(./assets/js/dplayerDemo.js)
 ```
 
 :::tip
 一定要把 `id` 改掉，别 TM 傻逼呵呵的直接用我测试视频的 id 直接就写上去了，自己想办法随便生成一个随机字符串。
 :::
 
-<script type="module" src="./dplayerDemo.js" ></script>
+<script type="module" src="./assets/js/dplayerDemo.js" ></script>
