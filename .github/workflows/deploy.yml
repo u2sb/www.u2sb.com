@@ -1,7 +1,5 @@
 name: deploy
 
-#on: [push]
-
 # 在master分支发生push事件时触发。
 on:
   push:
@@ -50,4 +48,4 @@ jobs:
 
       - name: Deploy vps
         run: |
-          curl "https://www.u2sb.com/hook-update"
+          curl "${{ secrets.ACTIONS_HOOK_URL }}"
