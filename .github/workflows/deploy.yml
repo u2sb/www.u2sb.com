@@ -23,6 +23,8 @@ jobs:
           node-version: 18
           cache: "pnpm"
       - name: Build
+        env:
+          NODE_OPTIONS: --max_old_space_size=8192
         run: |
           pnpm install
           pnpm run build
