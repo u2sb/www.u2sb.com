@@ -1,7 +1,7 @@
 ---
 title: MetingJS.Server
 date: 2021-02-23 12:41:58
-oldlink:
+redirectFrom:
   - /pages/7c33e5/
 ---
 

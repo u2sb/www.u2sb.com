@@ -2,7 +2,7 @@
 title: 公共服务
 date: 2020-06-06 00:00:00
 
-oldlink:
+redirectFrom:
   - /pages/c45a68/
 ---
 

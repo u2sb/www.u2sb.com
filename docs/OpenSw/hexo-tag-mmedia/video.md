@@ -1,7 +1,7 @@
 ---
 title: Video
 date: 2021-02-23 16:16:20
-oldlink:
+redirectFrom:
   - /pages/f98608/
 ---
 

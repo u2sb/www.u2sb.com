@@ -1,7 +1,7 @@
 ---
 title: Aplayer
 date: 2021-02-23 16:38:32
-oldlink:
+redirectFrom:
   - /pages/c7c112/
 ---
 

@@ -2,7 +2,7 @@
 title: SB00
 date: 2022-05-12 16:45:30
 
-oldlink:
+redirectFrom:
   - /pages/0015fa/
 ---
 

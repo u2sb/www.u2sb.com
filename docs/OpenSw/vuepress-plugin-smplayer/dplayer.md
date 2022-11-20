@@ -1,7 +1,7 @@
 ---
 title: Dplayer
 date: 2022-01-24 14:17:12
-oldlink:
+redirectFrom:
   - /pages/aad6e7/
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 哔哩哔哩动画
 date: 2022-01-24 14:17:12
-oldlink:
+redirectFrom:
   - /pages/15efef/
 ---
 

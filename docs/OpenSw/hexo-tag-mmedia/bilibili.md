@@ -1,7 +1,7 @@
 ---
 title: 哔哩哔哩动画
 date: 2021-02-23 16:39:02
-oldlink:
+redirectFrom:
   - /pages/19d343/
 ---
 

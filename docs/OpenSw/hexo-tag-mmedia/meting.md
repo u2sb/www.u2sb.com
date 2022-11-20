@@ -1,7 +1,7 @@
 ---
 title: Meting
 date: 2021-02-23 16:17:48
-oldlink:
+redirectFrom:
   - /pages/b9330d/
 ---
 

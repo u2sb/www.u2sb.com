@@ -1,7 +1,7 @@
 ---
 title: FAQ
 date: 2022-02-24 14:22:19
-oldlink:
+redirectFrom:
   - /pages/7f380f/
 ---
 

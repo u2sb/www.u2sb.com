@@ -1,7 +1,7 @@
 ---
 title: 安装
 date: 2022-01-24 14:17:12
-oldlink:
+redirectFrom:
   - /pages/963900/
 ---
 

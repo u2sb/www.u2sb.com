@@ -1,7 +1,7 @@
 ---
 title: 西瓜视频
 date: 2021-02-23 16:39:18
-oldlink:
+redirectFrom:
   - /pages/a0c4a7/
 ---
 

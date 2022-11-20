@@ -1,7 +1,7 @@
 ---
 title: ArtPlayer
 date: 2021-03-01 11:13:47
-oldlink:
+redirectFrom:
   - /pages/5b810b/
 ---
 

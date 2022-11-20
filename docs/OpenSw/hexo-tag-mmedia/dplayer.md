@@ -1,7 +1,7 @@
 ---
 title: Dplayer
 date: 2021-02-23 16:38:52
-oldlink:
+redirectFrom:
   - /pages/7105db/
 ---
 

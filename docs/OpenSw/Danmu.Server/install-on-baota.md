@@ -2,7 +2,7 @@
 title: 在宝塔面板安装
 date: 2022-07-12 21:00:46
 
-oldlink:
+redirectFrom:
   - /pages/9300a8/
 ---
 

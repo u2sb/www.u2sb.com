@@ -1,7 +1,7 @@
 ---
 title: Aplayer
 date: 2022-01-24 14:17:12
-oldlink:
+redirectFrom:
   - /pages/2f42c4/
 ---
 

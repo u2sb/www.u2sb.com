@@ -2,7 +2,7 @@
 title: 0.X 版本
 author: MonoLogueChi
 date: 2021-02-23 12:41:58
-oldlink:
+redirectFrom:
   - /pages/bc70cb/
 ---
 

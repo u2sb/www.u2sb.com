@@ -1,7 +1,7 @@
 ---
 title: 开发文档
 date: 2021-02-24 10:11:33
-oldlink:
+redirectFrom:
   - /pages/b86c1d/
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 安装和基本介绍
 date: 2021-02-23 14:17:12
-oldlink:
+redirectFrom:
   - /pages/748f02/
 ---
 

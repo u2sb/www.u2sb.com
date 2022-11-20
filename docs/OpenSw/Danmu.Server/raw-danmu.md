@@ -2,7 +2,7 @@
 title: 原始弹幕
 date: 2022-05-18 17:26:25
 
-oldlink:
+redirectFrom:
   - /pages/f4931b/
 ---
 

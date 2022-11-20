@@ -2,7 +2,7 @@
 title: 安装和基本介绍
 date: 2022-05-18 17:03:27
 
-oldlink:
+redirectFrom:
   - /pages/15f418/
 ---
 
