@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as o,a as c}from"./app.4aafdbda.js";const _={},s=c("p",null,"看到本页的都是帅比。",-1),n=[s];function a(r,l){return t(),o("div",null,n)}const d=e(_,[["render",a],["__file","About.html.vue"]]);export{d as default};
