@@ -1,18 +1,16 @@
 import type { PluginConfig } from "vuepress";
 import copyjs from "./copyjs";
 import smplayer from "./smplayer";
-// import { searchProPlugin } from "vuepress-plugin-search-pro";
+import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { redirectPlugin } from "vuepress-plugin-redirect";
-import fullTextSearchPlugin from "vuepress-plugin-full-text-search2";
 
 export default <PluginConfig>[
   redirectPlugin({
     config: {},
   }),
-  fullTextSearchPlugin,
-  // searchProPlugin({
-  //   fullIndex: true,
-  // }),
+  searchProPlugin({
+    indexContent: true,
+  }),
   copyjs,
   smplayer({
     meting: {

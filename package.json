@@ -13,7 +13,7 @@
     "@vuepress/client": "2.0.0-beta.53",
     "@vuepress/utils": "2.0.0-beta.53",
     "aplayer": "^1.10.1",
-    "artplayer": "^4.5.11",
+    "artplayer": "^4.5.12",
     "artplayer-plugin-danmuku": "^4.4.11",
     "chokidar": "^3.5.3",
     "dashjs": "^4.5.1",
@@ -25,9 +25,8 @@
     "shaka-player": "^4.3.0",
     "vue": "^3.2.45",
     "vuepress": "2.0.0-beta.53",
-    "vuepress-plugin-full-text-search2": "^0.4.0",
-    "vuepress-plugin-redirect": "2.0.0-beta.124",
-    "vuepress-plugin-search-pro": "2.0.0-beta.123",
-    "vuepress-theme-hope": "2.0.0-beta.124"
+    "vuepress-plugin-redirect": "2.0.0-beta.129",
+    "vuepress-plugin-search-pro": "2.0.0-beta.129",
+    "vuepress-theme-hope": "2.0.0-beta.129"
   }
 }
