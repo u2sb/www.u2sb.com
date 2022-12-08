@@ -1,0 +1,1 @@
+import{_ as e,L as t,M as o,N as _}from"./framework.88d00857.js";const c={},s=_("p",null,"看到本页的都是帅比。",-1),n=[s];function r(a,l){return t(),o("div",null,n)}const d=e(c,[["render",r],["__file","About.html.vue"]]);export{d as default};
