@@ -63,7 +63,7 @@ export default hopeTheme({
       imageSize: true,
       include: true,
       katex: true,
-      lazyLoad: true,
+      imageLazyload: true,
       mark: true,
       mermaid: true,
       playground: {
@@ -88,7 +88,7 @@ export default hopeTheme({
       sub: true,
       sup: true,
       tabs: true,
-      vpre: true,
+      vPre: true,
       vuePlayground: true,
     },
   },
