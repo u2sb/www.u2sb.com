@@ -20,9 +20,7 @@ export default <PluginConfig>[
   }),
   wxshare({
     host: "https://www.u2sb.com",
-    signatureApi: "https://wx.xxwhite.com/api/wx/share/signature?url=",
-    redirectApi: "https://wx.xxwhite.com/api/wx/share/redirect?url=",
-    imgUrl: "/assets/img/avatar.png",
-    desc: "你是大帅逼",
+    redirectApi: "https://wx.xxwhite.com/wxshare",
+    imgUrl: "https://www.u2sb.com/assets/img/avatar.png",
   }),
 ];

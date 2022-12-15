@@ -5,7 +5,6 @@ const __dirname = getDirname(import.meta.url);
 
 export interface WxSharePluginOptions {
   host: string;
-  signatureApi: string;
   redirectApi: string;
   imgUrl?: string;
   desc?: string;
