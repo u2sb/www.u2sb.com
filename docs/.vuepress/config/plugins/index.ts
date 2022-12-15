@@ -1,6 +1,7 @@
 import type { PluginConfig } from "vuepress";
 import copyjs from "./copyjs";
 import smplayer from "./smplayer";
+import wxshare from "./wxshare";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { redirectPlugin } from "vuepress-plugin-redirect";
 
@@ -16,5 +17,12 @@ export default <PluginConfig>[
     meting: {
       api: "https://sm.sm9.top/api/meting?server=:server&type=:type&id=:id&r=:r",
     },
+  }),
+  wxshare({
+    host: "http://www.u2sb.com",
+    signatureApi: "https://wx.xxwhite.com/api/wx/share/signature?url=",
+    redirectApi: "https://wx.xxwhite.com/api/wx/share/redirect?url=",
+    imgUrl: "/assets/img/avatar.png",
+    desc: "你是大帅逼",
   }),
 ];
