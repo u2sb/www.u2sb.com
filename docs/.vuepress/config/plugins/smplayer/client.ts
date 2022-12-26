@@ -1,13 +1,10 @@
 import { defineClientConfig } from "@vuepress/client";
 
+import Bilibili from "./components/Bilibili/bilibili";
+import Xigua from "./components/Xigua/xigua";
+import APlayer from "./components/Aplayer/aplayer";
 // @ts-ignore：
-import Bilibili from "./components/Bilibili/Bilibili.vue";
-// @ts-ignore：
-import Xigua from "./components/Xigua/Xigua.vue";
-// @ts-ignore：
-import APlayer from "./components/Aplayer/APlayer.vue";
-// @ts-ignore：
-import Meting from "./components/Meting/Meting.vue";
+import Meting from "./components/Meting/meting";
 
 export default defineClientConfig({
   async enhance({ app }) {

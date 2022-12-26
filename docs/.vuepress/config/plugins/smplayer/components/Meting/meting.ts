@@ -1,12 +1,12 @@
-<template>
-  <div>
-    <APlayer :src="src" v-if="showAplayer" />
-  </div>
-</template>
+import { computed, defineComponent, h, onMounted, ref } from "vue";
+import APlayer from "../Aplayer/aplayer";
 
-<script>
-import { defineComponent } from "vue";
-import { meting as METING } from "@temp/SmplayerOptions.json"
+import type { VNode } from "vue";
+import type { MetingOptions } from "../../options";
+// @ts-ignore
+import { meting } from "@temp/SmplayerOptions.json";
+
+const METING = meting as MetingOptions;
 
 export default defineComponent({
   props: {
@@ -110,19 +110,11 @@ export default defineComponent({
     },
   },
 
-  data() {
-    return {
-      showAplayer: false,
-      src: {},
-    };
-  },
+  setup(props) {
+    let src = ref();
+    const showAplayer = computed(() => src.value != undefined && src.value != null);
 
-  mounted() {
-    this.InitMeting(this.$props);
-  },
-
-  methods: {
-    async InitMeting(meting) {
+    const initMeting = async (meting) => {
       let urlList = [];
       let audio = meting.audio || [];
       let list = meting.list || [];
@@ -145,7 +137,7 @@ export default defineComponent({
         list.map((e) => {
           //判断id或auto是否存在，如果存在就将其添加到urlList中
           if (e.id || e.auto) {
-            let a = this.ParseMeting(
+            let a = parseMeting(
               {
                 id: e.id,
                 server: e.server,
@@ -156,6 +148,7 @@ export default defineComponent({
               meting.api
             );
             if (a) {
+              // @ts-ignore
               urlList.push(a);
             }
           }
@@ -166,6 +159,7 @@ export default defineComponent({
         urlList.map((url) => fetch(url).then((res) => res.json()))
       )
         .then((res) =>
+          //@ts-ignore
           res.filter((r) => r.status === "fulfilled").map((r) => r.value)
         )
         .then((a) => {
@@ -182,7 +176,7 @@ export default defineComponent({
               })),
             ];
           });
-          let src = {
+          src.value = {
             audio: audio,
             fixed: meting.fixed,
             mini: meting.mini,
@@ -197,15 +191,12 @@ export default defineComponent({
             listMaxHeight: meting.listMaxHeight,
             storageName: meting.storageName,
           };
-          this.src = src;
-          this.showAplayer = true;
         });
-    },
+    };
 
-    //解析API
-    ParseMeting(m, api) {
+    const parseMeting = (m, api) => {
       if (m && m.auto) {
-        m = this.ParseLink(m.auto);
+        m = parseLink(m.auto);
       }
       if (m && m.server && m.type && m.id) {
         let url = api
@@ -218,9 +209,9 @@ export default defineComponent({
         return url;
       }
       return "";
-    },
-    //解析链接，auto方式
-    ParseLink(auto) {
+    };
+
+    const parseLink = (auto) => {
       let rules = [
         ["music.163.com.*song.*id=(\\d+)", "netease", "song"],
         ["music.163.com.*album.*id=(\\d+)", "netease", "album"],
@@ -252,7 +243,13 @@ export default defineComponent({
       }
       console.error(`无法解析的链接: ${auto}，请检查链接是否书写正确`);
       return {};
-    },
+    };
+
+    onMounted(() => {
+      initMeting(props);
+    });
+    return (): VNode[] => [
+      showAplayer.value ? h(APlayer, { src: src.value }) : h("div"),
+    ];
   },
 });
-</script>
