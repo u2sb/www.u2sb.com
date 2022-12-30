@@ -1,1 +1,0 @@
-import{_ as e,P as t,Q as o,Y as _}from"./framework-ec398e94.js";const c={},s=_("p",null,"看到本页的都是帅比。",-1),n=[s];function r(a,l){return t(),o("div",null,n)}const d=e(c,[["render",r],["__file","About.html.vue"]]);export{d as default};
