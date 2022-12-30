@@ -1,7 +1,5 @@
 import { defineClientConfig } from "@vuepress/client";
-
-// @ts-ignore
-import wxshare from "./wxshare.vue";
+import wxshare from "./wxshare";
 
 export default defineClientConfig({
   rootComponents: [wxshare],
