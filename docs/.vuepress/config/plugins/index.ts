@@ -1,7 +1,7 @@
 import type { PluginConfig } from "vuepress";
 import copyjs from "./copyjs";
 import smplayer from "./smplayer";
-import wxshare from "./wxshare";
+import wxshare from "./wxshare/node";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { redirectPlugin } from "vuepress-plugin-redirect";
 
@@ -20,7 +20,7 @@ export default <PluginConfig>[
   }),
   wxshare({
     host: "https://www.u2sb.com",
-    redirectApi: "https://wx.xxwhite.com/wxshare",
+    redirectApi: "https://wx.xxwhite.com/wxshare/",
     imgUrl: "https://www.u2sb.com/assets/img/avatar.png",
   }),
 ];
