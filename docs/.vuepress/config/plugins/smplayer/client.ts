@@ -3,7 +3,6 @@ import { defineClientConfig } from "@vuepress/client";
 import Bilibili from "./components/Bilibili/bilibili";
 import Xigua from "./components/Xigua/xigua";
 import APlayer from "./components/Aplayer/aplayer";
-// @ts-ignore：
 import Meting from "./components/Meting/meting";
 
 export default defineClientConfig({
