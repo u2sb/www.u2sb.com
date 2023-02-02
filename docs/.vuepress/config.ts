@@ -1,5 +1,5 @@
 import { defineUserConfig, viteBundler } from "vuepress";
-import viteCompression from "vite-plugin-compression";
+import { compression } from "vite-plugin-compression2";
 import theme from "./config/theme";
 import plugins from "./config/plugins";
 
@@ -14,9 +14,9 @@ export default defineUserConfig({
   bundler: viteBundler({
     viteOptions: {
       plugins: [
-        viteCompression({
+        compression({
+          exclude: [/\.(br)$/, /\.(gz)$/],
           algorithm: "brotliCompress",
-          deleteOriginFile: false,
         }),
       ],
     },

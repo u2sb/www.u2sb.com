@@ -16,7 +16,7 @@ specifiers:
   hls.js: ^1.3.1
   mpegts.js: ^1.7.2
   shaka-player: ^4.3.3
-  vite-plugin-compression: ^0.5.1
+  vite-plugin-compression2: ^0.6.3
   vue: ^3.2.45
   vuepress: 2.0.0-beta.60
   vuepress-plugin-redirect: 2.0.0-beta.171
@@ -41,7 +41,7 @@ devDependencies:
   hls.js: 1.3.1
   mpegts.js: 1.7.2
   shaka-player: 4.3.3
-  vite-plugin-compression: 0.5.1
+  vite-plugin-compression2: 0.6.3
   vue: 3.2.45
   vuepress: 2.0.0-beta.60_dlgznq46b2nyvtu5wqobknojfm
   vuepress-plugin-redirect: 2.0.0-beta.171_vawycdzqq23r7rdlzpvoplyeoy
@@ -1790,6 +1790,20 @@ packages:
       rollup: 2.79.1
     dev: true
 
+  /@rollup/pluginutils/5.0.2:
+    resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      '@types/estree': 1.0.0
+      estree-walker: 2.0.2
+      picomatch: 2.3.1
+    dev: true
+
   /@sindresorhus/is/0.14.0:
     resolution: {integrity: sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==}
     engines: {node: '>=6'}
@@ -1834,6 +1848,10 @@ packages:
 
   /@types/estree/0.0.39:
     resolution: {integrity: sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==}
+    dev: true
+
+  /@types/estree/1.0.0:
+    resolution: {integrity: sha512-WulqXMDUTYAXCjZnk6JtIHPigp55cVtDgDrO2gHRwhyJto21+1zbVCtOYB2L1F9w4qCQ0rOGWBnBe0FNTiEJIQ==}
     dev: true
 
   /@types/fs-extra/9.0.13:
@@ -3559,15 +3577,6 @@ packages:
 
   /fraction.js/4.2.0:
     resolution: {integrity: sha512-MhLuK+2gUcnZe8ZHlaaINnQLl0xRIGRfcGk2yl8xoQAfHrSsL3rYu6FCmBdkdbhc9EPlwyGHewaRsvwRMJtAlA==}
-    dev: true
-
-  /fs-extra/10.1.0:
-    resolution: {integrity: sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==}
-    engines: {node: '>=12'}
-    dependencies:
-      graceful-fs: 4.2.10
-      jsonfile: 6.1.0
-      universalify: 2.0.0
     dev: true
 
   /fs-extra/11.1.0:
@@ -5384,16 +5393,14 @@ packages:
     hasBin: true
     dev: true
 
-  /vite-plugin-compression/0.5.1:
-    resolution: {integrity: sha512-5QJKBDc+gNYVqL/skgFAP81Yuzo9R+EAf19d+EtsMF/i8kFUpNi3J/H01QD3Oo8zBQn+NzoCIFkpPLynoOzaJg==}
+  /vite-plugin-compression2/0.6.3:
+    resolution: {integrity: sha512-vJ8+UGre9gCun14D39zqQso5hMEcLqoRxbojpvgx4XIxQz3EOC+qqOs6bg4CpJ99Vl+Al/IMFohkgkn/7GR5ag==}
     peerDependencies:
-      vite: '>=2.0.0'
+      vite: ^3.0.0 || ^4.0.0
     dependencies:
-      chalk: 4.1.2
-      debug: 4.3.4
-      fs-extra: 10.1.0
+      '@rollup/pluginutils': 5.0.2
     transitivePeerDependencies:
-      - supports-color
+      - rollup
     dev: true
 
   /vite/4.0.4:
