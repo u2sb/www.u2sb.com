@@ -32,8 +32,8 @@ export default navbar([
         link: "#hexo-tag-mmedia",
       },
       {
-        text: "通用弹幕服务器",
-        link: "#Danmu.Server",
+        text: "B站弹幕解析",
+        link: "#Danmu.Bili",
       },
     ],
   },

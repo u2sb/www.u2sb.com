@@ -17,6 +17,10 @@ export default sidebar({
           link: "/OpenSw/Danmu.Server/",
         },
         {
+          text: "BiliBili 弹幕解析",
+          link: "/OpenSw/Danmu.Bili/",
+        },
+        {
           text: "vuepress-plugin-smplayer",
           link: "/OpenSw/vuepress-plugin-smplayer/",
         },
@@ -104,6 +108,22 @@ export default sidebar({
             "developer-doc",
             "version0",
           ],
+        },
+      ],
+    },
+  ],
+  "/OpenSw/Danmu.Bili/": [
+    {
+      text: "开源软件",
+      icon: "software",
+      prefix: "",
+      link: "/OpenSw/",
+      children: [
+        {
+          text: "BiliBili弹幕解析",
+          prefix: "",
+          link: "/OpenSw/Danmu.Server/",
+          children: ["install", "protobuf", "json", "xml"],
         },
       ],
     },
