@@ -5,8 +5,7 @@
   "license": "CC BY-NC-SA 4.0",
   "type": "module",
   "scripts": {
-    "build": "vuepress build docs --clean-cache --clean-temp",
-    "gulp": "gulp build",
+    "build": "gulp build",
     "clean-dev": "vuepress dev docs --clean-cache",
     "dev": "vuepress dev docs --clean-cache --clean-temp"
   },
