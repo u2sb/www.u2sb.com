@@ -122,7 +122,7 @@ export default sidebar({
         {
           text: "BiliBili弹幕解析",
           prefix: "",
-          link: "/OpenSw/Danmu.Server/",
+          link: "/OpenSw/Danmu.Bili/",
           children: ["install", "protobuf", "json", "xml"],
         },
       ],
