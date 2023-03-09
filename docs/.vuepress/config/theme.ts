@@ -1,10 +1,10 @@
-import { hopeTheme } from "vuepress-theme-hope";
+import { hopeTheme } from "vuepress-theme-hope/perf";
 import navbar from "./navbar";
 import sidebar from "./sidebar";
 
 export default hopeTheme({
   hostname: "https://www.u2sb.com",
-
+  pure: true,
   author: {
     name: "MonoLogueChi",
     url: "https://blog.xxwhite.com",
