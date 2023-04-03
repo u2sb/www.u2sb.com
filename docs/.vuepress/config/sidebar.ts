@@ -21,6 +21,10 @@ export default sidebar({
           link: "/OpenSw/Danmu.Bili/",
         },
         {
+          text: "vuepress-plugin-sbaudio",
+          link: "/OpenSw/vuepress-plugin-sbaudio/",
+        },
+        {
           text: "vuepress-plugin-smplayer",
           link: "/OpenSw/vuepress-plugin-smplayer/",
         },
@@ -55,6 +59,22 @@ export default sidebar({
             "download-bilibili-danmu",
             "meting",
           ],
+        },
+      ],
+    },
+  ],
+  "/OpenSw/vuepress-plugin-sbaudio/": [
+    {
+      text: "开源软件",
+      icon: "software",
+      prefix: "",
+      link: "/OpenSw/",
+      children: [
+        {
+          text: "vuepress-plugin-sbaudio",
+          link: "/OpenSw/vuepress-plugin-sbaudio/",
+          prefix: "",
+          children: [],
         },
       ],
     },

@@ -1,6 +1,8 @@
 ---
 title: vuepress-plugin-smplayer
 date: 2022-01-24 14:17:12
+dir:
+  order: 0030
 ---
 
 :::warning

@@ -24,6 +24,10 @@ export default navbar([
         link: "#vuepress-plugin-smplayer",
       },
       {
+        text: "vuepress-plugin-sbaudio",
+        link: "#vuepress-plugin-sbaudio",
+      },
+      {
         text: "vuepress-plugin-vssue-global",
         link: "https://github.com/u2sb/vuepress-plugin-vssue-global",
       },
