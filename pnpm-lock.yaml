@@ -10,9 +10,6 @@ devDependencies:
   '@vuepress/utils':
     specifier: 2.0.0-beta.61
     version: 2.0.0-beta.61
-  '@vueuse/core':
-    specifier: ^9.13.0
-    version: 9.13.0(vue@3.2.47)
   aplayer:
     specifier: ^1.10.1
     version: 1.10.1
@@ -25,9 +22,6 @@ devDependencies:
   chokidar:
     specifier: ^3.5.3
     version: 3.5.3
-  deepmerge-ts:
-    specifier: ^4.3.0
-    version: 4.3.0
   dplayer:
     specifier: ^1.27.1
     version: 1.27.1
@@ -53,8 +47,8 @@ devDependencies:
     specifier: 2.0.0-beta.200
     version: 2.0.0-beta.200(vuepress@2.0.0-beta.61)
   vuepress-plugin-sbaudio:
-    specifier: 2.0.0-beta.3
-    version: registry.npmjs.org/vuepress-plugin-sbaudio@2.0.0-beta.3
+    specifier: 2.0.0-beta.5
+    version: 2.0.0-beta.5
   vuepress-plugin-search-pro:
     specifier: 2.0.0-beta.200
     version: 2.0.0-beta.200(vuepress@2.0.0-beta.61)
@@ -3720,11 +3714,6 @@ packages:
     engines: {node: '>=4'}
     dependencies:
       mimic-response: 1.0.1
-    dev: true
-
-  /deepmerge-ts@4.3.0:
-    resolution: {integrity: sha512-if3ZYdkD2dClhnXR5reKtG98cwyaRT1NeugQoAPTTfsOpV9kqyeiBF9Qa5RHjemb3KzD5ulqygv6ED3t5j9eJw==}
-    engines: {node: '>=12.4.0'}
     dev: true
 
   /deepmerge-ts@5.0.0:
@@ -8256,6 +8245,14 @@ packages:
       - supports-color
     dev: true
 
+  /vuepress-plugin-sbaudio@2.0.0-beta.5:
+    resolution: {integrity: sha512-8b6T4xSIvyWFGeCuQUCKes4O/Dbspg2L9kV2v29jaLNwA/C4vYJb24EiRN5m6vR1MhJ/c7h9mOG8LOqXu1aVHQ==}
+    dependencies:
+      aplayer: 1.10.1
+      deepmerge-ts: 5.0.0
+      hls.js: 1.3.5
+    dev: true
+
   /vuepress-plugin-search-pro@2.0.0-beta.200(vuepress@2.0.0-beta.61):
     resolution: {integrity: sha512-6qtuDH83Z1Ps2sIXLVzR5p1/z0gF8KcR1AWf1m2t9NQ0dqfOBGqJV+QOnCXBg4iblLax0N9LZhzehl+MQnaLvg==}
     engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
@@ -8848,14 +8845,4 @@ packages:
     resolution: {integrity: sha512-DRUM4ZLnoaT0PBVvGBDO9oWIDBKFdAVieNWxWwK0niYzJCMwGchRk21/hsE+RKkIveH3XHCyvXcJDkgLVvfizQ==}
     dependencies:
       tslib: 2.3.0
-    dev: true
-
-  registry.npmjs.org/vuepress-plugin-sbaudio@2.0.0-beta.3:
-    resolution: {integrity: sha512-xHNu5twcgSxxMXWVfU5WA0UsGA3fGnAzt/8hoxQOiaBs2X78TRcHQWveuSO7jcG/+A+wRPnZ0/29MfC99eHe/A==, registry: https://registry.npmmirror.com/, tarball: https://registry.npmjs.org/vuepress-plugin-sbaudio/-/vuepress-plugin-sbaudio-2.0.0-beta.3.tgz}
-    name: vuepress-plugin-sbaudio
-    version: 2.0.0-beta.3
-    dependencies:
-      aplayer: 1.10.1
-      deepmerge-ts: 5.0.0
-      hls.js: 1.3.5
     dev: true
