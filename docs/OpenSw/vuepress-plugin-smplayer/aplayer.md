@@ -19,10 +19,6 @@ redirectFrom:
 
 ### 基本使用
 
-<ClientOnly>
-  <APlayer :src="aplayer" />
-</ClientOnly>
-
 ```html
 <ClientOnly>
   <APlayer :src="aplayer" />
@@ -53,10 +49,6 @@ redirectFrom:
 ### customType
 
 自定义类型，方法见示例
-
-<ClientOnly>
-  <APlayer :src="aplayerCustomType" />
-</ClientOnly>
 
 ```html
 <ClientOnly>
@@ -108,10 +100,6 @@ redirectFrom:
 ```
 
 ### 混合列表
-
-<ClientOnly>
-  <APlayer :src="aplayer2" />
-</ClientOnly>
 
 ```html
 <ClientOnly>
@@ -168,5 +156,3 @@ export default defineUserConfig({
   ],
 });
 ```
-
-<script type="module" src="./js/aplayer-demo.js"></script>

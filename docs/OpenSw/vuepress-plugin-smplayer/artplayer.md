@@ -41,8 +41,6 @@ yarn add -D artplayer
 
 ### 基本使用
 
-<div ref="art0"></div>
-
 ```html
 <div ref="art0"></div>
 
@@ -88,8 +86,6 @@ yarn add -D artplayer
 ```
 
 ### 弹幕
-
-<div ref="art1"></div>
 
 ::: tip
 需安装 `artplayer-plugin-danmuku`
@@ -206,8 +202,6 @@ npm install -D artplayer-plugin-danmuku
 
 ### HLS
 
-<div ref="art2"></div>
-
 ::: tip
 需安装 `hls.js`
 
@@ -281,8 +275,6 @@ npm install -D hls.js
 
 ### FLV
 
-<div ref="art3"></div>
-
 ::: tip
 需安装 `mpegts.js`
 
@@ -349,8 +341,6 @@ npm install -D mpegts.js
 
 ### DASH
 
-<div ref="art4"></div>
-
 ::: tip
 需安装 `dashjs`
 
@@ -413,8 +403,6 @@ npm install -D dashjs
 
 ### ShakaDash
 
-<div ref="art5"></div>
-
 ::: tip
 需安装 `shaka-player`
 
@@ -474,5 +462,3 @@ npm install -D shaka-player
   };
 </script>
 ```
-
-<script type="module" src="./js/artplayer-demo.js"></script>

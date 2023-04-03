@@ -41,8 +41,6 @@ yarn add -D dplayer
 
 ### 基本使用
 
-<div ref="dp0" />
-
 ```html
 <div ref="dp0" />
 
@@ -70,8 +68,6 @@ yarn add -D dplayer
 ```
 
 ### 弹幕
-
-<div ref="dp1" />
 
 ```html
 <div ref="dp1" />
@@ -107,8 +103,6 @@ yarn add -D dplayer
 ```
 
 ### HLS
-
-<div ref="dp2" />
 
 ::: tip
 需安装 `hls.js`
@@ -162,5 +156,3 @@ npm install -D hls.js
 ### 其他库
 
 略，请自行脑补使用方式
-
-<script type="module" src="./js/dplayer-demo.js"></script>

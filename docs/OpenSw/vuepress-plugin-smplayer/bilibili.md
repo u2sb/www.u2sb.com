@@ -11,10 +11,10 @@ redirectFrom:
 
 ## 使用
 
-<Bilibili bvid="BV1zt411t79A" />
+<BiliBili bvid="BV1zt411t79A" />
 
 ```html
-<Bilibili bvid="BV1zt411t79A" />
+<BiliBili bvid="BV1zt411t79A" />
 ```
 
 ## 参数

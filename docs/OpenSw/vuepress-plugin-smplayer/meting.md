@@ -13,10 +13,6 @@ redirectFrom:
 
 ### 基本使用
 
-<ClientOnly>
-  <Meting id="003UkWuI0E8U0l" server="tencent" type="song" />
-</ClientOnly>
-
 ```html
 <ClientOnly>
   <Meting id="003UkWuI0E8U0l" server="tencent" type="playlist" />
@@ -33,10 +29,6 @@ redirectFrom:
 
 ### Auto
 
-<ClientOnly>
-  <Meting auto="https://y.qq.com/n/ryqq/songDetail/003UkWuI0E8U0l" />
-</ClientOnly>
-
 :::warning
 各种平台的 URL 一直是在变的，auto 解析不一定能及时更新，使用前请先测试，如遇到问题，请及时[反馈](https://github.com/u2sb/vuepress-plugin-smplayer/issues)。
 :::
@@ -48,10 +40,6 @@ redirectFrom:
 ```
 
 ### 组合列表
-
-<ClientOnly>
-  <Meting id="003UkWuI0E8U0l" server="tencent" type="song" :list="list" />
-</ClientOnly>
 
 使用 `list` 参数添加额外的音乐列表。
 
@@ -81,10 +69,6 @@ redirectFrom:
 ```
 
 ### 额外歌单
-
-<ClientOnly>
-  <Meting id="003UkWuI0E8U0l" server="tencent" type="song" :list="list" :audio="audio" />
-</ClientOnly>
 
 使用 `audio` 参数添加额外的音乐列表。
 
@@ -175,5 +159,3 @@ export default defineUserConfig({
   ],
 });
 ```
-
-<script type="module" src="./js/meting-demo.js"></script>
