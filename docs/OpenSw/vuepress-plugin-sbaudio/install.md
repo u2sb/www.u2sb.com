@@ -68,3 +68,7 @@ export default defineUserConfig({
   ],
 });
 ```
+
+:::tip
+本文只是简单说明使用，详细使用方法请阅读源码。
+:::

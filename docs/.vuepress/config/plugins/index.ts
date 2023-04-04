@@ -4,6 +4,7 @@ import wxshare from "./wxshare/node";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { redirectPlugin } from "vuepress-plugin-redirect";
 import sbaudio from "vuepress-plugin-sbaudio";
+import { shikiPlugin } from "@vuepress/plugin-shiki";
 
 export default <PluginConfig>[
   redirectPlugin({
@@ -17,6 +18,9 @@ export default <PluginConfig>[
     host: "https://www.u2sb.com",
     redirectApi: "https://sbapi.s3.sm9.top/api/wx/share/",
     imgUrl: "https://www.u2sb.com/assets/img/avatar.png",
+  }),
+  shikiPlugin({
+    theme: "one-dark-pro",
   }),
   sbaudio({
     metingOptions: {
