@@ -74,7 +74,7 @@ export default sidebar({
           text: "vuepress-plugin-sbaudio",
           link: "/OpenSw/vuepress-plugin-sbaudio/",
           prefix: "",
-          children: ["install", "aplayer", "meting"],
+          children: ["install", "aplayer", "meting", "aplayerGlobal"],
         },
       ],
     },
