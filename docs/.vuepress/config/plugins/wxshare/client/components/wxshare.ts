@@ -112,14 +112,13 @@ export default defineComponent({
       shareWx();
     });
 
-    return (): VNode[] => [
+    return (): VNode =>
       needIcon.value
         ? h("button", {
             class: "icon iconfont icon-wechat back-to-top",
             style: "bottom: 10px; font-size: 26px;",
             onClick: clickedWxShareButton,
           })
-        : h("div"),
-    ];
+        : h("div");
   },
 });

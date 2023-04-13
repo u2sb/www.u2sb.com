@@ -103,7 +103,7 @@ redirectFrom:
 ```
 
 ```js
-@include(./assets/js/artplayerDemo.js)
+<!-- @include: ./assets/js/artplayerDemo.js -->
 ```
 
 :::tip

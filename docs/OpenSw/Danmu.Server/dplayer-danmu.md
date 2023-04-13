@@ -64,7 +64,7 @@ redirectFrom:
 ```
 
 ```js
-@include(./assets/js/dplayerDemo.js)
+<!-- @include: ./assets/js/dplayerDemo.js -->
 ```
 
 :::tip
