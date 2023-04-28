@@ -49,6 +49,20 @@ export default hopeTheme({
       categoryId: "DIC_kwDOIIUHaM4CRzf3",
     },
 
+    components: {
+      components: [
+        "ArtPlayer",
+        "AudioPlayer",
+        "Badge",
+        "BiliBili",
+        "CodePen",
+        "FontIcon",
+        "VideoPlayer",
+        "XiGua",
+        "YouTube",
+      ],
+    },
+
     // Disable features you don't want here
     mdEnhance: {
       align: true,

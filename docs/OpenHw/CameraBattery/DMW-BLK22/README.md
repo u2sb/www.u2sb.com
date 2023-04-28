@@ -58,4 +58,4 @@ BOM 表有些问题，关键元件看这里，其他电阻电容看原理图
 
 ## 视频
 
-<Bilibili bvid="BV1sN4y1F7Nd" />
+<BiliBili bvid="BV1sN4y1F7Nd" />

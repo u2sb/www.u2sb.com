@@ -17,11 +17,11 @@ devDependencies:
     specifier: ^1.10.1
     version: 1.10.1
   artplayer:
-    specifier: ^4.6.2
-    version: 4.6.2
+    specifier: ^5.0.4
+    version: 5.0.4
   artplayer-plugin-danmuku:
-    specifier: ^4.4.11
-    version: 4.4.11
+    specifier: ^5.0.0
+    version: 5.0.0
   chokidar:
     specifier: ^3.5.3
     version: 3.5.3
@@ -56,8 +56,8 @@ devDependencies:
     specifier: 2.0.0-beta.206
     version: 2.0.0-beta.206(vuepress@2.0.0-beta.61)
   vuepress-shared:
-    specifier: 2.0.0-beta.200
-    version: 2.0.0-beta.200(vuepress@2.0.0-beta.61)
+    specifier: 2.0.0-beta.206
+    version: 2.0.0-beta.206(vuepress@2.0.0-beta.61)
   vuepress-theme-hope:
     specifier: 2.0.0-beta.206
     version: 2.0.0-beta.206(react-dom@16.14.0)(react@16.14.0)(vuepress@2.0.0-beta.61)
@@ -1449,7 +1449,7 @@ packages:
       '@jest/schemas': 29.4.3
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-reports': 3.0.1
-      '@types/node': 18.16.1
+      '@types/node': 18.16.2
       '@types/yargs': 17.0.24
       chalk: 4.1.2
     dev: true
@@ -1870,7 +1870,7 @@ packages:
     resolution: {integrity: sha512-MxObHvNl4A69ofaTRU8DFqvgzzv8s9yRtaPPm5gud9HDNvpB3GPQFvNuTWAI59B9huVGV5jXYJwbCsmBsOGYWA==}
     dependencies:
       '@types/jsonfile': 6.1.1
-      '@types/node': 18.16.1
+      '@types/node': 18.16.2
     dev: true
 
   /@types/hash-sum@1.0.0:
@@ -1900,7 +1900,7 @@ packages:
   /@types/jsonfile@6.1.1:
     resolution: {integrity: sha512-GSgiRCVeapDN+3pqA35IkQwasaCh/0YFH5dEF6S88iDvEn901DjOeH3/QPY+XYP1DFzDZPvIvfeEgk+7br5png==}
     dependencies:
-      '@types/node': 18.16.1
+      '@types/node': 18.16.2
     dev: true
 
   /@types/katex@0.16.0:
@@ -1910,7 +1910,7 @@ packages:
   /@types/keyv@3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 18.16.1
+      '@types/node': 18.16.2
     dev: true
 
   /@types/linkify-it@3.0.2:
@@ -1938,7 +1938,7 @@ packages:
     resolution: {integrity: sha512-WcdpPJCakFzcWWD9juKoZbRtQxKIMYF/JIAM4JrNHrMcnJL6/a2NWjXxW7fo9hxboxxkg+icff8d7+WIEvKgYQ==}
     dependencies:
       '@types/bson': 4.2.0
-      '@types/node': 18.16.1
+      '@types/node': 18.16.2
     dev: true
 
   /@types/ms@0.7.31:
@@ -1949,8 +1949,8 @@ packages:
     resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==}
     dev: true
 
-  /@types/node@18.16.1:
-    resolution: {integrity: sha512-DZxSZWXxFfOlx7k7Rv4LAyiMroaxa3Ly/7OOzZO8cBNho0YzAi4qlbrx8W27JGqG57IgR/6J7r+nOJWw6kcvZA==}
+  /@types/node@18.16.2:
+    resolution: {integrity: sha512-GQW/JL/5Fz/0I8RpeBG9lKp0+aNcXEaVL71c0D2Q0QHDTFvlYKT7an0onCUXj85anv7b4/WesqdfchLc0jtsCg==}
     dev: true
 
   /@types/prop-types@15.7.5:
@@ -1972,13 +1972,13 @@ packages:
   /@types/resolve@1.17.1:
     resolution: {integrity: sha512-yy7HuzQhj0dhGpD8RLXSZWEkLsV9ibvxvi6EiJ3bkqLAO1RGo0WbkWQiwpRlSFymTJRz0d3k5LM3kkx8ArDbLw==}
     dependencies:
-      '@types/node': 18.16.1
+      '@types/node': 18.16.2
     dev: true
 
   /@types/responselike@1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 18.16.1
+      '@types/node': 18.16.2
     dev: true
 
   /@types/sax@1.2.4:
@@ -1999,7 +1999,7 @@ packages:
     resolution: {integrity: sha512-4UqPv+2567NhMQuMLdKAyK4yzrfCqwaTt6bLhHEs8PFcxbHILsrxaY63n4wgE/BRLDWDQeI+WcTmkXKExh9hQg==}
     dependencies:
       '@types/expect': 1.20.4
-      '@types/node': 18.16.1
+      '@types/node': 18.16.2
     dev: true
 
   /@types/web-bluetooth@0.0.16:
@@ -2667,12 +2667,18 @@ packages:
       marked: 4.3.0
     dev: true
 
-  /artplayer-plugin-danmuku@4.4.11:
-    resolution: {integrity: sha512-/4F8IyB29Bdr1LV1RM3FM7CdiAMsVNOOJ/HY4jaJCXnMAKThQiGa++0PhCJ07nhyGvDcZGRL2/UWJRz9zZJFNw==}
+  /artplayer-plugin-danmuku@5.0.0:
+    resolution: {integrity: sha512-swnnTIHnwyAft4Pbh7uQtzjNNhqoiMffuEvZ3eUkMfFGWOEjoZ23TQ7rqXXY08iGJTIWt4Rn7iqUS5DdKsHy9g==}
     dev: true
 
   /artplayer@4.6.2:
     resolution: {integrity: sha512-9RMfFFy2wGgHUCnrwk+M2Z5OiLWQcBL+YzkSBwSi6IuJG6oM+TlfJJZt09RL2iag6DNQ+AUYtB879WUHxbqfIQ==}
+    dependencies:
+      option-validator: 2.0.6
+    dev: true
+
+  /artplayer@5.0.4:
+    resolution: {integrity: sha512-klX7v0OUa4S5C25IaBG1w9GkHKUf4qxK6K5pG96ksMH98lmm5gEJvh/xjDC7ZRGbOH5db7uFIHOJnJnMx2XTfA==}
     dependencies:
       option-validator: 2.0.6
     dev: true
@@ -2956,7 +2962,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001481
-      electron-to-chromium: 1.4.374
+      electron-to-chromium: 1.4.376
       node-releases: 2.0.10
       update-browserslist-db: 1.0.11(browserslist@4.21.5)
     dev: true
@@ -3964,8 +3970,8 @@ packages:
       jake: 10.8.5
     dev: true
 
-  /electron-to-chromium@1.4.374:
-    resolution: {integrity: sha512-dNP9tQNTrjgVlSXMqGaj0BdrCS+9pcUvy5/emB6x8kh0YwCoDZ0Z4ce1+7aod+KhybHUd5o5LgKrc5al4kVmzQ==}
+  /electron-to-chromium@1.4.376:
+    resolution: {integrity: sha512-TFeOKd98TpJzRHkr4Aorn16QkMnuCQuGAE6IZ0wYF+qkbSfMPqjplvRppR02tMUpVxZz8nyBNvVm9lIZsqrbPQ==}
     dev: true
 
   /elkjs@0.8.2:
@@ -5422,7 +5428,7 @@ packages:
     resolution: {integrity: sha512-KWYVV1c4i+jbMpaBC+U++4Va0cp8OisU185o73T1vo99hqi7w8tSJfUXYswwqqrjzwxa6KpRK54WhPvwf5w6PQ==}
     engines: {node: '>= 10.13.0'}
     dependencies:
-      '@types/node': 18.16.1
+      '@types/node': 18.16.2
       merge-stream: 2.0.0
       supports-color: 7.2.0
     dev: true
@@ -8493,40 +8499,6 @@ packages:
       sitemap: 7.1.1
       vuepress: 2.0.0-beta.61(@vuepress/client@2.0.0-beta.61)(vue@3.2.47)
       vuepress-shared: 2.0.0-beta.206(vuepress@2.0.0-beta.61)
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - supports-color
-    dev: true
-
-  /vuepress-shared@2.0.0-beta.200(vuepress@2.0.0-beta.61):
-    resolution: {integrity: sha512-H4TqjpfMR3MkTlStlSvaun1ZpNdhxgX57zVnatSRk9kSr1+VFcRAqLTvDuaSYlMC7i2DDAPKNReQw18h/OBfDw==}
-    engines: {node: ^14.18.0 || >=16.0.0, npm: '>=8', pnpm: '>=7'}
-    peerDependencies:
-      vuepress: 2.0.0-beta.61
-      vuepress-vite: 2.0.0-beta.61
-      vuepress-webpack: 2.0.0-beta.61
-    peerDependenciesMeta:
-      vuepress:
-        optional: true
-      vuepress-vite:
-        optional: true
-      vuepress-webpack:
-        optional: true
-    dependencies:
-      '@vuepress/client': 2.0.0-beta.61
-      '@vuepress/shared': 2.0.0-beta.61
-      '@vuepress/utils': 2.0.0-beta.61
-      '@vueuse/core': 9.13.0(vue@3.2.47)
-      cheerio: 1.0.0-rc.12
-      dayjs: 1.11.7
-      execa: 7.1.1
-      fflate: 0.7.4
-      gray-matter: 4.0.3
-      semver: 7.5.0
-      striptags: 3.2.0
-      vue: 3.2.47
-      vue-router: 4.1.6(vue@3.2.47)
-      vuepress: 2.0.0-beta.61(@vuepress/client@2.0.0-beta.61)(vue@3.2.47)
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
