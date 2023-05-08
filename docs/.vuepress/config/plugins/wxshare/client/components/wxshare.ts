@@ -46,12 +46,30 @@ export default defineComponent({
     };
 
     const clickedWxShareButton = () => {
-      let href = wspo.redirectApi || "";
-      href += `?url=${url.value}`;
-      href += `&title=${title.value}`;
-      href += `&desc=${desc.value}`;
-      href += `&imgUrl=${imgUrl}`;
-      window.location.href = href;
+      if (wspo.server) {
+        let page = {
+          Title: title.value,
+          Url: location.href,
+          Desc: desc.value,
+          ImgUrl: imgUrl,
+        };
+        fetch(wspo.server + "/api/wx/page/add", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json;charset=UTF-8",
+          },
+          body: JSON.stringify(page),
+        })
+          .then((res) => res.json())
+          .then((res) => {
+            console.log(res);
+            if (res["code"] === 0) {
+              let id = res["data"];
+              console.log(wspo.server + "/api/wx/share/" + id);
+              location.href = wspo.server + "/api/wx/share/" + id;
+            }
+          });
+      }
     };
 
     const shareWx = () => {

@@ -16,7 +16,7 @@ export default <PluginConfig>[
   copyjs,
   wxshare({
     host: "https://www.u2sb.com",
-    redirectApi: "https://sbapi.s3.sm9.top/api/wx/share/",
+    server: "https://sbapi.s3.sm9.top",
     imgUrl: "https://www.u2sb.com/assets/img/avatar.png",
   }),
   shikiPlugin({
