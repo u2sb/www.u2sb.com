@@ -40,8 +40,8 @@ export default defineComponent({
         frontmatter.value.title || pageHeadTitle.value || siteData.value.title;
       desc.value =
         frontmatter.value.wxdescription ||
-        wspo.desc ||
         frontmatter.value.description?.substring(0, 60) ||
+        wspo.desc ||
         siteData.value.description;
     };
 
@@ -62,10 +62,8 @@ export default defineComponent({
         })
           .then((res) => res.json())
           .then((res) => {
-            console.log(res);
             if (res["code"] === 0) {
               let id = res["data"];
-              console.log(wspo.server + "/api/wx/share/" + id);
               location.href = wspo.server + "/api/wx/share/" + id;
             }
           });

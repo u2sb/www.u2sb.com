@@ -18,6 +18,7 @@ export default <PluginConfig>[
     host: "https://www.u2sb.com",
     server: "https://sbapi.s3.sm9.top",
     imgUrl: "https://www.u2sb.com/assets/img/avatar.png",
+    desc: "帅比网"
   }),
   shikiPlugin({
     theme: "one-dark-pro",
