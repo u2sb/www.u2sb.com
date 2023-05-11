@@ -73,9 +73,15 @@ export default defineComponent({
     const shareWx = () => {
       if (wspo.directConnection === true) {
         if (/MicroMessenger/i.test(navigator.userAgent.toLowerCase())) {
-          fetch(
-            wspo.signatureApi + encodeURIComponent(location.href.split("#")[0])
-          )
+          fetch(wspo.server + "/api/wx/signature", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json;charset=UTF-8",
+            },
+            body: JSON.stringify({
+              url: location.href.split("#")[0],
+            }),
+          })
             .then((res) => res.json())
             .then((res) => {
               if (res["code"] === 0) {
