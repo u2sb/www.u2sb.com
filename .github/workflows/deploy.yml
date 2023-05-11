@@ -4,6 +4,9 @@ on:
     branches:
       - master
       - main
+permissions:
+  contents: write
+
 env:
   TZ: Asia/Shanghai
 jobs:
@@ -32,7 +35,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           publish_dir: ./dist
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
       - name: Deploy vps
