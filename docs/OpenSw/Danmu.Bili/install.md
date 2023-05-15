@@ -112,8 +112,8 @@ server {
         proxy_set_header X-Real-IP $remote_addr;
         proxy_pass http://unix:/home/mc/www/danmu.bili/danmu-bili.sock;
 
-        brotli_types text/plain text/javascript text/xml application/xml application/json application/octet-stream;
-        gzip_types text/plain text/javascript text/xml application/xml application/json application/octet-stream;
+        brotli_types text/plain text/javascript text/xml application/xml application/json application/octet-stream application/x-protobuf;
+        gzip_types text/plain text/javascript text/xml application/xml application/json application/octet-stream application/x-protobuf;
     }
 }
 ```
