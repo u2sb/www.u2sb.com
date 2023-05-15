@@ -12,14 +12,14 @@ title: xml 弹幕
 
 ## 接口
 
-- `https://danmu-bili.s2.u2sb.com/api/bilibili/danmu/bvid/p?.xml`
+- `https://danmu-bili.u2sb.com/api/bilibili/v1/bvid/p?.xml`
 
 - p 为 1 时可省略
 
 示例
 
-- `https://danmu-bili.s2.u2sb.com/api/bilibili/danmu/BV1zt411t79A.xml`
-- `https://danmu-bili.s2.u2sb.com/api/bilibili/danmu/BV1zt411t79A/1.xml`
+- `https://danmu-bili.u2sb.com/api/bilibili/v1/BV1zt411t79A.xml`
+- `https://danmu-bili.u2sb.com/api/bilibili/v1/BV1zt411t79A/1.xml`
 
 ## 格式
 

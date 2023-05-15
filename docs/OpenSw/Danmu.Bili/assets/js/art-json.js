@@ -1,4 +1,4 @@
-const danmuApi = "https://danmu-bili.s2.u2sb.com/api/bilibili/danmu/BV1zt411t79A.json";
+const danmuApi = "https://danmu-bili.u2sb.com/api/bilibili/v2/BV1zt411t79A.json";
 
 export default {
   mounted() {

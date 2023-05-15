@@ -13,19 +13,19 @@ export default navbar([
       },
       {
         text: "弹幕服务器",
-        link: "#Danmu.Server",
+        link: "Danmu.Server/",
       },
       {
         text: "MetingJS.Server",
-        link: "#MetingJsServer",
+        link: "MetingJS.Server/",
       },
       {
         text: "vuepress-plugin-smplayer",
-        link: "#vuepress-plugin-smplayer",
+        link: "vuepress-plugin-smplayer/",
       },
       {
         text: "vuepress-plugin-sbaudio",
-        link: "#vuepress-plugin-sbaudio",
+        link: "vuepress-plugin-sbaudio/",
       },
       {
         text: "vuepress-plugin-vssue-global",
@@ -33,11 +33,11 @@ export default navbar([
       },
       {
         text: "hexo-tag-mmedia",
-        link: "#hexo-tag-mmedia",
+        link: "hexo-tag-mmedia/",
       },
       {
         text: "B站弹幕解析",
-        link: "#Danmu.Bili",
+        link: "Danmu.Bili/",
       },
     ],
   },
@@ -52,11 +52,11 @@ export default navbar([
       },
       {
         text: "OBS导播键盘",
-        link: "#OBS导播键盘",
+        link: "ObsKeyboard/",
       },
       {
         text: "相机电池",
-        link: "#相机电池",
+        link: "CameraBattery/",
       },
     ],
   },

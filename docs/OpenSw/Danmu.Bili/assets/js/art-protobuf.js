@@ -1,4 +1,4 @@
-const danmuApi = "https://danmu-bili.s2.u2sb.com/api/bilibili/raw/BV1zt411t79A";
+const danmuApi = "https://danmu-bili.u2sb.com/api/bilibili/v2/BV1zt411t79A";
 
 export default {
   mounted() {
@@ -11,7 +11,7 @@ export default {
       Promise.all([
         import("artplayer"),
         import("artplayer-plugin-danmuku"),
-        import("https://danmu-bili.s2.u2sb.com/js/dm.js"),
+        import("https://danmu-bili.u2sb.com/js/dm.js"),
       ]).then(
         ([
           { default: ArtPlayer },

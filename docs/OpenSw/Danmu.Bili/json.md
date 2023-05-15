@@ -12,17 +12,15 @@ title: json 弹幕
 
 ## 接口
 
-- `https://danmu-bili.s2.u2sb.com/api/bilibili/danmu/bvid/p?`
-- `https://danmu-bili.s2.u2sb.com/api/bilibili/danmu/bvid/p?.json`
+- `https://danmu-bili.u2sb.com/api/bilibili/v2/bvid.json`
+- `https://danmu-bili.u2sb.com/api/bilibili/v2/bvid/p.json`
 
 - p 为 1 时可省略
-- .json 可省略
 
 示例
 
-- `https://danmu-bili.s2.u2sb.com/api/bilibili/danmu/BV1zt411t79A`
-- `https://danmu-bili.s2.u2sb.com/api/bilibili/danmu/BV1zt411t79A.json`
-- `https://danmu-bili.s2.u2sb.com/api/bilibili/danmu/BV1zt411t79A/1`
+- `https://danmu-bili.u2sb.com/api/bilibili/v2/BV1zt411t79A.json`
+- `https://danmu-bili.u2sb.com/api/bilibili/v2/BV1zt411t79A/1.json`
 
 ## 格式
 

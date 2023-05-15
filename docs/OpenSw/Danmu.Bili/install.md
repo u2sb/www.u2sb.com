@@ -47,34 +47,20 @@ sudo chmod +x Danmu.Bili
       "Microsoft.AspNetCore": "Warning"
     }
   },
-  "Kestrel": {
-    "Endpoints": {
-      "Http": {
-        "Url": "http://localhost:5000",
-        "Protocols": "Http1AndHttp2AndHttp3"
-      }
-    }
-  },
   "AllowedHosts": "*",
   "WithOrigins": ["*"],
-  "BiliBiliSetting": {
-    "PageCacheTime": 8640,
-    "DanMuCacheTime": 6
-  },
-  "DataBase": {
-    "Directory": "DataBase",
-    "DanMuCachingDb": "DanMuCaching.db"
-  },
-  "UnixSocket": ""
+  "Port": 13157,
+  "UnixSocket": "/home/www/danmu.bili/danmu-bili.sock",
+  "PidFile": "/home/www/danmu.bili/danmu-bili.pid"
 }
 ```
 
 需要修改的部分
 
-- `Kestrel.Endpoints.Http.Url` 修改为不冲突的端口
 - `AllowedHosts` 添加自己的域名，多个域名使用 `;` 隔开，如 `"danmu.u2sb.com;localhost"`，也可以直接填写 `"*"`
 - `WithOrigins` 允许跨域请求的域名，默认不需要修改
 - `UnixSocket` UnixSocket 路径
+- `PidFile` pid 文件路径
 
 ### 配置进程守护
 
@@ -82,17 +68,25 @@ sudo chmod +x Danmu.Bili
 
 ```ini
 [Unit]
-Description=danmu-bili
+Description = danmu-bili
+After = network.target remote-fs.target nss-lookup.target
 
 [Service]
-User=mc
-WorkingDirectory=/home/mc/www/danmu.bili/
-ExecStart=/home/mc/www/danmu.bili/Danmu.Bili
-Restart=always
-RestartSec=5s
+Type = exec
+Group = mc
+User = mc
+PIDFile = /home/mc/www/danmu.bili/danmu-bili.pid
+WorkingDirectory = /home/mc/www/danmu.bili/
+ExecStartPre = /usr/bin/rm -f /home/mc/www/danmu.bili/danmu-bili.pid
+ExecStart = /home/mc/www/danmu.bili/Danmu.Bili
+ExecStartPost = /usr/bin/sleep 1s
+KillSignal = SIGTERM
+
+Restart = always
+RestartSec = 5s
 
 [Install]
-WantedBy=multi-user.target
+WantedBy = multi-user.target
 ```
 
 ### 配置反向代理
@@ -107,31 +101,19 @@ server {
     ssl_early_data on;
     proxy_set_header Early-Data $ssl_early_data;
     ssl_protocols TLSv1.2 TLSv1.3;
-    add_header Alt-Svc 'h3=":443"; ma=86400, h3-29=":443"; h3-28=":443";';
+    add_header Alt-Svc 'h3=":443"; ma=86400; h3-29=":443"; h3-28=":443";';
     ssl_certificate /home/mc/.acme.sh/*.s2.u2sb.com_ecc/fullchain.cer;
     ssl_certificate_key /home/mc/.acme.sh/*.s2.u2sb.com_ecc/*.s2.u2sb.com.key;
 
     index index.html index.htm;
 
-    location /js/ {
-        root /home/mc/www/danmu.bili/wwwroot/;
-
-        add_header Access-Control-Allow-Origin *;
-        add_header Access-Control-Allow-Methods 'GET, POST, OPTIONS';
-
-        if ($request_method = 'OPTIONS') {
-            return 204;
-        }
-    }
-
-    location /api/ {
+    location / {
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
-        proxy_pass "http://unix:/home/mc/www/danmu.bili/danmu.sock";
+        proxy_pass http://unix:/home/mc/www/danmu.bili/danmu-bili.sock;
 
-        zstd_types text/html text/plain application/xml application/json application/octet-stream;
-        brotli_types text/html text/plain application/xml application/json application/octet-stream;
-        gzip_types text/html text/plain application/xml application/json application/octet-stream;
+        brotli_types text/plain text/javascript text/xml application/xml application/json application/octet-stream;
+        gzip_types text/plain text/javascript text/xml application/xml application/json application/octet-stream;
     }
 }
 ```

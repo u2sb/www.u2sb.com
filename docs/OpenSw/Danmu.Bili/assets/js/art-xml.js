@@ -1,5 +1,5 @@
 const danmuApi =
-  "https://danmu-bili.s2.u2sb.com/api/bilibili/danmu/BV1zt411t79A.xml";
+  "https://danmu-bili.u2sb.com/api/bilibili/v1/BV1zt411t79A.xml";
 
 export default {
   mounted() {

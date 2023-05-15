@@ -8,14 +8,14 @@ title: Protobuf 弹幕
 
 ## 接口
 
-- `https://danmu-bili.s2.u2sb.com/api/bilibili/raw/bvid/p?`
+- `https://danmu-bili.u2sb.com/api/bilibili/v2/bvid/p?`
 
 - p 为 1 时可省略
 
 示例
 
-- `https://danmu-bili.s2.u2sb.com/api/bilibili/raw/BV1zt411t79A`
-- `https://danmu-bili.s2.u2sb.com/api/bilibili/raw/BV1zt411t79A/1`
+- `https://danmu-bili.u2sb.com/api/bilibili/v2/BV1zt411t79A`
+- `https://danmu-bili.u2sb.com/api/bilibili/v2/BV1zt411t79A/1`
 
 ## 格式
 
@@ -49,7 +49,7 @@ title: Protobuf 弹幕
     <script type="module">
       import artplayer from "https://cdn.jsdelivr.net/npm/artplayer/+esm";
       import artdm from "https://cdn.jsdelivr.net/npm/artplayer-plugin-danmuku/+esm";
-      import { bilibili } from "https://danmu-bili.s2.u2sb.com/js/dm.js";
+      import { bilibili } from "https://danmu-bili.u2sb.com/js/dm.js";
 
       const Artplayer = artplayer.default;
       const artplayerPluginDanmuku = artdm.default;
@@ -60,7 +60,7 @@ title: Protobuf 弹幕
           artplayerPluginDanmuku({
             danmuku: () =>
               fetch(
-                "https://danmu-bili.s2.u2sb.com/api/bilibili/raw/BV1zt411t79A"
+                "https://danmu-bili.u2sb.com/api/bilibili/v2/BV1zt411t79A"
               )
                 .then((res) => res.arrayBuffer())
                 .then((buffer) => {
