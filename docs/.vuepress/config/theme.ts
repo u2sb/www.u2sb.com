@@ -54,6 +54,7 @@ export default hopeTheme({
       serverURL: "https://waline.u2sb.com",
       login: "force",
       pageSize: 15,
+      reaction: true,
     },
 
     components: {
