@@ -51,7 +51,7 @@ export default hopeTheme({
 
     comment: {
       provider: "Waline",
-      serverURL: "https://waline.u2sb.com",
+      serverURL: "https://waline-wu.u2sb.com",
       login: "force",
       pageSize: 15,
       reaction: true,
