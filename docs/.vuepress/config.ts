@@ -4,9 +4,9 @@ import plugins from "./config/plugins";
 
 export default defineUserConfig({
   base: "/",
-  title: "帅比",
+  title: "帅比网",
   dest: "dist",
-  lang:"zh-CN",
+  lang: "zh-CN",
   theme,
   shouldPrefetch: false,
   shouldPreload: false,
