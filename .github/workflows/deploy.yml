@@ -28,9 +28,12 @@ jobs:
       - name: Build
         env:
           NODE_OPTIONS: --max_old_space_size=8192
+        continue-on-error: true
         run: |
           pnpm install
           pnpm run build
+          chmod +x tools/leanify
+          tools/leanify -i 50 -p dist || true
       - name: Deploy gh-page
         uses: peaceiris/actions-gh-pages@v3
         with:
