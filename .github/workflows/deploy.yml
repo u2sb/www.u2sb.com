@@ -35,10 +35,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           publish_dir: ./dist
-          force_orphan: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
-      - name: Deploy vps
-        run: |
-          curl "${{ secrets.ACTIONS_HOOK_URL }}"
