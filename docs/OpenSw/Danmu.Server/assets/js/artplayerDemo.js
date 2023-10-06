@@ -11,7 +11,7 @@ export default {
       Promise.all([
         import("artplayer"),
         import("artplayer-plugin-danmuku"),
-        import("https://danmu-bili.u2sb.com/assets/dm/dm.js"),
+        import("https://danmu.u2sb.com/assets/dm/dm.js"),
       ]).then(
         ([
           { default: ArtPlayer },

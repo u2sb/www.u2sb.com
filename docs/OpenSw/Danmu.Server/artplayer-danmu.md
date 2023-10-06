@@ -95,10 +95,10 @@ redirectFrom:
 ## 示例
 
 
-<div ref="art0"></div>
+<div ref="art0" />
 
 ```html
-<div ref="art0"></div>
+<div ref="art0" />
 ```
 
 ```js
