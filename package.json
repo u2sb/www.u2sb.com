@@ -10,10 +10,10 @@
     "dev": "vuepress dev docs --clean-cache --clean-temp"
   },
   "devDependencies": {
-    "@vuepress/client": "2.0.0-beta.62",
-    "@vuepress/core": "2.0.0-beta.62",
-    "@vuepress/plugin-shiki": "2.0.0-beta.62",
-    "@vuepress/utils": "2.0.0-beta.62",
+    "@vuepress/client": "2.0.0-beta.67",
+    "@vuepress/core": "2.0.0-beta.67",
+    "@vuepress/plugin-shiki": "2.0.0-beta.67",
+    "@vuepress/utils": "2.0.0-beta.67",
     "aplayer": "^1.10.1",
     "artplayer": "^5.0.9",
     "artplayer-plugin-danmuku": "^5.0.1",
@@ -24,11 +24,10 @@
     "gulp-execa": "^4.5.0",
     "gulp-web-compress": "^0.4.1",
     "vue": "^3.3.4",
-    "vuepress": "2.0.0-beta.62",
-    "vuepress-plugin-redirect": "2.0.0-beta.222",
+    "vuepress": "2.0.0-beta.67",
+    "vuepress-plugin-redirect": "2.0.0-beta.237",
     "vuepress-plugin-sbaudio": "2.0.0-beta.7",
-    "vuepress-plugin-search-pro": "2.0.0-beta.222",
-    "vuepress-plugin-wxshare": "0.0.3",
-    "vuepress-theme-hope": "2.0.0-beta.222"
+    "vuepress-plugin-search-pro": "2.0.0-beta.237",
+    "vuepress-theme-hope": "2.0.0-beta.237"
   }
 }

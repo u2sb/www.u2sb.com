@@ -94,12 +94,11 @@ redirectFrom:
 
 ## 示例
 
-::: details 点击查看
 
-<div ref="art"></div>
+<div ref="art0"></div>
 
 ```html
-<div ref="art"></div>
+<div ref="art0"></div>
 ```
 
 ```js

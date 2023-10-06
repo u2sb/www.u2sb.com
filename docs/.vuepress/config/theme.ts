@@ -49,13 +49,13 @@ export default hopeTheme({
     //   categoryId: "DIC_kwDOIIUHaM4CRzf3",
     // },
 
-    comment: {
-      provider: "Waline",
-      serverURL: "https://waline-wu.u2sb.com",
-      login: "force",
-      pageSize: 15,
-      reaction: true,
-    },
+    // comment: {
+    //   provider: "Waline",
+    //   serverURL: "https://waline-wu.u2sb.com",
+    //   login: "force",
+    //   pageSize: 15,
+    //   reaction: true,
+    // },
 
     components: {
       components: [
@@ -91,9 +91,7 @@ export default hopeTheme({
       playground: {
         presets: ["ts", "vue"],
       },
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
+      presentation: ["highlight", "math", "search", "notes", "zoom"],
       stylize: [
         {
           matcher: "Recommanded",

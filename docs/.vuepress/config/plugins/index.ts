@@ -1,6 +1,5 @@
 import type { PluginConfig } from "vuepress";
 import copyjs from "./copyjs";
-import wxshare from "vuepress-plugin-wxshare";
 import { searchProPlugin } from "vuepress-plugin-search-pro";
 import { redirectPlugin } from "vuepress-plugin-redirect";
 import sbaudio from "vuepress-plugin-sbaudio";
@@ -14,12 +13,6 @@ export default <PluginConfig>[
     indexContent: true,
   }),
   copyjs,
-  wxshare({
-    host: "https://www.u2sb.com",
-    server: "https://sbapi.s3.sm9.top",
-    imgUrl: "https://www.u2sb.com/assets/img/avatar.png",
-    desc: "帅比网"
-  }),
   shikiPlugin({
     theme: "one-dark-pro",
   }),

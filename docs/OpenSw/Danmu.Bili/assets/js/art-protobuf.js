@@ -11,12 +11,12 @@ export default {
       Promise.all([
         import("artplayer"),
         import("artplayer-plugin-danmuku"),
-        import("https://danmu-bili.u2sb.com/js/dm.js"),
+        import("https://danmu-bili.u2sb.com/assets/dm/dm.js"),
       ]).then(
         ([
           { default: ArtPlayer },
           { default: artplayerPluginDanmuku },
-          { bilibili },
+          { DanMu },
         ]) => {
           this.art = new ArtPlayer({
             fullscreen: true,
@@ -31,7 +31,7 @@ export default {
                     .then((res) => res.arrayBuffer())
                     .then((buffer) => {
                       let d =
-                        bilibili.community.service.dm.v1.DmSegMobileReply.decode(
+                        DanMu.Models.Protos.BiliBili.Dm.DmSegMobileReply.decode(
                           new Uint8Array(buffer)
                         );
                       return d.elems.map((m) => ({
