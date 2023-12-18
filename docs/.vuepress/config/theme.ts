@@ -75,32 +75,32 @@ export default hopeTheme({
     mdEnhance: {
       align: true,
       attrs: true,
-      chart: true,
       codetabs: true,
-      container: true,
+      component: true,
+      hint: true,
       demo: true,
-      echarts: true,
-      flowchart: true,
+      figure: true,
       gfm: true,
+      imgLazyload: true,
+      imgMark: true,
       imgSize: true,
       include: true,
-      katex: true,
-      imgLazyload: true,
       mark: true,
-      mermaid: true,
       playground: {
         presets: ["ts", "vue"],
       },
-      presentation: ["highlight", "math", "search", "notes", "zoom"],
+      mathjax: {
+        output: "svg",
+      },
       stylize: [
         {
-          matcher: "Recommanded",
+          matcher: "Recommended",
           replacer: ({ tag }) => {
             if (tag === "em")
               return {
                 tag: "Badge",
                 attrs: { type: "tip" },
-                content: "Recommanded",
+                content: "Recommended",
               };
           },
         },
@@ -109,7 +109,6 @@ export default hopeTheme({
       sup: true,
       tabs: true,
       vPre: true,
-      vuePlayground: true,
     },
     prismjs: false,
   },
