@@ -1,0 +1,1 @@
+import{_ as e}from"./plugin-vue_export-helper-x3n3nnut.js";import{o as t,c as o,a as c}from"./app-xqFWxJf5.js";const _={},s=c("p",null,"看到本页的都是帅比。",-1),n=[s];function r(a,l){return t(),o("div",null,n)}const m=e(_,[["render",r],["__file","About.html.vue"]]);export{m as default};
