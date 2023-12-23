@@ -60,14 +60,11 @@ export default hopeTheme({
     components: {
       components: [
         "ArtPlayer",
-        "AudioPlayer",
         "Badge",
         "BiliBili",
         "CodePen",
         "FontIcon",
-        "VideoPlayer",
         "XiGua",
-        "YouTube",
       ],
     },
 

@@ -55,7 +55,7 @@ redirectFrom:
 
 ## 简介视频
 
-<Bilibili bvid="BV1VU4y1R75y" />
+<BiliBili bvid="BV1VU4y1R75y" />
 
 ## 固件及上位机下载
 

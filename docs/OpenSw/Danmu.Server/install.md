@@ -12,7 +12,7 @@ redirectFrom:
 
 ## 安装
 
-::: danger
+::: caution
 后面的教程戾气较重，心理承受能力差的别看，别对号入座。
 :::
 

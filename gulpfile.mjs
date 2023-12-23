@@ -1,11 +1,17 @@
+import fs from "fs";
 import gulp from "gulp";
 import gulpWebCompress from "gulp-web-compress";
 import { resolve } from "path";
 import { exec } from "gulp-execa";
+import { langs } from "./docs/.vuepress/config/plugins/shiki/langs.js";
 
 const { src, dest, series } = gulp;
+
 const inputDir = "./dist";
 const outputDir = "./dist";
+
+const sourceDir = "./docs";
+const usedLangsFile = "./docs/.vuepress/config/plugins/shiki/used-langs.json";
 
 export const vuepressBuild = async () => {
   await exec(
@@ -33,4 +39,25 @@ const compress = async () =>
     )
     .pipe(dest(outputDir));
 
-export const build = series(vuepressBuild, compress);
+// 分析所使用的语言
+const getLangsFromMdFiles = () => {
+  const values = new Set();
+
+  return src(resolve(sourceDir, "**/*.md"))
+    .on("data", (file) => {
+      const content = fs.readFileSync(file.path, "utf8");
+      const regex = /```([\w-]+)\s+([\s\S]*?)/g;
+      let match;
+
+      while ((match = regex.exec(content)) !== null) {
+        const value = match[1].trim().replace(/^\s+/, "");
+        if (langs.includes(value)) values.add(value);
+      }
+    })
+    .on("end", () => {
+      var langs = Array.from(values);
+      fs.writeFileSync(usedLangsFile, JSON.stringify(langs));
+    });
+};
+
+export const build = series(getLangsFromMdFiles, vuepressBuild, compress);
