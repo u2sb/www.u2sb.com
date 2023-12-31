@@ -108,5 +108,8 @@ export default hopeTheme({
       vPre: true,
     },
     prismjs: false,
+    searchPro: {
+      indexContent: true,
+    },
   },
 });

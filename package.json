@@ -15,7 +15,7 @@
     "@vuepress/plugin-shiki": "2.0.0-rc.0",
     "@vuepress/utils": "2.0.0-rc.0",
     "aplayer": "^1.10.1",
-    "artplayer": "^5.0.9",
+    "artplayer": "^5.1.0",
     "artplayer-plugin-danmuku": "^5.0.1",
     "chokidar": "^3.5.3",
     "dashjs-pure": "^1.0.0",
@@ -26,11 +26,11 @@
     "gulp-web-compress": "^0.4.1",
     "mathjax-full": "^3.2.2",
     "mpegts.js": "^1.7.3",
-    "vue": "^3.3.12",
+    "vue": "^3.4.3",
     "vuepress": "2.0.0-rc.0",
-    "vuepress-plugin-redirect": "2.0.0-rc.5",
+    "vuepress-plugin-redirect": "2.0.0-rc.10",
     "vuepress-plugin-sbaudio": "2.0.0-beta.7",
-    "vuepress-plugin-search-pro": "2.0.0-rc.5",
-    "vuepress-theme-hope": "2.0.0-rc.5"
+    "vuepress-plugin-search-pro": "2.0.0-rc.10",
+    "vuepress-theme-hope": "2.0.0-rc.10"
   }
 }
