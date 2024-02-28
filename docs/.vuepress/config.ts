@@ -1,6 +1,6 @@
 import { defineUserConfig } from "vuepress";
-import theme from "./config/theme";
-import plugins from "./config/plugins";
+import theme from "./config/theme.js";
+import plugins from "./config/plugins/index.js";
 import { viteBundler } from "@vuepress/bundler-vite";
 
 export default defineUserConfig({
