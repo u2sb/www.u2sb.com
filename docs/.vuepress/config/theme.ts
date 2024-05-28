@@ -1,6 +1,7 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
+import shiki from "./plugins/shiki/index.js";
 
 export default hopeTheme({
   hostname: "https://www.u2sb.com",
@@ -10,7 +11,7 @@ export default hopeTheme({
     url: "https://blog.xxwhite.com",
   },
 
-  iconAssets: "iconfont",
+  iconAssets: "fontawesome",
 
   logo: "/assets/img/logo.png",
 
@@ -107,7 +108,7 @@ export default hopeTheme({
       tabs: true,
       vPre: true,
     },
-    prismjs: false,
+    shiki: shiki,
     searchPro: {
       indexContent: true,
     },

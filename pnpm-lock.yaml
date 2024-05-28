@@ -60,8 +60,8 @@ importers:
         specifier: 2.0.0-rc.12
         version: 2.0.0-rc.12(@vuepress/bundler-vite@2.0.0-rc.12(@types/node@20.12.12)(sass@1.77.2))(vue@3.4.27)
       vuepress-plugin-sbaudio:
-        specifier: 2.0.0-beta.2
-        version: 2.0.0-beta.2
+        specifier: 2.0.0-bate.9
+        version: 2.0.0-bate.9
       vuepress-plugin-search-pro:
         specifier: 2.0.0-rc.45
         version: 2.0.0-rc.45(vuepress@2.0.0-rc.12(@vuepress/bundler-vite@2.0.0-rc.12(@types/node@20.12.12)(sass@1.77.2))(vue@3.4.27))
@@ -1744,8 +1744,8 @@ packages:
       sass-loader:
         optional: true
 
-  vuepress-plugin-sbaudio@2.0.0-beta.2:
-    resolution: {integrity: sha512-skUgAGSkmXbtDO+agDG046gqsi0iHU2PkSqHsyPEw16bfkaSTJpwFs6ULqh6rFF/VNncMD6ldU+NIiWIhtpO3Q==}
+  vuepress-plugin-sbaudio@2.0.0-bate.9:
+    resolution: {integrity: sha512-jTkE9p2LPX2LEAS+k8wGdf5ATbx9rcYecwCa0exMsS/DTDqys6ieRbBq8rxGB6UnE+wVOSjCHX6Yx3FIqykIqw==}
 
   vuepress-plugin-search-pro@2.0.0-rc.45:
     resolution: {integrity: sha512-EmOFmLPxknrtx/7X46mRPXFurZQMmHO8VZt9WVQaAgg5y4qhmgqQRyzJHdQ6+YlI5t1D+nwSagyibvGRIZNUCA==}
@@ -3511,7 +3511,7 @@ snapshots:
       - markdown-it
       - typescript
 
-  vuepress-plugin-sbaudio@2.0.0-beta.2:
+  vuepress-plugin-sbaudio@2.0.0-bate.9:
     dependencies:
       aplayer: 1.10.1
       deepmerge-ts: 5.1.0

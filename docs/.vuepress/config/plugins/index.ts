@@ -9,9 +9,6 @@ export default <PluginConfig>[
     config: {},
   }),
   copyjs,
-  shikiPlugin({
-    theme: "one-dark-pro",
-  }),
   sbaudio({
     metingOptions: {
       api: "https://meting-api.u2sb.com/?server=:server&type=:type&id=:id&r=:r",

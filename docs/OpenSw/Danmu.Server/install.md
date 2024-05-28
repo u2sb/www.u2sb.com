@@ -133,7 +133,7 @@ stdout_logfile_maxbytes=5MB
 
 以 caddy 为例
 
-```
+```caddy
 danmu.u2sb.com {
   encode zstd br gzip
   reverse_proxy localhost:5000
