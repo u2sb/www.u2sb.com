@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><atom:link href="https://www.u2sb.com/rss.xml" rel="self" type="application/rss+xml"/><title>帅比网</title><link>https://www.u2sb.com/</link><description/><language>zh-CN</language><pubDate>Sat, 09 Nov 2024 13:17:59 GMT</pubDate><lastBuildDate>Sat, 09 Nov 2024 13:17:59 GMT</lastBuildDate><generator>@vuepress/plugin-feed</generator><docs>https://validator.w3.org/feed/docs/rss2.html</docs><item><title>开源硬件</title><link>https://www.u2sb.com/OpenHw/</link><guid>https://www.u2sb.com/OpenHw/</guid><source url="https://www.u2sb.com/rss.xml">开源硬件</source><description>OBS 导播键盘 相机电池</description><pubDate>Mon, 27 Jan 2020 21:50:53 GMT</pubDate><content:encoded><![CDATA[<h2>OBS 导播键盘</h2>
+<ol>
+<li><a href="/OpenHw/ObsKeyboard/SB00/" target="_blank">SB00</a></li>
+</ol>
+<h2>相机电池</h2>
+<ol>
+<li><a href="/OpenHw/CameraBattery/DMW-BLK22/" target="_blank">DMW-BLK22 松下相机假电池</a></li>
+</ol>
+]]></content:encoded></item><item><title>开源软件</title><link>https://www.u2sb.com/OpenSw/</link><guid>https://www.u2sb.com/OpenSw/</guid><source url="https://www.u2sb.com/rss.xml">开源软件</source><pubDate>Mon, 27 Jan 2020 21:50:53 GMT</pubDate></item><item><title>关于U2SB</title><link>https://www.u2sb.com/pages/About.html</link><guid>https://www.u2sb.com/pages/About.html</guid><source url="https://www.u2sb.com/rss.xml">关于U2SB</source><description>看到本页的都是帅比。</description><pubDate>Sat, 09 Nov 2024 13:17:00 GMT</pubDate><content:encoded><![CDATA[<p>看到本页的都是帅比。</p>
+]]></content:encoded></item><item><title>BiliBili弹幕解析</title><link>https://www.u2sb.com/OpenSw/Danmu.Bili/</link><guid>https://www.u2sb.com/OpenSw/Danmu.Bili/</guid><source url="https://www.u2sb.com/rss.xml">BiliBili弹幕解析</source><description>开源地址 Github 这是什么？ 这是 B 站弹幕解析服务器，可以算是弹幕服务器的一个支线项目，用于测试一些功能。 公共服务 见 公共服务器是我个人维护的，存在不稳定因素，随时可能会停止服务器，以后也有可能清理弹幕，请勿用于生产环境。 反馈 issues QQ 群 159891059 QQ群QQ群 感谢 使用 ReSharper 开发</description><pubDate>Fri, 03 Feb 2023 00:00:00 GMT</pubDate><content:encoded><![CDATA[<h2>开源地址</h2>
+<p><a href="https://github.com/u2sb/Danmu.Bili" target="_blank" rel="noopener noreferrer">Github</a></p>
+<h2>这是什么？</h2>
+<p>这是 B 站弹幕解析服务器，可以算是弹幕服务器的一个支线项目，用于测试一些功能。</p>
+<h2>公共服务</h2>
+<p>见<a href="/OpenSw/Danmu.Bili/" target="_blank">文档</a></p>
+<blockquote>
+<p>公共服务器是我个人维护的，存在不稳定因素，随时可能会停止服务器，以后也有可能清理弹幕，请勿用于生产环境。</p>
+</blockquote>]]></content:encoded><enclosure url="https://s2.ax1x.com/2020/02/14/1jAh1U.png" type="image/png"/></item><item><title>安装和基本介绍</title><link>https://www.u2sb.com/OpenSw/Danmu.Bili/install.html</link><guid>https://www.u2sb.com/OpenSw/Danmu.Bili/install.html</guid><source url="https://www.u2sb.com/rss.xml">安装和基本介绍</source><description>基本介绍 这是 B 站弹幕解析服务器。 安装 警告 后面的教程戾气较重，心理承受能力差的别看，别对号入座。 注意 不支持 CentOS6，不支持 CentOS6，不支持 CentOS6，用 CentOS6 的自己想办法解决，仅在 Debian/Ubuntu 系系统测试，其他系统不能保证兼容性。 流程 下载预编译文件到服务器 编辑配置文件 appsett...</description><pubDate>Thu, 03 Feb 2022 00:00:00 GMT</pubDate><content:encoded><![CDATA[<h2>基本介绍</h2>
+<p>这是 B 站弹幕解析服务器。</p>
+<h2>安装</h2>
+<div class="hint-container caution">
+<p class="hint-container-title">警告</p>
+<p>后面的教程戾气较重，心理承受能力差的别看，别对号入座。</p>
+</div>
+<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>不支持 CentOS6，不支持 CentOS6，不支持 CentOS6，用 CentOS6 的自己想办法解决，仅在 Debian/Ubuntu 系系统测试，其他系统不能保证兼容性。</p>
+</div>]]></content:encoded></item><item><title>json 弹幕</title><link>https://www.u2sb.com/OpenSw/Danmu.Bili/json.html</link><guid>https://www.u2sb.com/OpenSw/Danmu.Bili/json.html</guid><source url="https://www.u2sb.com/rss.xml">json 弹幕</source><description>提示 推荐使用 介绍 使用 json 格式传输弹幕。 接口 https://danmu-bili.u2sb.com/api/bilibili/v2/bvid.json https://danmu-bili.u2sb.com/api/bilibili/v2/bvid/p.json p 为 1 时可省略 示例 https://danmu-bili.u2sb...</description><pubDate>Sat, 09 Nov 2024 13:17:00 GMT</pubDate><content:encoded><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>推荐使用 <a href="/OpenSw/Danmu.Bili/protobuf.html" target="_blank">protobuf 格式</a></p>
+</div>
+<h2>介绍</h2>
+<p>使用 json 格式传输弹幕。</p>
+<h2>接口</h2>
+<ul>
+<li>
+<p><code>https://danmu-bili.u2sb.com/api/bilibili/v2/bvid.json</code></p>
+</li>
+<li>
+<p><code>https://danmu-bili.u2sb.com/api/bilibili/v2/bvid/p.json</code></p>
+</li>
+<li>
+<p>p 为 1 时可省略</p>
+</li>
+</ul>]]></content:encoded></item><item><title>Protobuf 弹幕</title><link>https://www.u2sb.com/OpenSw/Danmu.Bili/protobuf.html</link><guid>https://www.u2sb.com/OpenSw/Danmu.Bili/protobuf.html</guid><source url="https://www.u2sb.com/rss.xml">Protobuf 弹幕</source><description>介绍 使用 protobuf 格式传输弹幕。 接口 https://danmu-bili.u2sb.com/api/bilibili/v2/bvid/p? p 为 1 时可省略 示例 https://danmu-bili.u2sb.com/api/bilibili/v2/BV1zt411t79A https://danmu-bili.u2sb.com/...</description><pubDate>Sat, 09 Nov 2024 13:17:00 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>使用 protobuf 格式传输弹幕。</p>
+<h2>接口</h2>
+<ul>
+<li>
+<p><code>https://danmu-bili.u2sb.com/api/bilibili/v2/bvid/p?</code></p>
+</li>
+<li>
+<p>p 为 1 时可省略</p>
+</li>
+</ul>
+<p>示例</p>
+<ul>
+<li><code>https://danmu-bili.u2sb.com/api/bilibili/v2/BV1zt411t79A</code></li>
+<li><code>https://danmu-bili.u2sb.com/api/bilibili/v2/BV1zt411t79A/1</code></li>
+</ul>]]></content:encoded></item><item><title>xml 弹幕</title><link>https://www.u2sb.com/OpenSw/Danmu.Bili/xml.html</link><guid>https://www.u2sb.com/OpenSw/Danmu.Bili/xml.html</guid><source url="https://www.u2sb.com/rss.xml">xml 弹幕</source><description>提示 推荐使用 介绍 使用 xml 格式传输弹幕。 接口 https://danmu-bili.u2sb.com/api/bilibili/v1/bvid/p?.xml p 为 1 时可省略 示例 https://danmu-bili.u2sb.com/api/bilibili/v1/BV1zt411t79A.xml https://danmu-bil...</description><pubDate>Sat, 09 Nov 2024 13:17:00 GMT</pubDate><content:encoded><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>推荐使用 <a href="/OpenSw/Danmu.Bili/protobuf.html" target="_blank">protobuf 格式</a></p>
+</div>
+<h2>介绍</h2>
+<p>使用 xml 格式传输弹幕。</p>
+<h2>接口</h2>
+<ul>
+<li>
+<p><code>https://danmu-bili.u2sb.com/api/bilibili/v1/bvid/p?.xml</code></p>
+</li>
+<li>
+<p>p 为 1 时可省略</p>
+</li>
+</ul>]]></content:encoded></item><item><title>弹幕服务器</title><link>https://www.u2sb.com/OpenSw/Danmu.Server/</link><guid>https://www.u2sb.com/OpenSw/Danmu.Server/</guid><source url="https://www.u2sb.com/rss.xml">弹幕服务器</source><description>开源地址 这是什么？ 这是一个通用弹幕服务器，包括但不限于以下播放器可以使用： Dplayer ArtPlayer 理论上所有支持弹幕的播放器都可以. 为什么要做这个东西？ 因为作者免费提供那个弹幕服务器貌似是挂掉了，看了一下开源的源码，我决定自己撸了一个出来。 公共服务 见文档 公共服务器是我个人维护的，存在不稳定因素，随时可能会停止服务器，以后也有...</description><pubDate>Wed, 18 May 2022 17:03:27 GMT</pubDate><content:encoded><![CDATA[<h2>开源地址</h2>
+<h2>这是什么？</h2>
+<p>这是一个通用弹幕服务器，包括但不限于以下播放器可以使用：</p>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-0" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-0"> <a href="https://github.com/MoePlayer/DPlayer" target="_blank" rel="noopener noreferrer">Dplayer</a></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-1" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-1"> <a href="https://github.com/zhw2590582/ArtPlayer" target="_blank" rel="noopener noreferrer">ArtPlayer</a></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-2" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-2"> 理论上所有支持弹幕的播放器都可以.</label></li>
+</ul>]]></content:encoded><enclosure url="https://s2.ax1x.com/2020/02/14/1jAh1U.png" type="image/png"/></item><item><title>ArtPlayer 弹幕</title><link>https://www.u2sb.com/OpenSw/Danmu.Server/artplayer-danmu.html</link><guid>https://www.u2sb.com/OpenSw/Danmu.Server/artplayer-danmu.html</guid><source url="https://www.u2sb.com/rss.xml">ArtPlayer 弹幕</source><description>介绍 适合 ArtPlayer 使用的弹幕 API V1 ArtPlayer 弹幕 API /api/artplayer/v1/{id}.{format?} /api/artplayer/v1/?id={id} 示例 https://danmu.u2sb.com/api/artplayer/v1/cENuyhsT2rMOCohK https://dan...</description><pubDate>Wed, 18 May 2022 17:26:25 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>适合 ArtPlayer 使用的弹幕</p>
+<h2>API V1</h2>
+<h3>ArtPlayer 弹幕</h3>
+<h4>API</h4>
+<ul>
+<li><code>/api/artplayer/v1/{id}.{format?}</code></li>
+<li><code>/api/artplayer/v1/?id={id}</code></li>
+</ul>
+<h4>示例</h4>
+<ul>
+<li><code>https://danmu.u2sb.com/api/artplayer/v1/cENuyhsT2rMOCohK</code></li>
+<li><code>https://danmu.u2sb.com/api/artplayer/v1/cENuyhsT2rMOCohK.json</code></li>
+<li><code>https://danmu.u2sb.com/api/artplayer/v1/?id=cENuyhsT2rMOCohK</code></li>
+</ul>]]></content:encoded></item><item><title>下载 BiliBili 弹幕</title><link>https://www.u2sb.com/OpenSw/Danmu.Server/download-bilibili-danmu.html</link><guid>https://www.u2sb.com/OpenSw/Danmu.Server/download-bilibili-danmu.html</guid><source url="https://www.u2sb.com/rss.xml">下载 BiliBili 弹幕</source><description>下载弹幕 ::: vue-playground 下载弹幕</description><pubDate>Thu, 27 Oct 2022 14:26:25 GMT</pubDate><content:encoded><![CDATA[<h2>下载弹幕</h2>
+<p>::: vue-playground 下载弹幕</p>
+<template>
+<div class="language-vue line-numbers-mode" data-highlighter="shiki" data-ext="vue" data-title="vue" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre v-pre="" class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">script</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> setup</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">import</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> { </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">ref</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> } </span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">from</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "vue"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">const</span><span style="--shiki-light:#986801;--shiki-dark:#E5C07B"> bpage</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF"> ref</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"https://www.bilibili.com/"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">const</span><span style="--shiki-light:#986801;--shiki-dark:#E5C07B"> danmuformat</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF"> ref</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"xml"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">let</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF"> downloadBtn</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> () </span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">=&gt;</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">  let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> url</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD"> new</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF"> URL</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B">bpage</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">value</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">  let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> a</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B"> url</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#E45649;--shiki-dark:#E5C07B">pathname</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">split</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"/"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">);</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">  let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> bvid</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ""</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B">  a</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">forEach</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">((</span><span style="--shiki-light:#383A42;--shiki-light-font-style:inherit;--shiki-dark:#E06C75;--shiki-dark-font-style:italic">b</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) </span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">=&gt;</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">    if</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> (</span><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B">b</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">startsWith</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"BV"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">)) {</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">      bvid</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> b</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">    }</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">  });</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">  let</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75"> p</span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> =</span><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B"> url</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#E45649;--shiki-dark:#E5C07B">searchParams</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">get</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"p"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">) </span><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">??</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 1</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B">  window</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">open</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">(</span></span>
+<span class="line"><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">    `https://danmu.u2sb.com/api/bilibili/v1.</span><span style="--shiki-light:#CA1243;--shiki-dark:#C678DD">${</span><span style="--shiki-light:#383A42;--shiki-dark:#E5C07B">danmuformat</span><span style="--shiki-light:#50A14F;--shiki-dark:#ABB2BF">.</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">value</span><span style="--shiki-light:#CA1243;--shiki-dark:#C678DD">}</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">?bvid=</span><span style="--shiki-light:#CA1243;--shiki-dark:#C678DD">${</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">bvid</span><span style="--shiki-light:#CA1243;--shiki-dark:#C678DD">}</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">&amp;p=</span><span style="--shiki-light:#CA1243;--shiki-dark:#C678DD">${</span><span style="--shiki-light:#383A42;--shiki-dark:#E06C75">p</span><span style="--shiki-light:#CA1243;--shiki-dark:#C678DD">}</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">`</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">  );</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">};</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">script</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">template</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">  &lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">div</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;&lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;使用方法：填写信息，点击预览，右键另存&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">a</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">div</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">  &lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">div</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;视频地址 &lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">input</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> v-model</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"bpage"</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> :placeholder</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"bpage"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> /&gt;&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">div</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">  &lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">div</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">    &lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">div</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      弹幕格式</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      &lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">input</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> type</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"radio"</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> id</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"json"</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> value</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"json"</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> v-model</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"danmuformat"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> /&gt;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      &lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">label</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> for</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"json"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;json&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">label</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      &lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">input</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> type</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"radio"</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> id</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"xml"</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> value</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"xml"</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> v-model</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"danmuformat"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> /&gt;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      &lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">label</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> for</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"xml"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;xml&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">label</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">    &lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">div</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">  &lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">div</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">  &lt;</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">button</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> type</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"button"</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> @click</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"downloadBtn"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;预览弹幕&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">button</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">template</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><p>:::</p>
+</template>]]></content:encoded></item><item><title>DPlayer 弹幕</title><link>https://www.u2sb.com/OpenSw/Danmu.Server/dplayer-danmu.html</link><guid>https://www.u2sb.com/OpenSw/Danmu.Server/dplayer-danmu.html</guid><source url="https://www.u2sb.com/rss.xml">DPlayer 弹幕</source><description>介绍 适合 DPlayer 使用的弹幕 API V3 DPlayer 弹幕 API /api/dplayer/ 示例 https://danmu.u2sb.com/api/dplayer/ 解析 BiliBili 弹幕 解释 id aid 或 bvid，例如 av810872 或 BV18b411j72u p 分 P，例如 1 2，省略时默认为 1 A...</description><pubDate>Wed, 18 May 2022 17:26:25 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>适合 DPlayer 使用的弹幕</p>
+<h2>API V3</h2>
+<h3>DPlayer 弹幕</h3>
+<h4>API</h4>
+<ul>
+<li><code>/api/dplayer/</code></li>
+</ul>
+<h4>示例</h4>
+<ul>
+<li><code>https://danmu.u2sb.com/api/dplayer/</code></li>
+</ul>
+<h3>解析 BiliBili 弹幕</h3>
+<h4>解释</h4>
+<ul>
+<li><code>id</code> aid 或 bvid，例如 <code>av810872</code> 或 <code>BV18b411j72u</code></li>
+<li><code>p</code> 分 P，例如 <code>1</code> <code>2</code>，省略时默认为 <code>1</code></li>
+</ul>]]></content:encoded></item><item><title>在宝塔面板安装</title><link>https://www.u2sb.com/OpenSw/Danmu.Server/install-on-baota.html</link><guid>https://www.u2sb.com/OpenSw/Danmu.Server/install-on-baota.html</guid><source url="https://www.u2sb.com/rss.xml">在宝塔面板安装</source><description>提示 宝塔面板实在是太复杂了，研究了两天没搞懂，只能搞个大概的教程，本文仅供参考。 基础环境 Ubuntu Server 20.04 宝塔 7.9.2 上传可执行文件 上传可执行文件到服务器，上传位置由你自己决定，确保自己能找到，我测试的时候直接上传压缩包，然后用宝塔面板解压没有反应，不知道是我这里的 bug 还是整个宝塔面板都有问题，建议不使用压缩包...</description><pubDate>Tue, 12 Jul 2022 21:00:46 GMT</pubDate><content:encoded><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>宝塔面板实在是太复杂了，研究了两天没搞懂，只能搞个大概的教程，本文仅供参考。</p>
+</div>
+<h2>基础环境</h2>
+<ul>
+<li>Ubuntu Server 20.04</li>
+<li>宝塔 7.9.2</li>
+</ul>
+<h2>上传可执行文件</h2>
+<p>上传可执行文件到服务器，上传位置由你自己决定，确保自己能找到，我测试的时候直接上传压缩包，然后用宝塔面板解压没有反应，不知道是我这里的 bug 还是整个宝塔面板都有问题，建议不使用压缩包，直接拖整个文件夹上去。</p>]]></content:encoded></item><item><title>安装和基本介绍</title><link>https://www.u2sb.com/OpenSw/Danmu.Server/install.html</link><guid>https://www.u2sb.com/OpenSw/Danmu.Server/install.html</guid><source url="https://www.u2sb.com/rss.xml">安装和基本介绍</source><description>基本介绍 这是一个通用的弹幕服务器，并且可以解析 B 站的视频弹幕。 安装 警告 后面的教程戾气较重，心理承受能力差的别看，别对号入座。 注意 目前 2.x 版本未正式发布，如想要体验，可以使用我搭建好的服务器，或者是到 QQ 群里下载测试版。 注意 不支持 CentOS6，不支持 CentOS6，不支持 CentOS6，用 CentOS6 的自己想办...</description><pubDate>Wed, 18 May 2022 17:03:27 GMT</pubDate><content:encoded><![CDATA[<h2>基本介绍</h2>
+<p>这是一个通用的弹幕服务器，并且可以解析 B 站的视频弹幕。</p>
+<h2>安装</h2>
+<div class="hint-container caution">
+<p class="hint-container-title">警告</p>
+<p>后面的教程戾气较重，心理承受能力差的别看，别对号入座。</p>
+</div>
+<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>目前 2.x 版本未正式发布，如想要体验，可以使用我搭建好的服务器，或者是到 QQ 群里下载测试版。</p>
+</div>]]></content:encoded></item><item><title>MetingJs 服务器</title><link>https://www.u2sb.com/OpenSw/Danmu.Server/meting.html</link><guid>https://www.u2sb.com/OpenSw/Danmu.Server/meting.html</guid><source url="https://www.u2sb.com/rss.xml">MetingJs 服务器</source><description>Danmu.Server 已合并 MetingJS.Server，可作为 MetingJs 的服务端使用。 API https://danmu.u2sb.com/api/meting?server=:server&amp;type=:type&amp;id=:id&amp;r=:r 示例 https://danmu.u2sb.com/api/meting?server=ten...</description><pubDate>Sat, 08 Oct 2022 17:03:27 GMT</pubDate><content:encoded><![CDATA[<p>Danmu.Server 已合并 MetingJS.Server，可作为 MetingJs 的服务端使用。</p>
+<h2>API</h2>
+<ul>
+<li><code>https://danmu.u2sb.com/api/meting?server=:server&amp;type=:type&amp;id=:id&amp;r=:r</code></li>
+</ul>
+<h2>示例</h2>
+<ul>
+<li><code>https://danmu.u2sb.com/api/meting?server=tencent&amp;type=song&amp;id=003UkWuI0E8U0l&amp;r=0.8074837167524542</code></li>
+</ul>]]></content:encoded></item><item><title>原始弹幕</title><link>https://www.u2sb.com/OpenSw/Danmu.Server/raw-danmu.html</link><guid>https://www.u2sb.com/OpenSw/Danmu.Server/raw-danmu.html</guid><source url="https://www.u2sb.com/rss.xml">原始弹幕</source><description>介绍 解析 B 站原始弹幕 API V1 解释 id aid 或 bvid，例如 av810872 或 BV18b411j72u p 分 P，例如 1 2，省略时默认为 1 format 数据格式，json 或 xml API /api/bilibili/v1/{id}/{p:int?} /api/bilibili/v1/?bvid={id}&amp;p={p...</description><pubDate>Wed, 18 May 2022 17:26:25 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>解析 B 站原始弹幕</p>
+<h2>API V1</h2>
+<h3>解释</h3>
+<ul>
+<li><code>id</code> aid 或 bvid，例如 <code>av810872</code> 或 <code>BV18b411j72u</code></li>
+<li><code>p</code> 分 P，例如 <code>1</code> <code>2</code>，省略时默认为 <code>1</code></li>
+<li><code>format</code> 数据格式，<code>json</code> 或 <code>xml</code></li>
+</ul>]]></content:encoded></item><item><title>MetingJS.Server</title><link>https://www.u2sb.com/OpenSw/MetingJS.Server/</link><guid>https://www.u2sb.com/OpenSw/MetingJS.Server/</guid><source url="https://www.u2sb.com/rss.xml">MetingJS.Server</source><description>简介 这是 MetingJS 的后端服务器，可以部署在自己的服务器上，也可以部署在阿里云函数计算上。 编译 非二次开发不需要看这一部分，直接看后面的部署即可。 下载项目，使用 vs 打开，调整参数编译。 安装 在阿里云函数计算(FC)上安装 提示 请在发行版中找含有 fc 的版本。 下载 fc 版本，开通阿里云函数计算 控制台 -&amp;gt; 函数计算 -&amp;gt; 新...</description><pubDate>Tue, 23 Feb 2021 12:41:58 GMT</pubDate><content:encoded><![CDATA[<h2>简介</h2>
+<p>这是 MetingJS 的后端服务器，可以部署在自己的服务器上，也可以部署在阿里云函数计算上。</p>
+<h2>编译</h2>
+<p>非二次开发不需要看这一部分，直接看后面的部署即可。<br>
+下载项目，使用 vs 打开，调整参数编译。</p>
+<h2>安装</h2>
+<h3>在阿里云函数计算(FC)上安装</h3>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>请在发行版中找含有 <code>fc</code> 的版本。</p>
+</div>
+<p><a href="https://github.com/u2sb/MetingJS.Server/releases" target="_blank" rel="noopener noreferrer">下载</a> fc 版本，开通阿里云函数计算</p>]]></content:encoded></item><item><title>公共服务</title><link>https://www.u2sb.com/OpenSw/Overview/public-service.html</link><guid>https://www.u2sb.com/OpenSw/Overview/public-service.html</guid><source url="https://www.u2sb.com/rss.xml">公共服务</source><description>我们提供的免费公共服务 弹幕服务器 状态：正在服务 地址：https://danmu.u2sb.com 项目：https://github.com/u2sb/Danmu.Server 文档：https://www.u2sb.com/OpenSw/#Danmu.Server B 站弹幕解析 状态：已合并至弹幕服务器 地址：https://danmu.u2...</description><pubDate>Sat, 06 Jun 2020 00:00:00 GMT</pubDate><content:encoded><![CDATA[<p>我们提供的免费公共服务</p>
+]]></content:encoded></item><item><title>hexo-tag-mmedia</title><link>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/</link><guid>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/</guid><source url="https://www.u2sb.com/rss.xml">hexo-tag-mmedia</source><description>注意 此插件已不再维护，不建议使用本插件。 插件说明 hexo 媒体插入插件</description><pubDate>Tue, 23 Feb 2021 14:17:12 GMT</pubDate><content:encoded><![CDATA[<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>此插件已不再维护，不建议使用本插件。</p>
+</div>
+<h2>插件说明</h2>
+<p>hexo 媒体插入插件</p>
+]]></content:encoded></item><item><title>Aplayer</title><link>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/aplayer.html</link><guid>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/aplayer.html</guid><source url="https://www.u2sb.com/rss.xml">Aplayer</source><description>介绍 可以插入 aplayer 标签 使用 参数 此部分请熟读 APlayer 文档 使用 : 或 = 分割。 详细参数表： 不在表格内的参数请使用下面 JSON 类型的参数。 JSON 参数 mmedia 插件允许在 contents 部分使用 JSON 编写配置，由于允许使用 JSON5，此项配置几乎与 APlayer 完全一致。 详情请见上方示例...</description><pubDate>Tue, 23 Feb 2021 16:38:32 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>可以插入 aplayer 标签</p>
+<h2>使用</h2>
+<div class="language-twig line-numbers-mode" data-highlighter="shiki" data-ext="twig" data-title="twig" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">{% </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">mmedia</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "aplayer"</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "name:songName"</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "url:a.mp3"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> %}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></content:encoded></item><item><title>ArtPlayer</title><link>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/artplayer.html</link><guid>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/artplayer.html</guid><source url="https://www.u2sb.com/rss.xml">ArtPlayer</source><description>介绍 可以插入 artplayer 标签。 使用 参数 此部分请熟读 ArtPlayer 文档 使用 : 或 = 分割。 详细参数表： 上面有一个比较特殊的参数 flv，这里单独解释一下，这个参数是用于引入其他 js 文件的，目前支持的有：hls dash shaka_dash flv webtorrent，上述参数可多个一起使用，如果后面带有 js ...</description><pubDate>Mon, 01 Mar 2021 11:13:47 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>可以插入 artplayer 标签。</p>
+<h2>使用</h2>
+<div class="language-twig line-numbers-mode" data-highlighter="shiki" data-ext="twig" data-title="twig" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">{% </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">mmedia</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "artplayer"</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "url:https://dandoc.u2sb.com/video/%E5%AE%89%E8%A3%85/1-%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%89%E8%A3%85.mp4"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> %}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></content:encoded></item><item><title>Audio</title><link>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/audio.html</link><guid>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/audio.html</guid><source url="https://www.u2sb.com/rss.xml">Audio</source><description>介绍 可以插入 html5 原生 audio 标签 使用 参数 此部分请熟读 Audio 相关介绍 使用 : 或 = 分割。 所有 &amp;lt;audio&amp;gt; 标签的原生参数均可添加，只要能写进去就可以。 具体能否实现相关标准，取决于客户端浏览器。 JSON 参数 mmedia 插件允许在 contents 部分使用 JSON 编写配置，使用 JSON5 标准。 ...</description><pubDate>Tue, 23 Feb 2021 16:08:47 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>可以插入 html5 原生 audio 标签</p>
+<h2>使用</h2>
+<div class="language-twig line-numbers-mode" data-highlighter="shiki" data-ext="twig" data-title="twig" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">{% </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">mmedia</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "audio"</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "src:a.mp3"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> %}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></content:encoded></item><item><title>哔哩哔哩动画</title><link>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/bilibili.html</link><guid>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/bilibili.html</guid><source url="https://www.u2sb.com/rss.xml">哔哩哔哩动画</source><description>介绍 可以插入 bilibili 视频 使用 参数 使用 : 或 = 分割。 详细参数表： JSON 参数 mmedia 插件允许在 contents 部分使用 JSON 编写配置，使用 JSON5 标准。 配置 默认配置可写入 _config.yml 下</description><pubDate>Tue, 23 Feb 2021 16:39:02 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>可以插入 bilibili 视频</p>
+<h2>使用</h2>
+<div class="language-twig line-numbers-mode" data-highlighter="shiki" data-ext="twig" data-title="twig" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">{% </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">mmedia</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "bilibili"</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "bvid:BV1br4y1P7ND"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> %}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></content:encoded></item><item><title>开发文档</title><link>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/developer-doc.html</link><guid>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/developer-doc.html</guid><source url="https://www.u2sb.com/rss.xml">开发文档</source><description>本项目接受以 pr 的方式贡献代码。 开发基础 Hexo API JavaScript TypeScript 本项目使用 pnpm 作为包管理工具，使用 TypeScript 作为编程语言，Gulp 作为编译引擎。 开发前需安装 node 和 pnpm。 开发 fork 仓库 需要先 fork 仓库，然后克隆到本地 提示 必须克隆到本地，不能在线修改 ...</description><pubDate>Wed, 24 Feb 2021 10:11:33 GMT</pubDate><content:encoded><![CDATA[<p>本项目接受以 pr 的方式贡献代码。</p>
+<h2>开发基础</h2>
+<p><a href="https://hexo.io/api/" target="_blank" rel="noopener noreferrer">Hexo API</a><br>
+<a href="">JavaScript</a><br>
+<a href="https://www.typescriptlang.org/" target="_blank" rel="noopener noreferrer">TypeScript</a></p>
+<p>本项目使用 pnpm 作为包管理工具，使用 TypeScript 作为编程语言，Gulp 作为编译引擎。</p>]]></content:encoded></item><item><title>Dplayer</title><link>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/dplayer.html</link><guid>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/dplayer.html</guid><source url="https://www.u2sb.com/rss.xml">Dplayer</source><description>介绍 可以插入 dplayer 标签。 使用 参数 此部分请熟读 DPlayer 文档 使用 : 或 = 分割。 详细参数表： 上面有一个比较特殊的参数 flv，这里单独解释一下，这个参数是用于引入其他 js 文件的，目前支持的有：hls dash shaka_dash flv webtorrent，上述参数可多个一起使用，如果后面带有 js 地址，将...</description><pubDate>Tue, 23 Feb 2021 16:38:52 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>可以插入 dplayer 标签。</p>
+<h2>使用</h2>
+<div class="language-twig line-numbers-mode" data-highlighter="shiki" data-ext="twig" data-title="twig" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">{% </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">mmedia</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "dplayer"</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "url:a.mp4"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> %}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></content:encoded></item><item><title>安装和基本介绍</title><link>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/install.html</link><guid>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/install.html</guid><source url="https://www.u2sb.com/rss.xml">安装和基本介绍</source><description>简介 hexo-tag-mmedia 是一个能在 Hexo 中快速插入媒体标签的插件，目前支持的标签和平台有（持续开发中）： Audio Video Aplayer MetingJS Dplayer 哔哩哔哩 西瓜视频 YouTube ArtPlayer DEMO http://demo.hexo-tag-mmedia.u2sb.com/ 使用 hex...</description><pubDate>Tue, 23 Feb 2021 14:17:12 GMT</pubDate><content:encoded><![CDATA[<h2>简介</h2>
+<p><a href="https://github.com/u2sb/hexo-tag-mmedia" target="_blank" rel="noopener noreferrer">hexo-tag-mmedia</a> 是一个能在 Hexo 中快速插入媒体标签的插件，目前支持的标签和平台有（持续开发中）：</p>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-0" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-0"> Audio</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-1" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-1"> Video</label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-2" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-2"> <a href="https://github.com/DIYgod/APlayer" target="_blank" rel="noopener noreferrer">Aplayer</a></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-3" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-3"> <a href="https://github.com/metowolf/MetingJS" target="_blank" rel="noopener noreferrer">MetingJS</a></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-4" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-4"> <a href="https://github.com/DIYgod/DPlayer" target="_blank" rel="noopener noreferrer">Dplayer</a></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-5" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-5"> <a href="https://www.bilibili.com/" target="_blank" rel="noopener noreferrer">哔哩哔哩</a></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-6" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-6"> <a href="https://www.ixigua.com/" target="_blank" rel="noopener noreferrer">西瓜视频</a></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-7" disabled="disabled"><label class="task-list-item-label" for="task-item-7"> <a href="">YouTube</a></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-8" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-8"> <a href="https://github.com/zhw2590582/ArtPlayer" target="_blank" rel="noopener noreferrer">ArtPlayer</a></label></li>
+</ul>]]></content:encoded></item><item><title>Meting</title><link>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/meting.html</link><guid>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/meting.html</guid><source url="https://www.u2sb.com/rss.xml">Meting</source><description>介绍 可以插入 MetingJS 标签。 使用 参数 此部分请熟读 MetingJS 文档 使用 : 或 = 分割。 所有 &amp;lt;meting-js&amp;gt; 标签的参数均可添加，只要能写进去就可以。 JSON 参数 mmedia 插件允许在 contents 部分使用 JSON 编写配置，使用 JSON5 标准。 配置 默认配置可写入 _config.yml 下</description><pubDate>Tue, 23 Feb 2021 16:17:48 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>可以插入 <a href="https://github.com/metowolf/MetingJS" target="_blank" rel="noopener noreferrer">MetingJS</a> 标签。</p>
+<h2>使用</h2>
+<div class="language-twig line-numbers-mode" data-highlighter="shiki" data-ext="twig" data-title="twig" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">{% </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">mmedia</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "meting"</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "auto=https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> %}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></content:encoded></item><item><title>0.X 版本</title><link>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/version0.html</link><guid>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/version0.html</guid><source url="https://www.u2sb.com/rss.xml">0.X 版本</source><description>注意 0.x 版本已停止更新，只做兼容和过渡使用，请尽快更新 1.x 版本。 如果有人愿意接手 0.x 版维护，请及时联系我。 简介 hexo-tag-mmedia 是 MonoLogueChi 自用的一个媒体插入插件，在添加部分功能后发布给大家使用。 支持的平台 Aplayer Meting Dplayer 哔哩哔哩 西瓜视频 YouTube Art...</description><pubDate>Tue, 23 Feb 2021 12:41:58 GMT</pubDate><content:encoded><![CDATA[<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>0.x 版本已停止更新，只做兼容和过渡使用，请尽快更新 1.x 版本。</p>
+<p>如果有人愿意接手 0.x 版维护，请及时联系我。</p>
+</div>
+<h2>简介</h2>
+<p>hexo-tag-mmedia 是 MonoLogueChi 自用的一个媒体插入插件，在添加部分功能后发布给大家使用。</p>
+<p>支持的平台</p>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-0" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-0"> <a href="https://github.com/DIYgod/APlayer" target="_blank" rel="noopener noreferrer">Aplayer</a></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-1" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-1"> <a href="https://github.com/metowolf/MetingJS" target="_blank" rel="noopener noreferrer">Meting</a></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-2" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-2"> <a href="https://github.com/DIYgod/DPlayer" target="_blank" rel="noopener noreferrer">Dplayer</a></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-3" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-3"> <a href="https://www.bilibili.com/" target="_blank" rel="noopener noreferrer">哔哩哔哩</a></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-4" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-4"> <a href="https://www.ixigua.com/" target="_blank" rel="noopener noreferrer">西瓜视频</a></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-5" disabled="disabled"><label class="task-list-item-label" for="task-item-5"> <a href="">YouTube</a></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-6" disabled="disabled"><label class="task-list-item-label" for="task-item-6"> <a href="https://github.com/zhw2590582/ArtPlayer" target="_blank" rel="noopener noreferrer">ArtPlayer</a></label></li>
+</ul>]]></content:encoded><enclosure url="https://www.u2sb.com/assets/img/2020/qq.png =300x300" type="image/"/></item><item><title>Video</title><link>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/video.html</link><guid>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/video.html</guid><source url="https://www.u2sb.com/rss.xml">Video</source><description>介绍 可以插入 html5 原生 video 标签 使用 参数 此部分请熟读 Video 相关介绍 使用 : 或 = 分割。 所有 &amp;lt;video&amp;gt; 标签的原生参数均可添加，只要能写进去就可以。 具体能否实现相关标准，取决于客户端浏览器。 JSON 参数 mmedia 插件允许在 contents 部分使用 JSON 编写配置，使用 JSON5 标准。 ...</description><pubDate>Tue, 23 Feb 2021 16:16:20 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>可以插入 html5 原生 video 标签</p>
+<h2>使用</h2>
+<div class="language-twig line-numbers-mode" data-highlighter="shiki" data-ext="twig" data-title="twig" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">{% </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">mmedia</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "video"</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "src:a.mp4"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> %}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></content:encoded></item><item><title>西瓜视频</title><link>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/xigua.html</link><guid>https://www.u2sb.com/OpenSw/hexo-tag-mmedia/xigua.html</guid><source url="https://www.u2sb.com/rss.xml">西瓜视频</source><description>介绍 可以插入 西瓜 视频 使用 参数 使用 : 或 = 分割。 详细参数表： JSON 参数 mmedia 插件允许在 contents 部分使用 JSON 编写配置，使用 JSON5 标准。 配置 默认配置可写入 _config.yml 下</description><pubDate>Tue, 23 Feb 2021 16:39:18 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>可以插入 西瓜 视频</p>
+<h2>使用</h2>
+<div class="language-twig line-numbers-mode" data-highlighter="shiki" data-ext="twig" data-title="twig" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">{% </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">mmedia</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "xigua"</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "xid=6925997698269053453"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> %}</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></content:encoded></item><item><title>vuepress-plugin-sbaudio</title><link>https://www.u2sb.com/OpenSw/vuepress-plugin-sbaudio/</link><guid>https://www.u2sb.com/OpenSw/vuepress-plugin-sbaudio/</guid><source url="https://www.u2sb.com/rss.xml">vuepress-plugin-sbaudio</source><description>介绍 一个能在 Vuepress 中快使用 APlayer 和 MetingJS 的插件 感谢 本项目依赖以下项目 APlayer (MIT)</description><pubDate>Sat, 09 Nov 2024 13:17:00 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>一个能在 Vuepress 中快使用 APlayer 和 MetingJS 的插件</p>
+<h2>感谢</h2>
+<p>本项目依赖以下项目</p>
+<ul>
+<li><a href="https://github.com/DIYgod/APlayer" target="_blank" rel="noopener noreferrer">APlayer</a> (<a href="https://github.com/DIYgod/APlayer/blob/master/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>)</li>
+</ul>]]></content:encoded></item><item><title>APlayer</title><link>https://www.u2sb.com/OpenSw/vuepress-plugin-sbaudio/aplayer.html</link><guid>https://www.u2sb.com/OpenSw/vuepress-plugin-sbaudio/aplayer.html</guid><source url="https://www.u2sb.com/rss.xml">APlayer</source><description>介绍 在页面插入 APlayer 播放器。 使用</description><pubDate>Sat, 09 Nov 2024 13:17:00 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>在页面插入 APlayer 播放器。</p>
+<h2>使用</h2>
+]]></content:encoded></item><item><title>APlayerGlobal</title><link>https://www.u2sb.com/OpenSw/vuepress-plugin-sbaudio/aplayerGlobal.html</link><guid>https://www.u2sb.com/OpenSw/vuepress-plugin-sbaudio/aplayerGlobal.html</guid><source url="https://www.u2sb.com/rss.xml">APlayerGlobal</source><description>介绍 全局音乐播放器 使用 全局音乐播放列表来自两部分，分别是 aplayerGlobalAudios 和 metingOptions.list，两部分共同组合为播放列表。 数据来源数据来源</description><pubDate>Sat, 09 Nov 2024 13:17:00 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>全局音乐播放器</p>
+<h2>使用</h2>
+<p>全局音乐播放列表来自两部分，分别是 <code>aplayerGlobalAudios</code> 和 <code>metingOptions.list</code>，两部分共同组合为播放列表。</p>
+<div class="language-ts line-numbers-mode" data-highlighter="shiki" data-ext="ts" data-title="ts" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">import</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> { </span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">defineUserConfig</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> } </span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">from</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "vuepress"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">import</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75"> sbaudio</span><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD"> from</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "vuepress-plugin-sbaudio"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">;</span></span>
+<span class="line"></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">export</span><span style="--shiki-light:#E45649;--shiki-dark:#C678DD"> default</span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF"> defineUserConfig</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">({</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">  plugins</span><span style="--shiki-light:#0184BC;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> [</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">    sbaudio</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">({</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">      aplayerGlobalOptions</span><span style="--shiki-light:#0184BC;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        autoplay</span><span style="--shiki-light:#0184BC;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> false</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">,</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        theme</span><span style="--shiki-light:#0184BC;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "#2980b9"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">,</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        loop</span><span style="--shiki-light:#0184BC;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "all"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">,</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        order</span><span style="--shiki-light:#0184BC;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "list"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">,</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        preload</span><span style="--shiki-light:#0184BC;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "auto"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">,</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        volume</span><span style="--shiki-light:#0184BC;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 0.7</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">,</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        mutex</span><span style="--shiki-light:#0184BC;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> true</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">,</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        lrcType</span><span style="--shiki-light:#0184BC;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 3</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">,</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        listFolded</span><span style="--shiki-light:#0184BC;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> false</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">,</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        listMaxHeight</span><span style="--shiki-light:#0184BC;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "540px"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">,</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      },</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">      aplayerGlobalAudios</span><span style="--shiki-light:#0184BC;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> [],</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">      metingOptions</span><span style="--shiki-light:#0184BC;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> {</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">        list</span><span style="--shiki-light:#0184BC;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> [</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">          {</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">            type</span><span style="--shiki-light:#0184BC;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "playlist"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">,</span></span>
+<span class="line"><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">            id</span><span style="--shiki-light:#0184BC;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> "3045842790"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">,</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">          },</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">        ],</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">      },</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">    }),</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">  ],</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">});</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded></item><item><title>安装和配置</title><link>https://www.u2sb.com/OpenSw/vuepress-plugin-sbaudio/install.html</link><guid>https://www.u2sb.com/OpenSw/vuepress-plugin-sbaudio/install.html</guid><source url="https://www.u2sb.com/rss.xml">安装和配置</source><description>安装 配置 默认配置 提示 本文只是简单说明使用，详细使用方法请阅读源码。</description><pubDate>Sat, 09 Nov 2024 13:17:00 GMT</pubDate><content:encoded><![CDATA[<h2>安装</h2>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" data-title="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">pnpm</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> add</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -D</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> vuepress-plugin-sbaudio</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> aplayer</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div>]]></content:encoded></item><item><title>Meting</title><link>https://www.u2sb.com/OpenSw/vuepress-plugin-sbaudio/meting.html</link><guid>https://www.u2sb.com/OpenSw/vuepress-plugin-sbaudio/meting.html</guid><source url="https://www.u2sb.com/rss.xml">Meting</source><description>介绍 使用 Meting API 插入 APlayer 播放器 使用</description><pubDate>Sat, 09 Nov 2024 13:17:00 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>使用 Meting API 插入 APlayer 播放器</p>
+<h2>使用</h2>
+]]></content:encoded></item><item><title>vuepress-plugin-smplayer</title><link>https://www.u2sb.com/OpenSw/vuepress-plugin-smplayer/</link><guid>https://www.u2sb.com/OpenSw/vuepress-plugin-smplayer/</guid><source url="https://www.u2sb.com/rss.xml">vuepress-plugin-smplayer</source><description>注意 本插件已不再继续维护，请使用本插件的朋友尽快转移到其他插件。 因本插件不再维护，DEMO 全部取消，示例仅供参考。 介绍 一个能在 Vuepress 中快速插入媒体标签的插件 包括但不仅限于以下播放器： Aplayer MetingJS 哔哩哔哩 西瓜视频 YouTube 感谢 本项目依赖以下项目 Aplayer MetingJS Dplayer...</description><pubDate>Mon, 24 Jan 2022 14:17:12 GMT</pubDate><content:encoded><![CDATA[<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>本插件已不再继续维护，请使用本插件的朋友尽快转移到其他插件。</p>
+<p>因本插件不再维护，DEMO 全部取消，示例仅供参考。</p>
+</div>
+<h2>介绍</h2>
+<p>一个能在 Vuepress 中快速插入媒体标签的插件</p>
+<p>包括但不仅限于以下播放器：</p>
+<ul class="task-list-container">
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-0" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-0"> <a href="https://github.com/DIYgod/APlayer" target="_blank" rel="noopener noreferrer">Aplayer</a></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-1" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-1"> <a href="https://github.com/metowolf/MetingJS" target="_blank" rel="noopener noreferrer">MetingJS</a></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-2" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-2"> <s><a href="https://github.com/DIYgod/DPlayer" target="_blank" rel="noopener noreferrer">Dplayer</a></s></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-3" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-3"> <a href="https://www.bilibili.com/" target="_blank" rel="noopener noreferrer">哔哩哔哩</a></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-4" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-4"> <a href="https://www.ixigua.com/" target="_blank" rel="noopener noreferrer">西瓜视频</a></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-5" disabled="disabled"><label class="task-list-item-label" for="task-item-5"> <a href="">YouTube</a></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-6" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-6"> <s><a href="https://github.com/zhw2590582/ArtPlayer" target="_blank" rel="noopener noreferrer">ArtPlayer</a></s></label></li>
+<li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" id="task-item-7" checked="checked" disabled="disabled"><label class="task-list-item-label" for="task-item-7"> <s><a href="https://github.com/bytedance/xgplayer" target="_blank" rel="noopener noreferrer">xgplayer</a></s></label></li>
+</ul>]]></content:encoded></item><item><title>Aplayer</title><link>https://www.u2sb.com/OpenSw/vuepress-plugin-smplayer/aplayer.html</link><guid>https://www.u2sb.com/OpenSw/vuepress-plugin-smplayer/aplayer.html</guid><source url="https://www.u2sb.com/rss.xml">Aplayer</source><description>介绍 可以插入 aplayer 标签 使用和示例 参数 此部分请熟读 APlayer 文档 src 传参，具体参数见 APlayer 文档，示例见下方 DEMO。 基本使用 customType 自定义类型，方法见示例 混合列表 配置 主题下插件配置为默认配置，每个 &amp;lt;APlayer /&amp;gt; 标签下的设置会覆盖默认配置。</description><pubDate>Mon, 24 Jan 2022 14:17:12 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>可以插入 aplayer 标签</p>
+<h2>使用和示例</h2>
+<h3>参数</h3>
+<blockquote>
+<p>此部分请熟读 <a href="http://aplayer.js.org/" target="_blank" rel="noopener noreferrer">APlayer 文档</a></p>
+</blockquote>
+<p><code>src</code> 传参，具体参数见 <a href="http://aplayer.js.org/" target="_blank" rel="noopener noreferrer">APlayer 文档</a>，示例见下方 DEMO。</p>]]></content:encoded></item><item><title>ArtPlayer</title><link>https://www.u2sb.com/OpenSw/vuepress-plugin-smplayer/artplayer.html</link><guid>https://www.u2sb.com/OpenSw/vuepress-plugin-smplayer/artplayer.html</guid><source url="https://www.u2sb.com/rss.xml">ArtPlayer</source><description>提示 本插件不再提供 ArtPlayer 快速接入功能，并建议用户使用 js 直接引入，详情见下方示例。 提示 详细配置说明见 ArtPlayer 文档 安装 使用和示例 基本使用 弹幕 提示 需安装 artplayer-plugin-danmuku HLS 提示 需安装 hls.js FLV 提示 需安装 mpegts.js DASH 提示 需安装 ...</description><pubDate>Mon, 24 Jan 2022 14:17:12 GMT</pubDate><content:encoded><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>本插件不再提供 ArtPlayer 快速接入功能，并建议用户使用 js 直接引入，详情见下方示例。</p>
+</div>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>详细配置说明见 <a href="https://artplayer.org/document/" target="_blank" rel="noopener noreferrer">ArtPlayer 文档</a></p>
+</div>]]></content:encoded></item><item><title>哔哩哔哩动画</title><link>https://www.u2sb.com/OpenSw/vuepress-plugin-smplayer/bilibili.html</link><guid>https://www.u2sb.com/OpenSw/vuepress-plugin-smplayer/bilibili.html</guid><source url="https://www.u2sb.com/rss.xml">哔哩哔哩动画</source><description>介绍 可以插入 bilibili 视频 使用</description><pubDate>Mon, 24 Jan 2022 14:17:12 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>可以插入 bilibili 视频</p>
+<h2>使用</h2>
+]]></content:encoded></item><item><title>Dplayer</title><link>https://www.u2sb.com/OpenSw/vuepress-plugin-smplayer/dplayer.html</link><guid>https://www.u2sb.com/OpenSw/vuepress-plugin-smplayer/dplayer.html</guid><source url="https://www.u2sb.com/rss.xml">Dplayer</source><description>提示 本插件不再提供 DPlayer 快速接入功能，并建议用户使用 js 直接引入，详情见下方示例。 提示 详细配置说明见 DPlayer 文档 安装 使用和示例 基本使用 弹幕 HLS 提示 需安装 hls.js 其他库 略，请自行脑补使用方式</description><pubDate>Mon, 24 Jan 2022 14:17:12 GMT</pubDate><content:encoded><![CDATA[<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>本插件不再提供 DPlayer 快速接入功能，并建议用户使用 js 直接引入，详情见下方示例。</p>
+</div>
+<div class="hint-container tip">
+<p class="hint-container-title">提示</p>
+<p>详细配置说明见 <a href="https://dplayer.diygod.dev" target="_blank" rel="noopener noreferrer">DPlayer 文档</a></p>
+</div>]]></content:encoded></item><item><title>FAQ</title><link>https://www.u2sb.com/OpenSw/vuepress-plugin-smplayer/faq.html</link><guid>https://www.u2sb.com/OpenSw/vuepress-plugin-smplayer/faq.html</guid><source url="https://www.u2sb.com/rss.xml">FAQ</source><description>常见问题 SMPlayer 是什么意思？ 全称 sb media player 这是一个什么样的项目？ 或者是问，为什么会有这个项目。 这个项目最早可以追溯到 2018 年的时候，当时做 EasyHexo，研究怎么在 Vuepress 中插入视频， Mitscherlich 写了 dplayer.vue 组件，这便是这个项目最早的雏形，时至今日，仍保留...</description><pubDate>Thu, 24 Feb 2022 14:22:19 GMT</pubDate><content:encoded><![CDATA[<h2>常见问题</h2>
+<h3>SMPlayer 是什么意思？</h3>
+<p>全称 sb media player</p>
+<h3>这是一个什么样的项目？</h3>
+<p>或者是问，为什么会有这个项目。</p>
+<p>这个项目最早可以追溯到 2018 年的时候，当时做 <a href="https://easyhexo.com/" target="_blank" rel="noopener noreferrer">EasyHexo</a>，研究怎么在 Vuepress 中插入视频，<a href="https://github.com/Mitscherlich" target="_blank" rel="noopener noreferrer"><br>
+Mitscherlich</a> 写了 <a href="https://github.com/EasyHexo/Easy-Hexo/blob/d3b5f8bec285a8a83effe2d47a98a710c1cbad11/docs/.vuepress/components/dplayer.vue" target="_blank" rel="noopener noreferrer">dplayer.vue</a> 组件，这便是这个项目最早的雏形，时至今日，仍保留一部分原始代码。</p>]]></content:encoded></item><item><title>安装</title><link>https://www.u2sb.com/OpenSw/vuepress-plugin-smplayer/install.html</link><guid>https://www.u2sb.com/OpenSw/vuepress-plugin-smplayer/install.html</guid><source url="https://www.u2sb.com/rss.xml">安装</source><description>注意 适用于 vuepress 2.x 的插件目前还有一些问题没有解决，仅供测试使用，详情请看文档，正式版请耐心等待。1.x 版本文档详见 v1 安装 当前版本打包为 npm 包还存在一些问题，暂时只以临时插件的形式存在，可自行到我的网站仓库下载相关文件，并引入 vuepress，详见本站点仓库。 配置 建议 建议配置 shouldPrefetch: ...</description><pubDate>Mon, 24 Jan 2022 14:17:12 GMT</pubDate><content:encoded><![CDATA[<div class="hint-container warning">
+<p class="hint-container-title">注意</p>
+<p>适用于 vuepress 2.x 的插件目前还有一些问题没有解决，仅供测试使用，详情请看文档，正式版请耐心等待。1.x 版本文档详见 <a href="https://v1.www.u2sb.com/pages/963900/" target="_blank" rel="noopener noreferrer">v1</a></p>
+</div>
+<h2>安装</h2>
+<p>当前版本打包为 npm 包还存在一些问题，暂时只以临时插件的形式存在，可自行到我的网站<a href="https://github.com/u2sb/www.u2sb.com/tree/main/docs/.vuepress/config/plugins" target="_blank" rel="noopener noreferrer">仓库</a>下载相关文件，并引入 vuepress，详见<a href="https://github.com/u2sb/www.u2sb.com/" target="_blank" rel="noopener noreferrer">本站点仓库</a>。</p>]]></content:encoded></item><item><title>Meting</title><link>https://www.u2sb.com/OpenSw/vuepress-plugin-smplayer/meting.html</link><guid>https://www.u2sb.com/OpenSw/vuepress-plugin-smplayer/meting.html</guid><source url="https://www.u2sb.com/rss.xml">Meting</source><description>介绍 可以插入 meting-js 标签 使用 基本使用 或 Auto 注意 各种平台的 URL 一直是在变的，auto 解析不一定能及时更新，使用前请先测试，如遇到问题，请及时反馈。 组合列表 使用 list 参数添加额外的音乐列表。 额外歌单 使用 audio 参数添加额外的音乐列表。 参数 此部分请熟读 MetingJS 文档 继承 Meting...</description><pubDate>Mon, 24 Jan 2022 14:17:12 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>可以插入 <code>meting-js</code> 标签</p>
+<h2>使用</h2>
+<h3>基本使用</h3>
+<div class="language-html line-numbers-mode" data-highlighter="shiki" data-ext="html" data-title="html" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code"><code><span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;</span><span style="--shiki-light:white;--shiki-dark:#E06C75">ClientOnly</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">  &lt;</span><span style="--shiki-light:white;--shiki-dark:#E06C75">Meting</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> id</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"003UkWuI0E8U0l"</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> server</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"tencent"</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> type</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">=</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">"playlist"</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> /&gt;</span></span>
+<span class="line"><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&lt;/</span><span style="--shiki-light:white;--shiki-dark:#E06C75">ClientOnly</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">&gt;</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>]]></content:encoded></item><item><title>西瓜视频</title><link>https://www.u2sb.com/OpenSw/vuepress-plugin-smplayer/xigua.html</link><guid>https://www.u2sb.com/OpenSw/vuepress-plugin-smplayer/xigua.html</guid><source url="https://www.u2sb.com/rss.xml">西瓜视频</source><description>介绍 可以插入 西瓜 视频 使用</description><pubDate>Mon, 24 Jan 2022 14:17:12 GMT</pubDate><content:encoded><![CDATA[<h2>介绍</h2>
+<p>可以插入 西瓜 视频</p>
+<h2>使用</h2>
+]]></content:encoded></item><item><title>DMW-BLK22 松下相机假电池</title><link>https://www.u2sb.com/OpenHw/CameraBattery/DMW-BLK22/</link><guid>https://www.u2sb.com/OpenHw/CameraBattery/DMW-BLK22/</guid><source url="https://www.u2sb.com/rss.xml">DMW-BLK22 松下相机假电池</source><description>简介 DMW-BLK22 松下相机假电池，适用于 LUMIX S5 等机型，输入电压 10-18V，输出电压 8.1V，带有 PD 和 QC 诱骗电路，支持快充输入。详见 立创开源 PCB 整体 左侧输入，右侧输出，打样时忘记加丝印了，新版工程文件已加丝印。左上角为诱骗电路，如不使用快充输入，无需焊接。 PCBPCB 诱骗电路 当需要使用充电宝或手机充...</description><pubDate>Sat, 09 Nov 2024 13:17:00 GMT</pubDate><content:encoded><![CDATA[<h2>简介</h2>
+<p>DMW-BLK22 松下相机假电池，适用于 LUMIX S5 等机型，输入电压 10-18V，输出电压 8.1V，带有 PD 和 QC 诱骗电路，支持快充输入。详见 <a href="https://oshwhub.com/monologuechi/dmw-blk22-xiang-ji-jia-dian-chi" target="_blank" rel="noopener noreferrer">立创开源</a></p>
+<h2>PCB</h2>
+<h3>整体</h3>
+<p>左侧输入，右侧输出，打样时忘记加丝印了，新版工程文件已加丝印。左上角为诱骗电路，如不使用快充输入，无需焊接。</p>]]></content:encoded></item><item><title>SB00</title><link>https://www.u2sb.com/OpenHw/ObsKeyboard/SB00/</link><guid>https://www.u2sb.com/OpenHw/ObsKeyboard/SB00/</guid><source url="https://www.u2sb.com/rss.xml">SB00</source><description>简介 一款 OBS 导播键盘，命名为 SB00，开源项目见 https://github.com/u2sb/ObsKeyBoard-SB00。 特点 USB TYPE B 接口，坚实可靠 机械键盘 MX 轴，价格便宜，方便 DIY 和维修 ESP32-S2 模组，价格便宜，容易买到，方便 DIY 电路简单，方便 DIY 和维护，新手也能焊接 固件使用 ...</description><pubDate>Thu, 12 May 2022 16:45:30 GMT</pubDate><content:encoded><![CDATA[<h2>简介</h2>
+<p>一款 OBS 导播键盘，命名为 SB00，开源项目见 <a href="https://github.com/u2sb/ObsKeyBoard-SB00" target="_blank" rel="noopener noreferrer">https://github.com/u2sb/ObsKeyBoard-SB00</a>。</p>
+<h2>特点</h2>
+<ul>
+<li>USB TYPE B 接口，坚实可靠</li>
+<li>机械键盘 MX 轴，价格便宜，方便 DIY 和维修</li>
+<li>ESP32-S2 模组，价格便宜，容易买到，方便 DIY</li>
+<li>电路简单，方便 DIY 和维护，新手也能焊接</li>
+<li>固件使用 Arduino 开发，与上位机使用串口通信，开发简单</li>
+</ul>]]></content:encoded></item></channel></rss>
