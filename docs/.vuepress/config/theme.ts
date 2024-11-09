@@ -11,7 +11,7 @@ export default hopeTheme({
     url: "https://blog.xxwhite.com",
   },
 
-  iconAssets: "fontawesome",
+  iconAssets: "fontawesome-with-brands",
 
   logo: "/assets/img/logo.png",
 
@@ -58,37 +58,26 @@ export default hopeTheme({
     //   reaction: true,
     // },
 
-    components: {
-      components: [
-        "ArtPlayer",
-        "Badge",
-        "BiliBili",
-        "CodePen",
-        "FontIcon",
-        "XiGua",
-      ],
+    feed: {
+      atom: true,
+      json: true,
+      rss: true,
+      getter: {
+        content: (page) => page.data.excerpt as string,
+      },
     },
 
     // Disable features you don't want here
     mdEnhance: {
       align: true,
       attrs: true,
-      codetabs: true,
       component: true,
-      hint: true,
       demo: true,
-      figure: true,
       gfm: true,
-      imgLazyload: true,
-      imgMark: true,
-      imgSize: true,
       include: true,
       mark: true,
       playground: {
         presets: ["ts", "vue"],
-      },
-      mathjax: {
-        output: "svg",
       },
       stylize: [
         {
@@ -105,12 +94,53 @@ export default hopeTheme({
       ],
       sub: true,
       sup: true,
-      tabs: true,
       vPre: true,
     },
-    shiki: shiki,
+    components: {
+      components: [
+        "ArtPlayer",
+        "Badge",
+        "BiliBili",
+        "CodePen",
+        "FontIcon",
+        "SiteInfo",
+        "VidStack",
+        "VPCard",
+        "XiGua",
+      ],
+    },
     searchPro: {
       indexContent: true,
     },
+    markdownHint: {
+      // 启用提示容器，默认启用
+      hint: true,
+      // 启用 GFM 警告
+      alert: true,
+    },
+    markdownImage: {
+      // 启用 figure
+      figure: true,
+      // 启用图片懒加载
+      lazyload: true,
+      // 启用图片标记
+      mark: true,
+      // 启用图片大小
+      size: true,
+    },
+    markdownMath: {
+      // 选项
+      type: "mathjax",
+      output: "svg",
+    },
+    markdownTab: {
+      // 启用代码选项卡
+      codeTabs: true,
+      // 启用选项卡
+      tabs: true,
+    },
+    redirect: {},
+    prismjs: false,
+    shiki: shiki,
   },
 });

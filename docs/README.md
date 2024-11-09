@@ -15,12 +15,12 @@ actions:
 
 features:
   - title: 开源软件
-    icon: software
+    icon: c
     details: 我们的软件开源项目
     link: /OpenSw/
 
   - title: 开源硬件
-    icon: IO
+    icon: microchip
     details: 我们的软件开源硬件
     link: /OpenHw/
 

@@ -1,13 +1,8 @@
 import type { PluginConfig } from "vuepress";
 import copyjs from "./copyjs.js";
-import { redirectPlugin } from "@vuepress/plugin-redirect";
 import sbaudio from "vuepress-plugin-sbaudio";
-import { shikiPlugin } from "@vuepress/plugin-shiki";
 
 export default <PluginConfig>[
-  redirectPlugin({
-    config: {},
-  }),
   copyjs,
   sbaudio({
     metingOptions: {
