@@ -4,7 +4,7 @@ export default sidebar({
   "/OpenSw/": [
     {
       text: "开源软件",
-      icon: "software",
+      icon: "c",
       prefix: "",
       link: "/OpenSw/",
       children: [
@@ -42,7 +42,7 @@ export default sidebar({
   "/OpenSw/Danmu.Server/": [
     {
       text: "开源软件",
-      icon: "software",
+      icon: "c",
       prefix: "",
       link: "/OpenSw/",
       children: [
@@ -66,7 +66,7 @@ export default sidebar({
   "/OpenSw/vuepress-plugin-sbaudio/": [
     {
       text: "开源软件",
-      icon: "software",
+      icon: "c",
       prefix: "",
       link: "/OpenSw/",
       children: [
@@ -82,7 +82,7 @@ export default sidebar({
   "/OpenSw/vuepress-plugin-smplayer/": [
     {
       text: "开源软件",
-      icon: "software",
+      icon: "c",
       prefix: "",
       link: "/OpenSw/",
       children: [
@@ -107,7 +107,7 @@ export default sidebar({
   "/OpenSw/hexo-tag-mmedia/": [
     {
       text: "开源软件",
-      icon: "software",
+      icon: "c",
       prefix: "",
       link: "/OpenSw/",
       children: [
@@ -135,7 +135,7 @@ export default sidebar({
   "/OpenSw/Danmu.Bili/": [
     {
       text: "开源软件",
-      icon: "software",
+      icon: "c",
       prefix: "",
       link: "/OpenSw/",
       children: [
@@ -151,7 +151,7 @@ export default sidebar({
   "/OpenHw/": [
     {
       text: "开源硬件",
-      icon: "IO",
+      icon: "microchip",
       prefix: "",
       link: "/OpenHw/",
       children: [
