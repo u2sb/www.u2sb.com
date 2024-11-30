@@ -34,7 +34,7 @@ redirectFrom:
 
 ### 下载
 
-到 [QQ 群](/assets/html/qq-groups.html)下载测试版本，或者使用[源码](https://github.com/u2sb/Danmu.Server)自行编译。
+暂不提供二进制文件，请使用[源码](https://github.com/u2sb/Danmu.Server)自行编译。
 
 授予运行权限
 
@@ -50,53 +50,25 @@ sudo chmod +x DanMu
 {
   "Logging": {
     "LogLevel": {
-      "Default": "Information",
+      "Default": "Warning",
       "Microsoft.AspNetCore": "Warning"
     }
   },
-  "Kestrel": {
-    "Endpoints": {
-      "Http": {
-        "Url": "http://localhost:5000",
-        "Protocols": "Http1AndHttp2AndHttp3"
-      }
-    }
-  },
-  "AllowedHosts": "*",
+  "AllowedHosts": ["localhost", "danmu-bili.u2sb.com", "danmu.u2sb.com"],
   "WithOrigins": ["*"],
-  "BiliBiliSetting": {
-    "PageCacheTime": 8640,
-    "DanMuCacheTime": 6
-  },
+  "Port": -1,
+  "UnixSocket": "/home/sb/www/danmu/danmu.sock",
+  "PidFile": "/home/sb/www/danmu/danmu.pid",
   "DataBase": {
     "Directory": "DataBase",
-    "DanMuCachingDb": "DanMuCaching.db",
-    "DanMuDb": "DanMu.db"
+    "CachingDb": "DanMu.cache",
+    "PoolSize": 10
   },
-  "Admins": [
-    {
-      "UserName": "王二麻子",
-      "Password": "123456"
-    }
-  ],
-  "Meting": {
-    "DefaultServerProvider": "Tencent",
-    "Url": "https://danmu.u2sb.com/api/meting",
-    "Replace": {
-      "Url": [
-        ["http://", "https://"],
-        ["ws.stream.qqmusic.qq.com", "dl.stream.qqmusic.qq.com"]
-      ],
-      "Pic": [["http://", "https://"]]
-    },
-    "CachingTime": {
-      "Base": 600,
-      "Url": 600,
-      "Pic": 600,
-      "Lrc": 43200
-    }
+  "BiliBiliSetting": {
+    "Cookie": ""
   }
 }
+
 ```
 
 需要修改的部分
@@ -108,25 +80,29 @@ sudo chmod +x DanMu
 
 ### 配置进程守护
 
-以 `supervisor` 为例
+以 `systemd` 为例
 
 ```ini
-[program:danmu.server]
+[Unit]
+Description = danmu
+After = network.target remote-fs.target nss-lookup.target
 
-directory=/www/danmu.server/
-command=/www/danmu.server/DanMu
+[Service]
+Type = exec
+Group = sb
+User = sb
+PIDFile = /home/sb/www/danmu/danmu.pid
+WorkingDirectory = /home/sb/www/danmu/
+ExecStartPre = /usr/bin/rm -f /home/sb/www/danmu/danmu.sock
+ExecStart = /home/sb/www/danmu/bin/DanMu
+ExecStartPost = /usr/bin/sleep 1s
+KillSignal = SIGTERM
 
-autostart=true
-autorestart=true
-startsecs=3
-user=root
+Restart = always
+RestartSec = 5s
 
-stderr_logfile=/www/danmu.server/logs/error.log
-stdout_logfile=/www/danmu.server/logs/out.log
-
-stderr_logfile_maxbytes=5MB
-stderr_logfile_backups=20
-stdout_logfile_maxbytes=5MB
+[Install]
+WantedBy = multi-user.target
 ```
 
 ### 配置反向代理
@@ -136,7 +112,7 @@ stdout_logfile_maxbytes=5MB
 ```caddy
 danmu.u2sb.com {
   encode zstd br gzip
-  reverse_proxy localhost:5000
+  reverse_proxy unix+h2c//home/mc/www/danmu/danmu.sock
 }
 ```
 

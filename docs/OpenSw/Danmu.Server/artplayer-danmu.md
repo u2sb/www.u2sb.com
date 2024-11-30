@@ -10,90 +10,88 @@ redirectFrom:
 
 适合 ArtPlayer 使用的弹幕
 
-## API V1
-
-### ArtPlayer 弹幕
-
-#### API
-
-- `/api/artplayer/v1/{id}.{format?}`
-- `/api/artplayer/v1/?id={id}`
-
-#### 示例
-
-- `https://danmu.u2sb.com/api/artplayer/v1/cENuyhsT2rMOCohK`
-- `https://danmu.u2sb.com/api/artplayer/v1/cENuyhsT2rMOCohK.json`
-- `https://danmu.u2sb.com/api/artplayer/v1/?id=cENuyhsT2rMOCohK`
+## API V2
 
 ### 解析 BiliBili 弹幕
 
 #### 解释
 
-- `id` aid 或 bvid，例如 `av810872` 或 `BV18b411j72u`
+- `bvid` 视频 bvid
 - `p` 分 P，例如 `1` `2`，省略时默认为 `1`
-- `format` 数据格式，`json` 或 `xml`
+- `format` 数据格式，`json`
 
 #### API
 
-- `/api/artplayer/v1/bilibili/{id}/{p:int?}.{format?}`
-- `/api/artplayer/v1/bilibili.{format}?bvid={id}&p={p}`
+- `/api/art/bilibili/v2/{bvid}.{format}`
+- `/api/art/bilibili/v2/{bvid}/{p:int}.{format}`
 
 #### 示例
 
-- `https://danmu.u2sb.com/api/artplayer/v1/bilibili/BV18b411j72u`
-- `https://danmu.u2sb.com/api/artplayer/v1/bilibili/BV18b411j72u.json`
-- `https://danmu.u2sb.com/api/artplayer/v1/bilibili/BV18b411j72u/2.json`
-- `https://danmu.u2sb.com/api/artplayer/v1/bilibili/?bvid=BV18b411j72u`
+- `https://danmu.u2sb.com/api/art/bilibili/v2/BV1JP41167xK.json`
 
-#### 返回
+```html
+<!DOCTYPE html>
 
-```xml
-<i xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <d p="12.544,1,25,16777215,1555668046,0,3600fffd,14955772062990336, 6">来了</d>
-  <d p="7.739,1,25,16777215,1555668050,0,5689bb4c,14955774128160768, 8">第一，截图见证</d>
-  <d p="30.225,1,25,16777215,1555668063,0,b21ea9d5,14955781264769024, 8">国风真美！！！</d>
-  <d p="25.077,1,25,16777215,1555668091,0,260d013c,14955795885588482, 7">好像真的是第一</d>
-  <d p="6.46,1,25,16777215,1555668096,0,8e084014,14955798307799044, 7">我好早</d>
-  <d p="11.538,1,25,16777215,1555668098,0,e3027d1f,14955799643160580, 10">来了来了！</d>
-  <d p="39.019,1,25,16777215,1555668105,0,3600fffd,14955802998079490, 9">那个说第一的，你错了，00:12那个是我，我才是第一</d>
-  <d p="40.484,1,25,16777215,1555668200,0,d1f6347d,14955852705824768, 1">真的美爆了！⁽⁽ଘ( ˊᵕˋ )ଓ⁾⁾</d>
-</i>
-```
-
-```json
-{
-  "code": 0,
-  "data": [
-    {
-      "text": "来了",
-      "time": 12.544,
-      "color": "#FFFFFF",
-      "size": 25,
-      "border": false,
-      "mode": 0
-    },
-    {
-      "text": "第一，截图见证",
-      "time": 7.739,
-      "color": "#FFFFFF",
-      "size": 25,
-      "border": false,
-      "mode": 0
-    },
-    {
-      "text": "国风真美！！！",
-      "time": 30.225,
-      "color": "#FFFFFF",
-      "size": 25,
-      "border": false,
-      "mode": 0
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>demo</title>
+  <style>
+    .art-container {
+      width: 800px;
+      height: 450px;
     }
-  ]
-}
+  </style>
+</head>
+
+<body>
+  <h2>MessagePack 推荐</h2>
+  <div id="art1" class="art-container"></div>
+
+  <h2>JSON 不推荐</h2>
+  <div id="art2" class="art-container"></div>
+
+  <script type="module">
+    import artplayer from "https://cdn.jsdelivr.net/npm/artplayer/+esm";
+    import artdm from "https://cdn.jsdelivr.net/npm/artplayer-plugin-danmuku/+esm";
+    import { getDanMuAsync } from "/assets/js/artMsgpackDm.js";
+
+    const Artplayer = artplayer.default;
+    const artplayerPluginDanmuku = artdm.default;
+
+    const art1 = new Artplayer({
+      container: "#art1",
+      url: "/assets/video/1214946209-1-192.mp4",
+      fullscreen: true,
+      fullscreenWeb: true,
+      plugins: [
+        artplayerPluginDanmuku({
+          danmuku: () => getDanMuAsync("/api/art/bilibili/v2/BV1JP41167xK"),
+        }),
+      ],
+    });
+
+    //不推荐
+    const art2 = new Artplayer({
+      container: "#art2",
+      url: "/assets/video/1214946209-1-192.mp4",
+      fullscreen: true,
+      fullscreenWeb: true,
+      plugins: [
+        artplayerPluginDanmuku({
+          danmuku: () =>
+            fetch("/api/art/bilibili/v2/BV1JP41167xK.json").then((res) =>
+              res.json()
+            ),
+        }),
+      ],
+    });
+  </script>
+</body>
 ```
 
 ## 示例
-
 
 <div ref="art0" />
 

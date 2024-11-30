@@ -20,11 +20,17 @@ dir:
 
 因为作者免费提供那个弹幕服务器貌似是挂掉了，看了一下开源的[源码](https://github.com/MoePlayer/DPlayer-node)，我决定自己撸了一个出来。
 
+## 示例
+
+- https://danmu.u2sb.com/bilibili/artplayer-v2.html
+- https://danmu.u2sb.com/bilibili/dplayer-v2.html
+- https://danmu.u2sb.com/bilibili/artplayer-v1.html
+
 ## 公共服务
 
-见[文档](https://www.u2sb.com/pages/15f418/)
+暂时只提供 BiliBili 弹幕解析服务，详见 API
 
-> 公共服务器是我个人维护的，存在不稳定因素，随时可能会停止服务器，以后也有可能清理弹幕，请勿用于生产环境。
+地址为 `https://danmu.u2sb.com/`
 
 ## 反馈
 

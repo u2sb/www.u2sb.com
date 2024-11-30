@@ -53,11 +53,8 @@ export default sidebar({
           children: [
             "install",
             "install-on-baota",
-            "raw-danmu",
             "artplayer-danmu",
-            "dplayer-danmu",
-            "download-bilibili-danmu",
-            "meting",
+            "dplayer-danmu"
           ],
         },
       ],

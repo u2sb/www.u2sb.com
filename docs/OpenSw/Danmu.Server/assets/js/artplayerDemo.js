@@ -1,4 +1,4 @@
-const danmuApi = "https://danmu.u2sb.com/api/bilibili/v2/BV1zt411t79A";
+const danmuApi = "https://danmu.u2sb.com/api/art/bilibili/v2/BV1JP41167xK";
 
 export default {
   mounted() {
@@ -11,37 +11,22 @@ export default {
       Promise.all([
         import("artplayer"),
         import("artplayer-plugin-danmuku"),
-        import("https://danmu.u2sb.com/assets/dm/dm.js"),
+        import("https://danmu.u2sb.com/assets/js/artMsgpackDm.js"),
       ]).then(
         ([
           { default: ArtPlayer },
           { default: artplayerPluginDanmuku },
-          { DanMu },
+          { getDanMuAsync },
         ]) => {
           this.art = new ArtPlayer({
             fullscreen: true,
             autoSize: true,
             setting: true,
             container: art0,
-            url: "/assets/video/s_720.mp4",
+            url: "https://danmu.u2sb.com/assets/video/1214946209-1-192.mp4",
             plugins: [
               artplayerPluginDanmuku({
-                danmuku: () =>
-                  fetch(danmuApi)
-                    .then((res) => res.arrayBuffer())
-                    .then((buffer) => {
-                      let d =
-                        DanMu.Models.Protos.BiliBili.Dm.DmSegMobileReply.decode(
-                          new Uint8Array(buffer)
-                        );
-                      return d.elems.map((m) => ({
-                        text: m.content,
-                        time: m.progress / 1000,
-                        color: "#" + m.color.toString(16),
-                        border: false,
-                        mode: m.mode === 4 || m.mode === 5 ? 1 : 0,
-                      }));
-                    }),
+                danmuku: () => getDanMuAsync(danmuApi),
               }),
             ],
           });
