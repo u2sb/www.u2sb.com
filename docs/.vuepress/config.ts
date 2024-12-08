@@ -2,6 +2,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./config/theme.js";
 import plugins from "./config/plugins/index.js";
 import { viteBundler } from "@vuepress/bundler-vite";
+import markdown from "./config/markdown.js";
 
 export default defineUserConfig({
   base: "/",
@@ -12,6 +13,7 @@ export default defineUserConfig({
   shouldPrefetch: false,
   shouldPreload: false,
   plugins,
+  markdown,
   bundler: viteBundler({
     viteOptions: {},
     vuePluginOptions: {},
