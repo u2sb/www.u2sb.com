@@ -1,7 +1,6 @@
 ---
-title: 说明
+title: ThirdPartyPackageExt
 
-order: 0010
 dir:
   text: 第三方包拓展
   order: 0999
