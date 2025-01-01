@@ -41,3 +41,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
+      - name: Deploy site
+        run: |
+          /usr/bin/sleep 5s
+          wget -O- ${{ secrets.ACTIONS_HOOK_URL }} > /dev/null

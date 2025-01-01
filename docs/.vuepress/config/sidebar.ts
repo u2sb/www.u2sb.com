@@ -122,12 +122,12 @@ export default sidebar({
         {
           text: "OBS导播键盘",
           prefix: "ObsKeyboard/",
-          children: ["SB00"],
+          children: ["SB00/README.md"],
         },
         {
           text: "相机电池",
           prefix: "CameraBattery",
-          children: ["DMW-BLK22"],
+          children: ["DMW-BLK22/README.md"],
         },
       ],
     },
