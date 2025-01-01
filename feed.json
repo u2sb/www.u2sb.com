@@ -11,7 +11,7 @@
       "summary": "OBS 导播键盘 相机电池",
       "content_html": "<h2>OBS 导播键盘</h2>\n<ol>\n<li><a href=\"/OpenHw/ObsKeyboard/SB00/\" target=\"_blank\">SB00</a></li>\n</ol>\n<h2>相机电池</h2>\n<ol>\n<li><a href=\"/OpenHw/CameraBattery/DMW-BLK22/\" target=\"_blank\">DMW-BLK22 松下相机假电池</a></li>\n</ol>\n",
       "date_published": "2020-01-27T21:50:53.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -21,7 +21,7 @@
       "id": "https://www.u2sb.com/OpenSw/",
       "content_html": "",
       "date_published": "2020-01-27T21:50:53.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -31,8 +31,8 @@
       "id": "https://www.u2sb.com/pages/About.html",
       "summary": "看到本页的都是帅比。",
       "content_html": "<p>看到本页的都是帅比。</p>\n",
-      "date_published": "2022-10-04T16:32:54.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_published": "2025-01-01T15:27:13.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -44,7 +44,7 @@
       "content_html": "<h2>开源地址</h2>\n<h2>这是什么？</h2>\n<p>这是一个通用弹幕服务器，包括但不限于以下播放器可以使用：</p>\n<ul class=\"task-list-container\">\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" id=\"task-item-0\" checked=\"checked\" disabled=\"disabled\"><label class=\"task-list-item-label\" for=\"task-item-0\"> <a href=\"https://github.com/MoePlayer/DPlayer\" target=\"_blank\" rel=\"noopener noreferrer\">Dplayer</a></label></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" id=\"task-item-1\" checked=\"checked\" disabled=\"disabled\"><label class=\"task-list-item-label\" for=\"task-item-1\"> <a href=\"https://github.com/zhw2590582/ArtPlayer\" target=\"_blank\" rel=\"noopener noreferrer\">ArtPlayer</a></label></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" id=\"task-item-2\" checked=\"checked\" disabled=\"disabled\"><label class=\"task-list-item-label\" for=\"task-item-2\"> 理论上所有支持弹幕的播放器都可以.</label></li>\n</ul>",
       "image": "https://s2.ax1x.com/2020/02/14/1jAh1U.avif",
       "date_published": "2022-05-18T17:03:27.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -55,7 +55,7 @@
       "summary": "介绍 适合 ArtPlayer 使用的弹幕 API V2 解析 BiliBili 弹幕 解释 bvid 视频 bvid p 分 P，例如 1 2，省略时默认为 1 format 数据格式，json API /api/art/bilibili/v2/{bvid}.{format} /api/art/bilibili/v2/{bvid}/{p:int}.{...",
       "content_html": "<h2>介绍</h2>\n<p>适合 ArtPlayer 使用的弹幕</p>\n<h2>API V2</h2>\n<h3>解析 BiliBili 弹幕</h3>\n<h4>解释</h4>\n<ul>\n<li><code>bvid</code> 视频 bvid</li>\n<li><code>p</code> 分 P，例如 <code>1</code> <code>2</code>，省略时默认为 <code>1</code></li>\n<li><code>format</code> 数据格式，<code>json</code></li>\n</ul>\n<h4>API</h4>\n<ul>\n<li><code>/api/art/bilibili/v2/{bvid}.{format}</code></li>\n<li><code>/api/art/bilibili/v2/{bvid}/{p:int}.{format}</code></li>\n</ul>",
       "date_published": "2022-05-18T17:26:25.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -66,7 +66,7 @@
       "summary": "介绍 适合 DPlayer 使用的弹幕 示例 点击查看 提示 一定要把 id 改掉，别 TM 傻逼呵呵的直接用我测试视频的 id 直接就写上去了，自己想办法随便生成一个随机字符串。",
       "content_html": "<h2>介绍</h2>\n<p>适合 DPlayer 使用的弹幕</p>\n<h2>示例</h2>\n<details class=\"hint-container details\"><summary>点击查看</summary>\n<div ref=\"dp\"></div>\n<div class=\"language-html line-numbers-mode\" data-highlighter=\"shiki\" data-ext=\"html\" data-title=\"html\" style=\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\"><pre class=\"shiki shiki-themes one-light one-dark-pro vp-code\"><code><span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">&lt;</span><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">div</span><span style=\"--shiki-light:#986801;--shiki-dark:#D19A66\"> ref</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">=</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\">\"dp\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">&gt;&lt;/</span><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">div</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">&gt;</span></span></code></pre>\n<div class=\"line-numbers\" aria-hidden=\"true\" style=\"counter-reset:line-number 0\"><div class=\"line-number\"></div></div></div><div class=\"language-js line-numbers-mode\" data-highlighter=\"shiki\" data-ext=\"js\" data-title=\"js\" style=\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\"><pre class=\"shiki shiki-themes one-light one-dark-pro vp-code\"><code><span class=\"line\"><span style=\"--shiki-light:#A626A4;--shiki-dark:#C678DD\">export</span><span style=\"--shiki-light:#E45649;--shiki-dark:#C678DD\"> default</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> {</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#4078F2;--shiki-dark:#61AFEF\">  mounted</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">() {</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E5C07B\">    this</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">.</span><span style=\"--shiki-light:#4078F2;--shiki-dark:#61AFEF\">$nextTick</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">(() </span><span style=\"--shiki-light:#A626A4;--shiki-dark:#C678DD\">=&gt;</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> {</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#0184BC;--shiki-dark:#61AFEF\">      import</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">(</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\">\"dplayer\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">).</span><span style=\"--shiki-light:#4078F2;--shiki-dark:#61AFEF\">then</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">(({ </span><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">default</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">: </span><span style=\"--shiki-light:#383A42;--shiki-light-font-style:inherit;--shiki-dark:#E06C75;--shiki-dark-font-style:italic\">DPlayer</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> }) </span><span style=\"--shiki-light:#A626A4;--shiki-dark:#C678DD\">=&gt;</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> {</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E5C07B\">        this</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">.</span><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">dp</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#56B6C2\"> =</span><span style=\"--shiki-light:#A626A4;--shiki-dark:#C678DD\"> new</span><span style=\"--shiki-light:#4078F2;--shiki-dark:#61AFEF\"> DPlayer</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">({</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">          container</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#E45649;--shiki-dark:#E5C07B\"> this</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">.</span><span style=\"--shiki-light:#E45649;--shiki-dark:#E5C07B\">$refs</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">.</span><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">dp</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">,</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">          video</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> {</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">            url</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"https://danmu.u2sb.com/assets/video/1214946209-1-192.mp4\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">,</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">          },</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">          danmaku</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> {</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">            api</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"https://danmu.u2sb.com/api/dp/bilibili/\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">,</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">            id</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"cENuyhsT2rMOCohK\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">,</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">            addition</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> [</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\">              \"https://danmu.u2sb.com/api/dp/bilibili/v3/BV1JP41167xK.json\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">,</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">            ],</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">          },</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">        });</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">      });</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">    });</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">  },</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"--shiki-light:#4078F2;--shiki-dark:#61AFEF\">  beforeUnmount</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">() {</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E5C07B\">    this</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">.</span><span style=\"--shiki-light:#E45649;--shiki-dark:#E5C07B\">dp</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">.</span><span style=\"--shiki-light:#4078F2;--shiki-dark:#61AFEF\">destroy</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">();</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">  },</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">};</span></span></code></pre>\n<div class=\"line-numbers\" aria-hidden=\"true\" style=\"counter-reset:line-number 0\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div><div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p>一定要把 <code>id</code> 改掉，别 TM 傻逼呵呵的直接用我测试视频的 id 直接就写上去了，自己想办法随便生成一个随机字符串。</p>\n</div>\n</details>",
       "date_published": "2022-05-18T17:26:25.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -77,7 +77,7 @@
       "summary": "提示 宝塔面板实在是太复杂了，研究了两天没搞懂，只能搞个大概的教程，本文仅供参考。 基础环境 Ubuntu Server 20.04 宝塔 7.9.2 上传可执行文件 上传可执行文件到服务器，上传位置由你自己决定，确保自己能找到，我测试的时候直接上传压缩包，然后用宝塔面板解压没有反应，不知道是我这里的 bug 还是整个宝塔面板都有问题，建议不使用压缩包...",
       "content_html": "<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p>宝塔面板实在是太复杂了，研究了两天没搞懂，只能搞个大概的教程，本文仅供参考。</p>\n</div>\n<h2>基础环境</h2>\n<ul>\n<li>Ubuntu Server 20.04</li>\n<li>宝塔 7.9.2</li>\n</ul>\n<h2>上传可执行文件</h2>\n<p>上传可执行文件到服务器，上传位置由你自己决定，确保自己能找到，我测试的时候直接上传压缩包，然后用宝塔面板解压没有反应，不知道是我这里的 bug 还是整个宝塔面板都有问题，建议不使用压缩包，直接拖整个文件夹上去。</p>",
       "date_published": "2022-07-12T21:00:46.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -88,7 +88,7 @@
       "summary": "基本介绍 这是一个通用的弹幕服务器，并且可以解析 B 站的视频弹幕。 安装 警告 后面的教程戾气较重，心理承受能力差的别看，别对号入座。 注意 目前 2.x 版本未正式发布，如想要体验，可以使用我搭建好的服务器，或者是到 QQ 群里下载测试版。 注意 不支持 CentOS6，不支持 CentOS6，不支持 CentOS6，用 CentOS6 的自己想办...",
       "content_html": "<h2>基本介绍</h2>\n<p>这是一个通用的弹幕服务器，并且可以解析 B 站的视频弹幕。</p>\n<h2>安装</h2>\n<div class=\"hint-container caution\">\n<p class=\"hint-container-title\">警告</p>\n<p>后面的教程戾气较重，心理承受能力差的别看，别对号入座。</p>\n</div>\n<div class=\"hint-container warning\">\n<p class=\"hint-container-title\">注意</p>\n<p>目前 2.x 版本未正式发布，如想要体验，可以使用我搭建好的服务器，或者是到 QQ 群里下载测试版。</p>\n</div>",
       "date_published": "2022-05-18T17:03:27.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -99,18 +99,18 @@
       "summary": "我们提供的免费公共服务 弹幕服务器 状态：正在服务 地址：https://danmu.u2sb.com 项目：https://github.com/u2sb/Danmu.Server 文档：https://www.u2sb.com/OpenSw/#Danmu.Server 状态：已合并至弹幕服务器 地址：https://danmu.u2sb.com 项...",
       "content_html": "<p>我们提供的免费公共服务</p>\n",
       "date_published": "2020-06-06T00:00:00.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
     {
-      "title": "介绍",
+      "title": "UnitySbTemplate",
       "url": "https://www.u2sb.com/OpenSw/UnitySbTemplate/",
       "id": "https://www.u2sb.com/OpenSw/UnitySbTemplate/",
       "summary": "介绍 煞笔使用的 Unity 模板，也许是最适合虚拟仿真开发的模板 特性 包含大量自定义工具 完成诸多包的初始化工作 配置离线工具，可将所有依赖打包，在无网环境使用 包含的包 Unity 原生 com.unity.2d.sprite com.unity.ide.rider com.unity.ide.visualstudio com.unity.inp...",
       "content_html": "<h2>介绍</h2>\n<p>煞笔使用的 Unity 模板，也许是最适合虚拟仿真开发的模板</p>\n<h2>特性</h2>\n<ul>\n<li>包含大量自定义工具</li>\n<li>完成诸多包的初始化工作</li>\n<li>配置离线工具，可将所有依赖打包，在无网环境使用</li>\n</ul>\n<h2>包含的包</h2>\n<h3>Unity 原生</h3>\n<ul>\n<li>com.unity.2d.sprite</li>\n<li>com.unity.ide.rider</li>\n<li>com.unity.ide.visualstudio</li>\n<li>com.unity.inputsystem</li>\n<li>com.unity.render-pipelines.universal</li>\n<li>com.unity.test-framework</li>\n<li>com.unity.textmeshpro</li>\n<li>com.unity.timeline</li>\n<li>com.unity.ugui</li>\n</ul>",
-      "date_published": "2022-10-04T16:32:54.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_published": "2025-01-01T15:27:13.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -120,8 +120,8 @@
       "id": "https://www.u2sb.com/OpenSw/UnitySbTemplate/SbGameObject.html",
       "summary": "介绍 一个游戏内标记与查找物体的系统。包含运行时，编辑器和代码生成器。 使用 继承 BaseSbGameObject，绑定在场景中的物体上，添加 Keys，可通过 Keys 查找物体。 FindSbGameObject 一个用于查找物体的工具。 SbGameObjectCodeGen 一个代码生成工具，用于生成当前场景中已绑定的 BaseSbGameO...",
       "content_html": "<h2>介绍</h2>\n<p>一个游戏内标记与查找物体的系统。包含运行时，编辑器和代码生成器。</p>\n<h2>使用</h2>\n<p>继承 <code>BaseSbGameObject</code>，绑定在场景中的物体上，添加 Keys，可通过 Keys 查找物体。</p>\n<h2>FindSbGameObject</h2>\n<p>一个用于查找物体的工具。</p>\n<figure><figcaption></figcaption></figure>\n<h2>SbGameObjectCodeGen</h2>\n<p>一个代码生成工具，用于生成当前场景中已绑定的 <code>BaseSbGameObject</code> 物体列表。</p>",
-      "date_published": "2022-10-04T16:32:54.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_published": "2025-01-01T15:27:13.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -131,8 +131,8 @@
       "id": "https://www.u2sb.com/OpenSw/UnitySbTemplate/UnityPackageOffline.html",
       "summary": "介绍 将 upm 包转换为离线，以便在没有网络连接的电脑上使用。 使用 菜单栏点击 U2SB -> PackageOffline -> ConvertToLocal，并耐心等待 Console 窗口出现 Completed。 提示 如果安装的包较多，且电脑性能过差，并且使用机械硬盘，需要等待的时间会非常非常久，请耐心等待，转换完成前不要关闭 Unity...",
       "content_html": "<h2>介绍</h2>\n<p>将 upm 包转换为离线，以便在没有网络连接的电脑上使用。</p>\n<h2>使用</h2>\n<p>菜单栏点击 <code>U2SB -&gt; PackageOffline -&gt; ConvertToLocal</code>，并耐心等待 <code>Console</code> 窗口出现 <code>Completed</code>。</p>\n<div class=\"hint-container tip\">\n<p class=\"hint-container-title\">提示</p>\n<p>如果安装的包较多，且电脑性能过差，并且使用机械硬盘，需要等待的时间会非常非常久，请耐心等待，转换完成前不要关闭 UnityEditor。</p>\n</div>",
-      "date_published": "2022-10-04T16:32:54.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_published": "2025-01-01T15:27:13.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -143,7 +143,7 @@
       "summary": "注意 此插件已不再维护，不建议使用本插件。 插件说明 hexo 媒体插入插件",
       "content_html": "<div class=\"hint-container warning\">\n<p class=\"hint-container-title\">注意</p>\n<p>此插件已不再维护，不建议使用本插件。</p>\n</div>\n<h2>插件说明</h2>\n<p>hexo 媒体插入插件</p>\n",
       "date_published": "2021-02-23T14:17:12.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -154,7 +154,7 @@
       "summary": "介绍 可以插入 aplayer 标签 使用 参数 此部分请熟读 APlayer 文档 使用 : 或 = 分割。 详细参数表： 不在表格内的参数请使用下面 JSON 类型的参数。 JSON 参数 mmedia 插件允许在 contents 部分使用 JSON 编写配置，由于允许使用 JSON5，此项配置几乎与 APlayer 完全一致。 详情请见上方示例...",
       "content_html": "<h2>介绍</h2>\n<p>可以插入 aplayer 标签</p>\n<h2>使用</h2>\n<div class=\"language-twig line-numbers-mode\" data-highlighter=\"shiki\" data-ext=\"twig\" data-title=\"twig\" style=\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\"><pre class=\"shiki shiki-themes one-light one-dark-pro vp-code\"><code><span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">{% </span><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">mmedia</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"aplayer\"</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"name:songName\"</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"url:a.mp3\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> %}</span></span></code></pre>\n<div class=\"line-numbers\" aria-hidden=\"true\" style=\"counter-reset:line-number 0\"><div class=\"line-number\"></div></div></div>",
       "date_published": "2021-02-23T16:38:32.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -165,7 +165,7 @@
       "summary": "介绍 可以插入 artplayer 标签。 使用 参数 此部分请熟读 ArtPlayer 文档 使用 : 或 = 分割。 详细参数表： 上面有一个比较特殊的参数 flv，这里单独解释一下，这个参数是用于引入其他 js 文件的，目前支持的有：hls dash shaka_dash flv webtorrent，上述参数可多个一起使用，如果后面带有 js ...",
       "content_html": "<h2>介绍</h2>\n<p>可以插入 artplayer 标签。</p>\n<h2>使用</h2>\n<div class=\"language-twig line-numbers-mode\" data-highlighter=\"shiki\" data-ext=\"twig\" data-title=\"twig\" style=\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\"><pre class=\"shiki shiki-themes one-light one-dark-pro vp-code\"><code><span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">{% </span><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">mmedia</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"artplayer\"</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"url:https://dandoc.u2sb.com/video/%E5%AE%89%E8%A3%85/1-%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%89%E8%A3%85.mp4\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> %}</span></span></code></pre>\n<div class=\"line-numbers\" aria-hidden=\"true\" style=\"counter-reset:line-number 0\"><div class=\"line-number\"></div></div></div>",
       "date_published": "2021-03-01T11:13:47.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -176,7 +176,7 @@
       "summary": "介绍 可以插入 html5 原生 audio 标签 使用 参数 此部分请熟读 Audio 相关介绍 使用 : 或 = 分割。 所有 <audio> 标签的原生参数均可添加，只要能写进去就可以。 具体能否实现相关标准，取决于客户端浏览器。 JSON 参数 mmedia 插件允许在 contents 部分使用 JSON 编写配置，使用 JSON5 标准。 ...",
       "content_html": "<h2>介绍</h2>\n<p>可以插入 html5 原生 audio 标签</p>\n<h2>使用</h2>\n<div class=\"language-twig line-numbers-mode\" data-highlighter=\"shiki\" data-ext=\"twig\" data-title=\"twig\" style=\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\"><pre class=\"shiki shiki-themes one-light one-dark-pro vp-code\"><code><span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">{% </span><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">mmedia</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"audio\"</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"src:a.mp3\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> %}</span></span></code></pre>\n<div class=\"line-numbers\" aria-hidden=\"true\" style=\"counter-reset:line-number 0\"><div class=\"line-number\"></div></div></div>",
       "date_published": "2021-02-23T16:08:47.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -187,7 +187,7 @@
       "summary": "介绍 可以插入 bilibili 视频 使用 参数 使用 : 或 = 分割。 详细参数表： JSON 参数 mmedia 插件允许在 contents 部分使用 JSON 编写配置，使用 JSON5 标准。 配置 默认配置可写入 _config.yml 下",
       "content_html": "<h2>介绍</h2>\n<p>可以插入 bilibili 视频</p>\n<h2>使用</h2>\n<div class=\"language-twig line-numbers-mode\" data-highlighter=\"shiki\" data-ext=\"twig\" data-title=\"twig\" style=\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\"><pre class=\"shiki shiki-themes one-light one-dark-pro vp-code\"><code><span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">{% </span><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">mmedia</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"bilibili\"</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"bvid:BV1br4y1P7ND\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> %}</span></span></code></pre>\n<div class=\"line-numbers\" aria-hidden=\"true\" style=\"counter-reset:line-number 0\"><div class=\"line-number\"></div></div></div>",
       "date_published": "2021-02-23T16:39:02.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -198,7 +198,7 @@
       "summary": "本项目接受以 pr 的方式贡献代码。 开发基础 Hexo API JavaScript TypeScript 本项目使用 pnpm 作为包管理工具，使用 TypeScript 作为编程语言，Gulp 作为编译引擎。 开发前需安装 node 和 pnpm。 开发 fork 仓库 需要先 fork 仓库，然后克隆到本地 提示 必须克隆到本地，不能在线修改 ...",
       "content_html": "<p>本项目接受以 pr 的方式贡献代码。</p>\n<h2>开发基础</h2>\n<p><a href=\"https://hexo.io/api/\" target=\"_blank\" rel=\"noopener noreferrer\">Hexo API</a><br>\n<a href=\"\">JavaScript</a><br>\n<a href=\"https://www.typescriptlang.org/\" target=\"_blank\" rel=\"noopener noreferrer\">TypeScript</a></p>\n<p>本项目使用 pnpm 作为包管理工具，使用 TypeScript 作为编程语言，Gulp 作为编译引擎。</p>",
       "date_published": "2021-02-24T10:11:33.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -209,7 +209,7 @@
       "summary": "介绍 可以插入 dplayer 标签。 使用 参数 此部分请熟读 DPlayer 文档 使用 : 或 = 分割。 详细参数表： 上面有一个比较特殊的参数 flv，这里单独解释一下，这个参数是用于引入其他 js 文件的，目前支持的有：hls dash shaka_dash flv webtorrent，上述参数可多个一起使用，如果后面带有 js 地址，将...",
       "content_html": "<h2>介绍</h2>\n<p>可以插入 dplayer 标签。</p>\n<h2>使用</h2>\n<div class=\"language-twig line-numbers-mode\" data-highlighter=\"shiki\" data-ext=\"twig\" data-title=\"twig\" style=\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\"><pre class=\"shiki shiki-themes one-light one-dark-pro vp-code\"><code><span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">{% </span><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">mmedia</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"dplayer\"</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"url:a.mp4\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> %}</span></span></code></pre>\n<div class=\"line-numbers\" aria-hidden=\"true\" style=\"counter-reset:line-number 0\"><div class=\"line-number\"></div></div></div>",
       "date_published": "2021-02-23T16:38:52.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -220,7 +220,7 @@
       "summary": "简介 hexo-tag-mmedia 是一个能在 Hexo 中快速插入媒体标签的插件，目前支持的标签和平台有（持续开发中）： Audio Video Aplayer MetingJS Dplayer 哔哩哔哩 西瓜视频 YouTube ArtPlayer DEMO http://demo.hexo-tag-mmedia.u2sb.com/ 使用 hex...",
       "content_html": "<h2>简介</h2>\n<p><a href=\"https://github.com/u2sb/hexo-tag-mmedia\" target=\"_blank\" rel=\"noopener noreferrer\">hexo-tag-mmedia</a> 是一个能在 Hexo 中快速插入媒体标签的插件，目前支持的标签和平台有（持续开发中）：</p>\n<ul class=\"task-list-container\">\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" id=\"task-item-0\" checked=\"checked\" disabled=\"disabled\"><label class=\"task-list-item-label\" for=\"task-item-0\"> Audio</label></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" id=\"task-item-1\" checked=\"checked\" disabled=\"disabled\"><label class=\"task-list-item-label\" for=\"task-item-1\"> Video</label></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" id=\"task-item-2\" checked=\"checked\" disabled=\"disabled\"><label class=\"task-list-item-label\" for=\"task-item-2\"> <a href=\"https://github.com/DIYgod/APlayer\" target=\"_blank\" rel=\"noopener noreferrer\">Aplayer</a></label></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" id=\"task-item-3\" checked=\"checked\" disabled=\"disabled\"><label class=\"task-list-item-label\" for=\"task-item-3\"> <a href=\"https://github.com/metowolf/MetingJS\" target=\"_blank\" rel=\"noopener noreferrer\">MetingJS</a></label></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" id=\"task-item-4\" checked=\"checked\" disabled=\"disabled\"><label class=\"task-list-item-label\" for=\"task-item-4\"> <a href=\"https://github.com/DIYgod/DPlayer\" target=\"_blank\" rel=\"noopener noreferrer\">Dplayer</a></label></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" id=\"task-item-5\" checked=\"checked\" disabled=\"disabled\"><label class=\"task-list-item-label\" for=\"task-item-5\"> <a href=\"https://www.bilibili.com/\" target=\"_blank\" rel=\"noopener noreferrer\">哔哩哔哩</a></label></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" id=\"task-item-6\" checked=\"checked\" disabled=\"disabled\"><label class=\"task-list-item-label\" for=\"task-item-6\"> <a href=\"https://www.ixigua.com/\" target=\"_blank\" rel=\"noopener noreferrer\">西瓜视频</a></label></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" id=\"task-item-7\" disabled=\"disabled\"><label class=\"task-list-item-label\" for=\"task-item-7\"> <a href=\"\">YouTube</a></label></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" id=\"task-item-8\" checked=\"checked\" disabled=\"disabled\"><label class=\"task-list-item-label\" for=\"task-item-8\"> <a href=\"https://github.com/zhw2590582/ArtPlayer\" target=\"_blank\" rel=\"noopener noreferrer\">ArtPlayer</a></label></li>\n</ul>",
       "date_published": "2021-02-23T14:17:12.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -231,7 +231,7 @@
       "summary": "介绍 可以插入 MetingJS 标签。 使用 参数 此部分请熟读 MetingJS 文档 使用 : 或 = 分割。 所有 <meting-js> 标签的参数均可添加，只要能写进去就可以。 JSON 参数 mmedia 插件允许在 contents 部分使用 JSON 编写配置，使用 JSON5 标准。 配置 默认配置可写入 _config.yml 下",
       "content_html": "<h2>介绍</h2>\n<p>可以插入 <a href=\"https://github.com/metowolf/MetingJS\" target=\"_blank\" rel=\"noopener noreferrer\">MetingJS</a> 标签。</p>\n<h2>使用</h2>\n<div class=\"language-twig line-numbers-mode\" data-highlighter=\"shiki\" data-ext=\"twig\" data-title=\"twig\" style=\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\"><pre class=\"shiki shiki-themes one-light one-dark-pro vp-code\"><code><span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">{% </span><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">mmedia</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"meting\"</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"auto=https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> %}</span></span></code></pre>\n<div class=\"line-numbers\" aria-hidden=\"true\" style=\"counter-reset:line-number 0\"><div class=\"line-number\"></div></div></div>",
       "date_published": "2021-02-23T16:17:48.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -243,7 +243,7 @@
       "content_html": "<div class=\"hint-container warning\">\n<p class=\"hint-container-title\">注意</p>\n<p>0.x 版本已停止更新，只做兼容和过渡使用，请尽快更新 1.x 版本。</p>\n<p>如果有人愿意接手 0.x 版维护，请及时联系我。</p>\n</div>\n<h2>简介</h2>\n<p>hexo-tag-mmedia 是 MonoLogueChi 自用的一个媒体插入插件，在添加部分功能后发布给大家使用。</p>\n<p>支持的平台</p>\n<ul class=\"task-list-container\">\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" id=\"task-item-0\" checked=\"checked\" disabled=\"disabled\"><label class=\"task-list-item-label\" for=\"task-item-0\"> <a href=\"https://github.com/DIYgod/APlayer\" target=\"_blank\" rel=\"noopener noreferrer\">Aplayer</a></label></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" id=\"task-item-1\" checked=\"checked\" disabled=\"disabled\"><label class=\"task-list-item-label\" for=\"task-item-1\"> <a href=\"https://github.com/metowolf/MetingJS\" target=\"_blank\" rel=\"noopener noreferrer\">Meting</a></label></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" id=\"task-item-2\" checked=\"checked\" disabled=\"disabled\"><label class=\"task-list-item-label\" for=\"task-item-2\"> <a href=\"https://github.com/DIYgod/DPlayer\" target=\"_blank\" rel=\"noopener noreferrer\">Dplayer</a></label></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" id=\"task-item-3\" checked=\"checked\" disabled=\"disabled\"><label class=\"task-list-item-label\" for=\"task-item-3\"> <a href=\"https://www.bilibili.com/\" target=\"_blank\" rel=\"noopener noreferrer\">哔哩哔哩</a></label></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" id=\"task-item-4\" checked=\"checked\" disabled=\"disabled\"><label class=\"task-list-item-label\" for=\"task-item-4\"> <a href=\"https://www.ixigua.com/\" target=\"_blank\" rel=\"noopener noreferrer\">西瓜视频</a></label></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" id=\"task-item-5\" disabled=\"disabled\"><label class=\"task-list-item-label\" for=\"task-item-5\"> <a href=\"\">YouTube</a></label></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" class=\"task-list-item-checkbox\" id=\"task-item-6\" disabled=\"disabled\"><label class=\"task-list-item-label\" for=\"task-item-6\"> <a href=\"https://github.com/zhw2590582/ArtPlayer\" target=\"_blank\" rel=\"noopener noreferrer\">ArtPlayer</a></label></li>\n</ul>",
       "image": "https://www.u2sb.com/assets/img/2020/qq.avif =300x300",
       "date_published": "2021-02-23T12:41:58.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [
         {
           "name": "MonoLogueChi"
@@ -258,7 +258,7 @@
       "summary": "介绍 可以插入 html5 原生 video 标签 使用 参数 此部分请熟读 Video 相关介绍 使用 : 或 = 分割。 所有 <video> 标签的原生参数均可添加，只要能写进去就可以。 具体能否实现相关标准，取决于客户端浏览器。 JSON 参数 mmedia 插件允许在 contents 部分使用 JSON 编写配置，使用 JSON5 标准。 ...",
       "content_html": "<h2>介绍</h2>\n<p>可以插入 html5 原生 video 标签</p>\n<h2>使用</h2>\n<div class=\"language-twig line-numbers-mode\" data-highlighter=\"shiki\" data-ext=\"twig\" data-title=\"twig\" style=\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\"><pre class=\"shiki shiki-themes one-light one-dark-pro vp-code\"><code><span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">{% </span><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">mmedia</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"video\"</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"src:a.mp4\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> %}</span></span></code></pre>\n<div class=\"line-numbers\" aria-hidden=\"true\" style=\"counter-reset:line-number 0\"><div class=\"line-number\"></div></div></div>",
       "date_published": "2021-02-23T16:16:20.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -269,7 +269,7 @@
       "summary": "介绍 可以插入 西瓜 视频 使用 参数 使用 : 或 = 分割。 详细参数表： JSON 参数 mmedia 插件允许在 contents 部分使用 JSON 编写配置，使用 JSON5 标准。 配置 默认配置可写入 _config.yml 下",
       "content_html": "<h2>介绍</h2>\n<p>可以插入 西瓜 视频</p>\n<h2>使用</h2>\n<div class=\"language-twig line-numbers-mode\" data-highlighter=\"shiki\" data-ext=\"twig\" data-title=\"twig\" style=\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\"><pre class=\"shiki shiki-themes one-light one-dark-pro vp-code\"><code><span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">{% </span><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">mmedia</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"xigua\"</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"xid=6925997698269053453\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> %}</span></span></code></pre>\n<div class=\"line-numbers\" aria-hidden=\"true\" style=\"counter-reset:line-number 0\"><div class=\"line-number\"></div></div></div>",
       "date_published": "2021-02-23T16:39:18.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -279,8 +279,8 @@
       "id": "https://www.u2sb.com/OpenSw/vuepress-plugin-sbaudio/",
       "summary": "介绍 一个能在 Vuepress 中快使用 APlayer 和 MetingJS 的插件 感谢 本项目依赖以下项目 APlayer (MIT)",
       "content_html": "<h2>介绍</h2>\n<p>一个能在 Vuepress 中快使用 APlayer 和 MetingJS 的插件</p>\n<h2>感谢</h2>\n<p>本项目依赖以下项目</p>\n<ul>\n<li><a href=\"https://github.com/DIYgod/APlayer\" target=\"_blank\" rel=\"noopener noreferrer\">APlayer</a> (<a href=\"https://github.com/DIYgod/APlayer/blob/master/LICENSE\" target=\"_blank\" rel=\"noopener noreferrer\">MIT</a>)</li>\n</ul>",
-      "date_published": "2022-10-04T16:32:54.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_published": "2025-01-01T15:27:13.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -290,8 +290,8 @@
       "id": "https://www.u2sb.com/OpenSw/vuepress-plugin-sbaudio/aplayer.html",
       "summary": "介绍 在页面插入 APlayer 播放器。 使用",
       "content_html": "<h2>介绍</h2>\n<p>在页面插入 APlayer 播放器。</p>\n<h2>使用</h2>\n",
-      "date_published": "2022-10-04T16:32:54.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_published": "2025-01-01T15:27:13.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -301,8 +301,8 @@
       "id": "https://www.u2sb.com/OpenSw/vuepress-plugin-sbaudio/aplayerGlobal.html",
       "summary": "介绍 全局音乐播放器 使用 全局音乐播放列表来自两部分，分别是 aplayerGlobalAudios 和 metingOptions.list，两部分共同组合为播放列表。 数据来源数据来源",
       "content_html": "<h2>介绍</h2>\n<p>全局音乐播放器</p>\n<h2>使用</h2>\n<p>全局音乐播放列表来自两部分，分别是 <code>aplayerGlobalAudios</code> 和 <code>metingOptions.list</code>，两部分共同组合为播放列表。</p>\n<div class=\"language-ts line-numbers-mode\" data-highlighter=\"shiki\" data-ext=\"ts\" data-title=\"ts\" style=\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\"><pre class=\"shiki shiki-themes one-light one-dark-pro vp-code\"><code><span class=\"line\"><span style=\"--shiki-light:#A626A4;--shiki-dark:#C678DD\">import</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> { </span><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">defineUserConfig</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> } </span><span style=\"--shiki-light:#A626A4;--shiki-dark:#C678DD\">from</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"vuepress\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">;</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#A626A4;--shiki-dark:#C678DD\">import</span><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\"> sbaudio</span><span style=\"--shiki-light:#A626A4;--shiki-dark:#C678DD\"> from</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"vuepress-plugin-sbaudio\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">;</span></span>\n<span class=\"line\"></span>\n<span class=\"line\"><span style=\"--shiki-light:#A626A4;--shiki-dark:#C678DD\">export</span><span style=\"--shiki-light:#E45649;--shiki-dark:#C678DD\"> default</span><span style=\"--shiki-light:#4078F2;--shiki-dark:#61AFEF\"> defineUserConfig</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">({</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">  plugins</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> [</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#4078F2;--shiki-dark:#61AFEF\">    sbaudio</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">({</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">      aplayerGlobalOptions</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> {</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">        autoplay</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#986801;--shiki-dark:#D19A66\"> false</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">,</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">        theme</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"#2980b9\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">,</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">        loop</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"all\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">,</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">        order</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"list\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">,</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">        preload</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"auto\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">,</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">        volume</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#986801;--shiki-dark:#D19A66\"> 0.7</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">,</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">        mutex</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#986801;--shiki-dark:#D19A66\"> true</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">,</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">        lrcType</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#986801;--shiki-dark:#D19A66\"> 3</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">,</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">        listFolded</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#986801;--shiki-dark:#D19A66\"> false</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">,</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">        listMaxHeight</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"540px\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">,</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">      },</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">      aplayerGlobalAudios</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> [],</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">      metingOptions</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> {</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">        list</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\"> [</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">          {</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">            type</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"playlist\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">,</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#E45649;--shiki-dark:#E06C75\">            id</span><span style=\"--shiki-light:#0184BC;--shiki-dark:#ABB2BF\">:</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> \"3045842790\"</span><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">,</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">          },</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">        ],</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">      },</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">    }),</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">  ],</span></span>\n<span class=\"line\"><span style=\"--shiki-light:#383A42;--shiki-dark:#ABB2BF\">});</span></span></code></pre>\n<div class=\"line-numbers\" aria-hidden=\"true\" style=\"counter-reset:line-number 0\"><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div><div class=\"line-number\"></div></div></div>",
-      "date_published": "2022-10-04T16:32:54.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_published": "2025-01-01T15:27:13.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -312,8 +312,8 @@
       "id": "https://www.u2sb.com/OpenSw/vuepress-plugin-sbaudio/install.html",
       "summary": "安装 配置 默认配置 提示 本文只是简单说明使用，详细使用方法请阅读源码。",
       "content_html": "<h2>安装</h2>\n<div class=\"language-bash line-numbers-mode\" data-highlighter=\"shiki\" data-ext=\"bash\" data-title=\"bash\" style=\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\"><pre class=\"shiki shiki-themes one-light one-dark-pro vp-code\"><code><span class=\"line\"><span style=\"--shiki-light:#4078F2;--shiki-dark:#61AFEF\">pnpm</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> add</span><span style=\"--shiki-light:#986801;--shiki-dark:#D19A66\"> -D</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> vuepress-plugin-sbaudio</span><span style=\"--shiki-light:#50A14F;--shiki-dark:#98C379\"> aplayer</span></span></code></pre>\n<div class=\"line-numbers\" aria-hidden=\"true\" style=\"counter-reset:line-number 0\"><div class=\"line-number\"></div></div></div>",
-      "date_published": "2022-10-04T16:32:54.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_published": "2025-01-01T15:27:13.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -323,8 +323,8 @@
       "id": "https://www.u2sb.com/OpenSw/vuepress-plugin-sbaudio/meting.html",
       "summary": "介绍 使用 Meting API 插入 APlayer 播放器 使用",
       "content_html": "<h2>介绍</h2>\n<p>使用 Meting API 插入 APlayer 播放器</p>\n<h2>使用</h2>\n",
-      "date_published": "2022-10-04T16:32:54.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_published": "2025-01-01T15:27:13.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -334,8 +334,8 @@
       "id": "https://www.u2sb.com/OpenHw/CameraBattery/DMW-BLK22/",
       "summary": "简介 DMW-BLK22 松下相机假电池，适用于 LUMIX S5 等机型，输入电压 10-18V，输出电压 8.1V，带有 PD 和 QC 诱骗电路，支持快充输入。详见 立创开源 PCB 整体 左侧输入，右侧输出，打样时忘记加丝印了，新版工程文件已加丝印。左上角为诱骗电路，如不使用快充输入，无需焊接。 PCBPCB 诱骗电路 当需要使用充电宝或手机充...",
       "content_html": "<h2>简介</h2>\n<p>DMW-BLK22 松下相机假电池，适用于 LUMIX S5 等机型，输入电压 10-18V，输出电压 8.1V，带有 PD 和 QC 诱骗电路，支持快充输入。详见 <a href=\"https://oshwhub.com/monologuechi/dmw-blk22-xiang-ji-jia-dian-chi\" target=\"_blank\" rel=\"noopener noreferrer\">立创开源</a></p>\n<h2>PCB</h2>\n<h3>整体</h3>\n<p>左侧输入，右侧输出，打样时忘记加丝印了，新版工程文件已加丝印。左上角为诱骗电路，如不使用快充输入，无需焊接。</p>",
-      "date_published": "2022-10-04T16:32:54.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_published": "2025-01-01T15:27:13.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -346,18 +346,18 @@
       "summary": "简介 一款 OBS 导播键盘，命名为 SB00，开源项目见 https://github.com/u2sb/ObsKeyBoard-SB00。 特点 USB TYPE B 接口，坚实可靠 机械键盘 MX 轴，价格便宜，方便 DIY 和维修 ESP32-S2 模组，价格便宜，容易买到，方便 DIY 电路简单，方便 DIY 和维护，新手也能焊接 固件使用 ...",
       "content_html": "<h2>简介</h2>\n<p>一款 OBS 导播键盘，命名为 SB00，开源项目见 <a href=\"https://github.com/u2sb/ObsKeyBoard-SB00\" target=\"_blank\" rel=\"noopener noreferrer\">https://github.com/u2sb/ObsKeyBoard-SB00</a>。</p>\n<h2>特点</h2>\n<ul>\n<li>USB TYPE B 接口，坚实可靠</li>\n<li>机械键盘 MX 轴，价格便宜，方便 DIY 和维修</li>\n<li>ESP32-S2 模组，价格便宜，容易买到，方便 DIY</li>\n<li>电路简单，方便 DIY 和维护，新手也能焊接</li>\n<li>固件使用 Arduino 开发，与上位机使用串口通信，开发简单</li>\n</ul>",
       "date_published": "2022-05-12T16:45:30.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
     {
-      "title": "说明",
+      "title": "ThirdPartyPackageExt",
       "url": "https://www.u2sb.com/OpenSw/UnitySbTemplate/ThirdPartyPackageExt/",
       "id": "https://www.u2sb.com/OpenSw/UnitySbTemplate/ThirdPartyPackageExt/",
       "summary": "介绍 包含诸多第三方包拓展。",
       "content_html": "<h2>介绍</h2>\n<p>包含诸多第三方包拓展。</p>\n",
-      "date_published": "2022-10-04T16:32:54.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_published": "2025-01-01T15:27:13.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     },
@@ -367,8 +367,8 @@
       "id": "https://www.u2sb.com/OpenSw/UnitySbTemplate/ThirdPartyPackageExt/UniTask.YooAsset.html",
       "summary": "说明 YooAsset 的 UniTask 拓展。",
       "content_html": "<h2>说明</h2>\n<p>YooAsset 的 UniTask 拓展。</p>\n",
-      "date_published": "2022-10-04T16:32:54.000Z",
-      "date_modified": "2022-10-04T16:32:54.000Z",
+      "date_published": "2025-01-01T15:27:13.000Z",
+      "date_modified": "2025-01-01T15:27:13.000Z",
       "authors": [],
       "tags": []
     }
