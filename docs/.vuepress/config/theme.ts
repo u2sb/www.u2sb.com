@@ -11,8 +11,6 @@ export default hopeTheme({
     url: "https://blog.xxwhite.com",
   },
 
-  iconAssets: "fontawesome-with-brands",
-
   logo: "/assets/img/logo.avif",
 
   repo: "u2sb/www.u2sb.com",
@@ -37,6 +35,9 @@ export default hopeTheme({
   markdown,
 
   plugins: {
+    icon: {
+      assets: "iconify",
+    },
     slimsearch: {
       indexContent: true,
     },
@@ -59,7 +60,6 @@ export default hopeTheme({
         "Badge",
         "BiliBili",
         "CodePen",
-        "FontIcon",
         "SiteInfo",
         "VidStack",
         "VPCard",

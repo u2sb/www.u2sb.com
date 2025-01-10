@@ -1,7 +1,5 @@
 ---
 title: UnitySbTemplate
-sidebar:
-  text: 介绍
 
 order: 0010
 dir:

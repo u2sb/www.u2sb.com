@@ -4,7 +4,7 @@ export default navbar([
   "/",
   {
     text: "开源软件",
-    icon: "c",
+    icon: "mdi:language-csharp",
     prefix: "/OpenSw/",
     children: [
       {
@@ -35,7 +35,7 @@ export default navbar([
   },
   {
     text: "开源硬件",
-    icon: "microchip",
+    icon: "mdi:chip",
     prefix: "/OpenHw/",
     children: [
       {

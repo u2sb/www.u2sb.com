@@ -33,7 +33,7 @@ dir:
 - 地址：`https://danmu.u2sb.com/api/meting`
 - 配置：`https://danmu.u2sb.com/api/meting?server=:server&type=:type&id=:id&r=:r`
 - 项目：[https://github.com/u2sb/MetingJS.Server](https://github.com/u2sb/MetingJS.Server)
-- 文档：[MetingJs.Server](../MetingJS.Server/README.md)
+- 文档：[MetingJs.Server](https://github.com/u2sb/MetingJS.Server)
 
 ## ~~Apk 应用名称查询~~
 

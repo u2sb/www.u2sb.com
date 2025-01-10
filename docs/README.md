@@ -15,12 +15,12 @@ actions:
 
 features:
   - title: 开源软件
-    icon: c
+    icon: mdi:language-csharp
     details: 我们的软件开源项目
     link: /OpenSw/
 
   - title: 开源硬件
-    icon: microchip
+    icon: mdi:chip
     details: 我们的软件开源硬件
     link: /OpenHw/
 
