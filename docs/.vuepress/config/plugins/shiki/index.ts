@@ -3,7 +3,7 @@ import {
   bundledLanguageNames,
 } from "@vuepress/plugin-shiki";
 
-import caddyfile from "./languages/caddyfile.tmLanguage.json";
+import caddyfile from "./languages/caddyfile.tmLanguage.json" with { type: 'json'};
 
 const caddyfileLanguage = {
   id: "Caddyfile",
@@ -12,7 +12,6 @@ const caddyfileLanguage = {
 };
 
 export default <ShikiPluginOptions>{
-  // 你的选项
   themes: {
     light: "one-light",
     dark: "one-dark-pro",
