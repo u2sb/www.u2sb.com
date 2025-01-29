@@ -2,7 +2,7 @@
 title: vuepress-plugin-sbaudio
 
 dir:
-  order: 0030
+  order: 0040
 ---
 
 ## 介绍

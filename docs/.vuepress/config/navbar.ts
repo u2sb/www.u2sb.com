@@ -12,8 +12,12 @@ export default navbar([
         link: "",
       },
       {
-        text: "Unity 煞笔模板",
+        text: "Unity 沙比模板",
         link: "UnitySbTemplate/",
+      },
+      {
+        text: "沙比 Modbus",
+        link: "SbModbus/",
       },
       {
         text: "弹幕服务器",

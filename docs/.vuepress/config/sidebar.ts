@@ -13,7 +13,7 @@ export default sidebar({
           link: "/OpenSw/Overview/public-service",
         },
         {
-          text: "Unity 煞笔模板",
+          text: "Unity 沙比模板",
           link: "/OpenSw/UnitySbTemplate/",
         },
         {
@@ -39,9 +39,25 @@ export default sidebar({
       link: "/OpenSw/",
       children: [
         {
-          text: "Unity 煞笔模板",
+          text: "Unity 沙比模板",
           prefix: "",
           link: "/OpenSw/UnitySbTemplate/",
+          children: "structure",
+        },
+      ],
+    },
+  ],
+  "/OpenSw/SbModbus/": [
+    {
+      text: "开源软件",
+      icon: "mdi:language-csharp",
+      prefix: "",
+      link: "/OpenSw/",
+      children: [
+        {
+          text: "沙比 Modbus",
+          prefix: "",
+          link: "/OpenSw/SbModbus/",
           children: "structure",
         },
       ],

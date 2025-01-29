@@ -3,7 +3,7 @@ title: 弹幕服务器
 date: 2022-05-18 17:03:27
 
 dir:
-  order: 0020
+  order: 0030
 ---
 
 ## 开源地址
@@ -37,10 +37,10 @@ dir:
 - [issues](https://github.com/u2sb/Danmu.Server/issues)
 - QQ 群 [159891059](https://qm.qq.com/cgi-bin/qm/qr?k=VeoyYRJIvLQfa_xhRLSN87AeiGTghiPo&jump_from=webapi)
 
-![](https://s2.ax1x.com/2020/02/14/1jAh1U.avif)
+![](https://s2.ax1x.com/2020/02/14/1jAh1U.png)
 
 ## 感谢
 
-[![](https://i.loli.net/2021/10/14/TdLpB7lEzgOcHQx.avif)](https://www.jetbrains.com/resharper/)
+[![](https://i.loli.net/2021/10/14/TdLpB7lEzgOcHQx.png)](https://www.jetbrains.com/resharper/)
 
 **使用 ReSharper 开发**

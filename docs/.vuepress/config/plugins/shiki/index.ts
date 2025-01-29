@@ -1,6 +1,5 @@
 import {
   ShikiPluginOptions,
-  bundledLanguageNames,
 } from "@vuepress/plugin-shiki";
 
 import caddyfile from "./languages/caddyfile.tmLanguage.json" with { type: 'json'};
@@ -18,5 +17,5 @@ export default <ShikiPluginOptions>{
   },
   lineNumbers: true,
 
-  langs: [caddyfileLanguage, ...bundledLanguageNames],
+  langs: [caddyfileLanguage],
 };
