@@ -114,12 +114,12 @@ throw new IndexOutOfRangeException();
 }
 }
 }
-public ushort[] this[Range range]
+public Span<ushort> this[Range range]
 {
 get
 {
 var span = AsSpan();
-return span[range].ToArray();
+return span[range];
 }
 }
 }
