@@ -17,6 +17,10 @@ export default sidebar({
           link: "/OpenSw/UnitySbTemplate/",
         },
         {
+          text: "沙比 Modbus",
+          link: "/OpenSw/SbModbus/",
+        },
+        {
           text: "弹幕服务器",
           link: "/OpenSw/Danmu.Server/",
         },
