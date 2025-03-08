@@ -32,10 +32,6 @@
             background: var(--c-bg);
           }
 
-          html {
-            font-size: 16px;
-          }
-
           body {
             min-height: 100vh;
             color: var(--c-text);
@@ -241,7 +237,7 @@
             margin: 0.5rem auto;
             border: 1px solid #fff;
             border-collapse: collapse;
-            border-radius: 8px;
+            border-radius: 0.5rem;
 
             text-align: start;
           }
@@ -321,13 +317,13 @@
           }
 
           .atom-info {
-            margin-top: 4px;
-            font-size: 14px;
+            margin-top: 0.25rem;
+            font-size: 0.875rem;
           }
 
           .atom-info &gt; span {
             display: inline-block;
-            margin: 4px 8px 4px 0;
+            margin: 0.25em 0.5em 0.25em 0;
           }
 
           .atom-info &gt; span:last-child {
@@ -340,14 +336,14 @@
           }
 
           .atom-body {
-            padding: 4px 16px;
+            padding: 0.25rem 1rem;
           }
 
           .atom-footer {
             display: flex;
             justify-content: space-between;
-            padding: 8px 16px;
-            font-size: 14px;
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
           }
 
           .atom-footer label {
@@ -357,20 +353,20 @@
           .atom-link {
             display: inline-block;
 
-            padding: 6px 12px;
-            border-radius: 8px;
+            padding: 0.375em 0.75em;
+            border-radius: 0.5em;
 
             background: var(--c-accent);
             color: var(--c-bg-elv);
           }
 
           footer {
-            margin-top: 10px;
-            padding: 4px;
+            margin-top: 0.75rem;
+            padding: 0.25rem;
 
             color: #888;
 
-            font-size: 12px;
+            font-size: 0.75rem;
             text-align: center;
           }
         </style></head><body><div class="feed-info"><xsl:if test="atom:logo"><img class="feed-logo" src="{atom:logo}" alt="atom logo"/></xsl:if><h1 class="feed-title"><xsl:if test="atom:icon and not(atom:logo)"><img class="feed-icon" src="{atom:icon}" alt="atom logo"/></xsl:if><xsl:value-of select="atom:title"/></h1><h2 class="feed-subtitle"><xsl:value-of select="atom:subtitle"/></h2><table class="feed-detail"><tbody><tr><td>Last update time:</td><td><xsl:value-of select="concat(substring(atom:updated,0,11),concat(' ', substring(atom:updated,12,5)))"/></td></tr><xsl:if test="atom:author/atom:name"><tr><td>Author:</td><td><xsl:for-each select="atom:author/atom:name"><xsl:if test="position() != 1">, </xsl:if><xsl:value-of select="current()"/></xsl:for-each></td></tr></xsl:if><xsl:if test="atom:contributor/atom:name"><tr><td>Contributor:</td><td><xsl:for-each select="atom:contributor/atom:name"><xsl:if test="position() != 1">, </xsl:if><xsl:value-of select="current()"/></xsl:for-each></td></tr></xsl:if><xsl:if test="atom:category"><tr><td>Categories:</td><td><xsl:for-each select="atom:category"><xsl:if test="position() != 1">, </xsl:if><xsl:value-of select="current()/@term"/></xsl:for-each></td></tr></xsl:if><xsl:if test="atom:rights"><tr><td>Copyright:</td><td><xsl:value-of select="atom:rights"/></td></tr></xsl:if></tbody></table></div><div class="atom-item-wrapper"><xsl:for-each select="atom:entry"><xsl:variable name="feed-index" select="position()"/><div class="atom-item"><div class="atom-header"><div class="atom-title"><xsl:value-of select="atom:title"/></div><div class="atom-info"><xsl:if test="atom:author"><span><label for="author-{$feed-index}">Author:</label><span id="author-{$feed-index}"><xsl:for-each select="atom:author"><xsl:if test="position() != 1">, </xsl:if><xsl:value-of select="current()/atom:name"/></xsl:for-each></span></span></xsl:if><xsl:if test="atom:contributor"><span><label for="contributor-{$feed-index}">Contributor:</label><span id="contributor-{$feed-index}"><xsl:for-each select="atom:contributor"><xsl:if test="position() != 1">, </xsl:if><xsl:value-of select="current()/atom:name"/></xsl:for-each></span></span></xsl:if><xsl:if test="atom:published"><span><label for="date-{$feed-index}">Date:</label><span id="date-{$feed-index}"><xsl:value-of select="concat(substring(atom:updated,0,11),concat(' ', substring(atom:updated,12,5)))"/></span></span></xsl:if><xsl:if test="atom:updated"><span><label for="update-{$feed-index}">Updated time:</label><span id="update-{$feed-index}"><xsl:value-of select="concat(substring(atom:updated,0,11),concat(' ', substring(atom:updated,12,5)))"/></span></span></xsl:if></div></div><div class="atom-body"><xsl:value-of select="atom:summary" disable-output-escaping="yes"/></div><div class="atom-footer"><a class="atom-link" href="{atom:link/@href}" target="_blank">

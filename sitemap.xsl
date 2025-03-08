@@ -25,10 +25,6 @@
             background: var(--bg-color);
           }
 
-          html {
-            font-size: 14px;
-          }
-
           body {
             min-height: 100vh;
             color: var(--text-color);
@@ -59,7 +55,7 @@
 
           table {
             width: 100%;
-            border-radius: 8px;
+            border-radius: 0.5rem;
             border-collapse: collapse;
             text-align: center;
             overflow: hidden;
@@ -72,19 +68,19 @@
           }
 
           th {
-            min-width: 56px;
+            min-width: 3.5em;
             padding: 0.6em 1em;
 
             background-color: var(--brand-color);
             color: var(--bg-color);
 
             font-weight: bold;
-            font-size: 16px;
+            font-size: 1rem;
           }
 
           @media (max-width: 719px) {
             th {
-              font-size: 14px;
+              font-size: 0.875rem;
             }
           }
 
@@ -112,7 +108,7 @@
 
           @media (max-width: 719px) {
             td {
-              font-size: 12px;
+              font-size: 0.75rem;
             }
           }
 
@@ -121,12 +117,12 @@
           }
 
           footer {
-            margin-top: 10px;
-            padding: 4px;
+            margin-top: 0.75rem;
+            padding: 0.25rem;
 
             color: #888;
 
-            font-size: 12px;
+            font-size: 0.75rem;
             text-align: center;
           }
         </style></head><body><div id="content"><h1>Sitemap</h1><table><thead><tr><th><xsl:value-of select="concat('URL (', count(sitemap:urlset/sitemap:url), ')')"/></th><th>Priority</th><th>Change Frequency</th><th>Last Updated Time</th></tr></thead><tbody><xsl:variable name="lower" select="'abcdefghijklmnopqrstuvwxyz'"/><xsl:variable name="upper" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'"/><xsl:for-each select="sitemap:urlset/sitemap:url"><tr><td><xsl:variable name="itemURL"><xsl:value-of select="sitemap:loc"/></xsl:variable><a href="{$itemURL}" target="_blank"><xsl:value-of select="sitemap:loc"/></a></td><td><xsl:choose><xsl:when test="sitemap:priority"><xsl:value-of select="concat(sitemap:priority*100,'%a')"/></xsl:when><xsl:otherwise><xsl:text>0.5</xsl:text></xsl:otherwise></xsl:choose></td><td><xsl:choose><xsl:when test="sitemap:changefreq"><xsl:value-of select="concat(translate(substring(sitemap:changefreq, 1, 1),concat($lower, $upper),concat($upper, $lower)),substring(sitemap:changefreq, 2))"/></xsl:when><xsl:otherwise><xsl:text>-</xsl:text></xsl:otherwise></xsl:choose></td><td><xsl:value-of select="concat(substring(sitemap:lastmod,0,11),concat(' ', substring(sitemap:lastmod,12,5)))"/></td></tr></xsl:for-each></tbody></table></div><footer>
