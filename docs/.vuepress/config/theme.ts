@@ -6,6 +6,7 @@ import markdown from "./markdown.js";
 export default hopeTheme({
   hostname: "https://www.u2sb.com",
   pure: true,
+  focus: false,
   author: {
     name: "MonoLogueChi",
     url: "https://blog.xxwhite.com",
