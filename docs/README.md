@@ -25,7 +25,7 @@ features:
     link: /OpenHw/
 
 copyright: false
-footer: "<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/' rel='external nofollow' target='_blank'>CC BY-NC-SA 4.0</a> | Copyright © 2018-present <a href='https://blog.xxwhite.com' target='_blank'>MonoLogueChi</a>"
+footer: "<a href='https://creativecommons.org/licenses/by-nc-sa/4.0/' rel='external nofollow' target='_blank'>CC BY-NC-SA 4.0</a> | Copyright © 2018-present <a href='https://blog.u2sb.com' target='_blank'>MonoLogueChi</a>"
 ---
 
 ## 为什么会有这个组织？

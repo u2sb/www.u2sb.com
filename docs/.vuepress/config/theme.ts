@@ -9,7 +9,7 @@ export default hopeTheme({
   focus: false,
   author: {
     name: "MonoLogueChi",
-    url: "https://blog.xxwhite.com",
+    url: "https://blog.u2sb.com",
   },
 
   logo: "/assets/img/logo.avif",
