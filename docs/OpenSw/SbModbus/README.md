@@ -23,3 +23,7 @@ dir:
 本项目仍处于开发阶段，存在部分已知和未知 BUG，后续接口可能会有修改，不建议用于生产环境。
 
 This project is still under development and contains some known and unknown bugs. Future interfaces may undergo changes, so it is not recommended for use in production environments.
+
+## 感谢
+
+- [FluentModbus](https://github.com/Apollo3zehn/FluentModbus) - [MIT](https://github.com/Apollo3zehn/FluentModbus/blob/dev/LICENSE.md)
