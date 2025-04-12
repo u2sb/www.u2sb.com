@@ -12,7 +12,7 @@ using UnityEngine;
 
 namespace Models;
 
-[SbModbusArray(typeof(float), 3)]
+[SbBitConverterArray(typeof(float), 3)]
 public partial struct Float3
 {
   [FieldOffset(0)] public float x;
@@ -34,11 +34,11 @@ public partial struct Float3
 ```cs
 // Auto-generated code
 #pragma warning disable
-using SbModbus.Utils;
+using SbBitConverter.Utils;
 using System;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using static SbModbus.Utils.Utils;
+using static SbBitConverter.Utils.Utils;
 namespace Models
 {
 [StructLayout(LayoutKind.Explicit, Pack = 4, Size = 12)]
@@ -53,7 +53,7 @@ this._item2 = data[8..12].ToT<float>(mode);
 }
 public Float3(ReadOnlySpan<ushort> data0, byte mode = 0)
 {
-var data = data0.AsReadOnlyByteSpan();
+var data = MemoryMarshal.AsBytes(data0);
 CheckLength(data, Unsafe.SizeOf<Float3>());
 this._item0 = data[0..4].ToT<float>(mode);
 this._item1 = data[4..8].ToT<float>(mode);
@@ -62,13 +62,14 @@ this._item2 = data[8..12].ToT<float>(mode);
 [FieldOffset(0)]private float _item0;
 [FieldOffset(4)]private float _item1;
 [FieldOffset(8)]private float _item2;
-public byte[] ToBytes(byte mode = 0)
+public byte[] ToByteArray(byte mode = 0)
 {
 var data = new byte[Unsafe.SizeOf<Float3>()];
 var span = data.AsSpan();
 WriteTo(span, mode);
 return data;
 }
+[MethodImpl(MethodImplOptions.AggressiveInlining)]
 public void WriteTo(Span<byte> span, byte mode = 0)
 {
 CheckLength(span, Unsafe.SizeOf<Float3>());
@@ -106,10 +107,12 @@ throw new IndexOutOfRangeException();
 }
 }
 }
+[MethodImpl(MethodImplOptions.AggressiveInlining)]
 public Span<float> AsSpan()
 {
-return this.Cast<Float3, float>();
+return MemoryMarshal.Cast<Float3,float>(MemoryMarshal.CreateSpan(ref this, 1));
 }
+[MethodImpl(MethodImplOptions.AggressiveInlining)]
 public Span<float> Slice(int start, int length)
 {
 var span = AsSpan();
@@ -117,6 +120,7 @@ return span.Slice(start, length);
 }
 public Span<float> this[Range range]
 {
+[MethodImpl(MethodImplOptions.AggressiveInlining)]
 get
 {
 var span = AsSpan();
@@ -125,4 +129,5 @@ return span[range];
 }
 }
 }
+#pragma warning restore
 ```
