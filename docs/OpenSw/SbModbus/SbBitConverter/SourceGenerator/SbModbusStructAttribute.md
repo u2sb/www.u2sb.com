@@ -40,60 +40,44 @@ using System;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using static SbBitConverter.Utils.Utils;
-namespace T0
+namespace ModbusTest
 {
 partial struct MyStruct
 {
-public MyStruct(ReadOnlySpan<byte> data, byte mode = 0)
-{
-CheckLength(data, Unsafe.SizeOf<MyStruct>());
-this._float3 = new T0.Float3(data.Slice(0, Unsafe.SizeOf<T0.Float3>()), mode);
-this._f1 = data[4..8].ToT<float>(mode);
+  public MyStruct(ReadOnlySpan<byte> data, byte mode = 1)
+  {
+    CheckLength(data, Unsafe.SizeOf<MyStruct>());
+    this._float3 = new ModbusTest.Float3(data.Slice(0, Unsafe.SizeOf<ModbusTest.Float3>()), mode);
+    this._f1 = data[4..8].ToT<float>(mode);
 
-}
-public MyStruct(ReadOnlySpan<ushort> data0, byte mode = 0)
-{
-var data = MemoryMarshal.AsBytes(data0);
-CheckLength(data, Unsafe.SizeOf<MyStruct>());
-this._float3 = new T0.Float3(data.Slice(0, Unsafe.SizeOf<T0.Float3>()), mode);
-this._f1 = data[4..8].ToT<float>(mode);
+  }
 
-}
-public byte[] ToByteArray(byte mode = 0)
-{
-var data = new byte[Unsafe.SizeOf<MyStruct>()];
-var span = data.AsSpan();
-WriteTo(span, mode);
-return data;
-}
-[MethodImpl(MethodImplOptions.AggressiveInlining)]
-public void WriteTo(Span<byte> span, byte mode = 0)
-{
-CheckLength(span, Unsafe.SizeOf<MyStruct>());
-this._float3.WriteTo(span.Slice(0, Unsafe.SizeOf<T0.Float3>()), mode);
-this._f1.WriteTo<float>(span[4..8], mode);
+  public MyStruct(ReadOnlySpan<ushort> data0, byte mode = 1)
+  {
+    var data = MemoryMarshal.AsBytes(data0);
+    CheckLength(data, Unsafe.SizeOf<MyStruct>());
+    this._float3 = new ModbusTest.Float3(data.Slice(0, Unsafe.SizeOf<ModbusTest.Float3>()), mode);
+    this._f1 = data[4..8].ToT<float>(mode);
 
-}
-[MethodImpl(MethodImplOptions.AggressiveInlining)]
-public Span<byte> AsSpan()
-{
-return MemoryMarshal.CreateSpan(ref Unsafe.As<MyStruct, byte>(ref this), Unsafe.SizeOf<MyStruct>());
-}
-[MethodImpl(MethodImplOptions.AggressiveInlining)]
-public Span<byte> Slice(int start, int length)
-{
-var span = AsSpan();
-return span.Slice(start, length);
-}
-public Span<byte> this[Range range]
-{
-[MethodImpl(MethodImplOptions.AggressiveInlining)]
-get
-{
-var span = AsSpan();
-return span[range];
-}
-}
+  }
+
+  public byte[] ToByteArray(byte mode = 1)
+  {
+    var data = new byte[Unsafe.SizeOf<MyStruct>()];
+    var span = data.AsSpan();
+    WriteTo(span, mode);
+    return data;
+  }
+
+  [MethodImpl(MethodImplOptions.AggressiveInlining)]
+  public void WriteTo(Span<byte> span, byte mode = 1)
+  {
+    CheckLength(span, Unsafe.SizeOf<MyStruct>());
+    this._float3.WriteTo(span.Slice(0, Unsafe.SizeOf<ModbusTest.Float3>()), mode);
+    this._f1.WriteTo<float>(span[4..8], mode);
+
+  }
+
 }
 }
 #pragma warning restore
