@@ -19,7 +19,7 @@ using SbModbus.Models;
 
 namespace ModbusTest;
 
-[SbBitConverterStruct]
+[SbBitConverterStruct(BigAndSmallEndianEncodingMode.ABCD)]
 [StructLayout(LayoutKind.Explicit)]
 public partial struct MyStruct
 {
