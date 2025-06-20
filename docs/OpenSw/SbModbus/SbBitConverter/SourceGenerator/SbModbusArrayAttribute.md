@@ -37,11 +37,16 @@ using System.Runtime.InteropServices;
 using static SbBitConverter.Utils.Utils;
 namespace ModbusTest
 {
+unsafe partial struct Float3
+{
+  [FieldOffset(0)]  public fixed byte source[12];
+  [FieldOffset(0)]  public fixed float elementSource[3];
+}
 
 [StructLayout(LayoutKind.Explicit, Pack = 4, Size = 12)]
 partial struct Float3
 {
-  public Float3(ReadOnlySpan<byte> data, byte mode = 1)
+  public Float3(scoped in ReadOnlySpan<byte> data, SbBitConverter.Attributes.BigAndSmallEndianEncodingMode mode = (SbBitConverter.Attributes.BigAndSmallEndianEncodingMode)1)
   {
     CheckLength(data, Unsafe.SizeOf<Float3>());
     this._item0 = data[0..4].ToT<float>(mode);
@@ -49,7 +54,7 @@ partial struct Float3
     this._item2 = data[8..12].ToT<float>(mode);
   }
 
-  public Float3(ReadOnlySpan<ushort> data0, byte mode = 1)
+  public Float3(scoped in ReadOnlySpan<ushort> data0, SbBitConverter.Attributes.BigAndSmallEndianEncodingMode mode = (SbBitConverter.Attributes.BigAndSmallEndianEncodingMode)1)
   {
     var data = MemoryMarshal.AsBytes(data0);
     CheckLength(data, Unsafe.SizeOf<Float3>());
@@ -64,7 +69,8 @@ partial struct Float3
 
   [FieldOffset(8)]private float _item2;
 
-  public byte[] ToByteArray(byte mode = 1)
+  [MethodImpl(MethodImplOptions.AggressiveInlining)]
+  public byte[] ToByteArray(SbBitConverter.Attributes.BigAndSmallEndianEncodingMode mode = (SbBitConverter.Attributes.BigAndSmallEndianEncodingMode)1)
   {
     var data = new byte[Unsafe.SizeOf<Float3>()];
     var span = data.AsSpan();
@@ -73,7 +79,7 @@ partial struct Float3
   }
 
   [MethodImpl(MethodImplOptions.AggressiveInlining)]
-  public void WriteTo(Span<byte> span, byte mode = 1)
+  public void WriteTo(scoped in Span<byte> span, SbBitConverter.Attributes.BigAndSmallEndianEncodingMode mode = (SbBitConverter.Attributes.BigAndSmallEndianEncodingMode)1)
   {
     CheckLength(span, Unsafe.SizeOf<Float3>());
     this._item0.WriteTo<float>(span[0..4], mode);
@@ -83,30 +89,31 @@ partial struct Float3
 
   public int Length => 3;
 
-  public float this[int index]
+  public ref float this[int index]
   {
+    [MethodImpl(MethodImplOptions.AggressiveInlining)]
     get
-    {
-      return index switch {
-        0 => _item0,
-        1 => _item1,
-        2 => _item2,
-        _ => throw new IndexOutOfRangeException()
-      };
-    }
-    set
     {
       switch (index)
       {
         case 0:
-          _item0 = value;
-        break;
+#if NET8_0_OR_GREATER
+          return ref Unsafe.AsRef(in _item0);
+#else
+          return ref AsSpan()[0];
+#endif
         case 1:
-          _item1 = value;
-        break;
+#if NET8_0_OR_GREATER
+          return ref Unsafe.AsRef(in _item1);
+#else
+          return ref AsSpan()[1];
+#endif
         case 2:
-          _item2 = value;
-        break;
+#if NET8_0_OR_GREATER
+          return ref Unsafe.AsRef(in _item2);
+#else
+          return ref AsSpan()[2];
+#endif
         default:
           throw new IndexOutOfRangeException();
       }
