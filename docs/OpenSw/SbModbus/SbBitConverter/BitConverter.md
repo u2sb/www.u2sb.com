@@ -12,7 +12,15 @@ order: 0020
 使用时一定要小心，一定要注意，只能对结构已知的 struct 使用。
 :::
 
-### ToXX
+### WithEndianness()
+
+应用大小端
+
+### ApplyEndianness()
+
+应用大小端
+
+### ToXX()
 
 一看就懂，不再赘述。
 
