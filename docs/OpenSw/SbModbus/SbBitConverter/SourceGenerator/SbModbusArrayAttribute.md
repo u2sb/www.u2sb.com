@@ -30,11 +30,11 @@ public partial struct Float3
 ```cs
 // Auto-generated code
 #pragma warning disable
-using SbBitConverter.Utils;
 using System;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using static SbBitConverter.Utils.Utils;
+using static System.SbBitConverter;
+using static System.SpanExtension;
 namespace ModbusTest
 {
 unsafe partial struct Float3
@@ -46,21 +46,21 @@ unsafe partial struct Float3
 [StructLayout(LayoutKind.Explicit, Pack = 4, Size = 12)]
 partial struct Float3
 {
-  public Float3(scoped in ReadOnlySpan<byte> data, SbBitConverter.Attributes.BigAndSmallEndianEncodingMode mode = (SbBitConverter.Attributes.BigAndSmallEndianEncodingMode)1)
+  public Float3(ReadOnlySpan<byte> data, System.BigAndSmallEndianEncodingMode mode = (System.BigAndSmallEndianEncodingMode)1)
   {
     CheckLength(data, Unsafe.SizeOf<Float3>());
-    this._item0 = data[0..4].ToT<float>(mode);
-    this._item1 = data[4..8].ToT<float>(mode);
-    this._item2 = data[8..12].ToT<float>(mode);
+    this._item0 = data.Slice(0, 4).ToT<float>(mode);
+    this._item1 = data.Slice(4, 4).ToT<float>(mode);
+    this._item2 = data.Slice(8, 4).ToT<float>(mode);
   }
 
-  public Float3(scoped in ReadOnlySpan<ushort> data0, SbBitConverter.Attributes.BigAndSmallEndianEncodingMode mode = (SbBitConverter.Attributes.BigAndSmallEndianEncodingMode)1)
+  public Float3(ReadOnlySpan<ushort> data0, System.BigAndSmallEndianEncodingMode mode = (System.BigAndSmallEndianEncodingMode)1)
   {
     var data = MemoryMarshal.AsBytes(data0);
     CheckLength(data, Unsafe.SizeOf<Float3>());
-    this._item0 = data[0..4].ToT<float>(mode);
-    this._item1 = data[4..8].ToT<float>(mode);
-    this._item2 = data[8..12].ToT<float>(mode);
+    this._item0 = data.Slice(0, 4).ToT<float>(mode);
+    this._item1 = data.Slice(4, 4).ToT<float>(mode);
+    this._item2 = data.Slice(8, 4).ToT<float>(mode);
   }
 
   [FieldOffset(0)]private float _item0;
@@ -70,7 +70,7 @@ partial struct Float3
   [FieldOffset(8)]private float _item2;
 
   [MethodImpl(MethodImplOptions.AggressiveInlining)]
-  public byte[] ToByteArray(SbBitConverter.Attributes.BigAndSmallEndianEncodingMode mode = (SbBitConverter.Attributes.BigAndSmallEndianEncodingMode)1)
+  public byte[] ToByteArray(System.BigAndSmallEndianEncodingMode mode = (System.BigAndSmallEndianEncodingMode)1)
   {
     var data = new byte[Unsafe.SizeOf<Float3>()];
     var span = data.AsSpan();
@@ -79,12 +79,12 @@ partial struct Float3
   }
 
   [MethodImpl(MethodImplOptions.AggressiveInlining)]
-  public void WriteTo(scoped in Span<byte> span, SbBitConverter.Attributes.BigAndSmallEndianEncodingMode mode = (SbBitConverter.Attributes.BigAndSmallEndianEncodingMode)1)
+  public void WriteTo(Span<byte> span, System.BigAndSmallEndianEncodingMode mode = (System.BigAndSmallEndianEncodingMode)1)
   {
     CheckLength(span, Unsafe.SizeOf<Float3>());
-    this._item0.WriteTo<float>(span[0..4], mode);
-    this._item1.WriteTo<float>(span[4..8], mode);
-    this._item2.WriteTo<float>(span[8..12], mode);
+    this._item0.WriteTo<float>(span.Slice(0, 4), mode);
+    this._item1.WriteTo<float>(span.Slice(4, 4), mode);
+    this._item2.WriteTo<float>(span.Slice(8, 4), mode);
   }
 
   public int Length => 3;
@@ -97,23 +97,11 @@ partial struct Float3
       switch (index)
       {
         case 0:
-#if NET8_0_OR_GREATER
           return ref Unsafe.AsRef(in _item0);
-#else
-          return ref AsSpan()[0];
-#endif
         case 1:
-#if NET8_0_OR_GREATER
           return ref Unsafe.AsRef(in _item1);
-#else
-          return ref AsSpan()[1];
-#endif
         case 2:
-#if NET8_0_OR_GREATER
           return ref Unsafe.AsRef(in _item2);
-#else
-          return ref AsSpan()[2];
-#endif
         default:
           throw new IndexOutOfRangeException();
       }
@@ -123,7 +111,7 @@ partial struct Float3
   [MethodImpl(MethodImplOptions.AggressiveInlining)]
   public Span<float> AsSpan()
   {
-    return MemoryMarshal.CreateSpan(ref _item0, 3);
+    return CreateSpan(ref _item0, 3);
   }
 
   [MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -131,16 +119,6 @@ partial struct Float3
   {
     var span = AsSpan();
     return span.Slice(start, length);
-  }
-
-  public Span<float> this[Range range]
-  {
-    [MethodImpl(MethodImplOptions.AggressiveInlining)]
-    get
-    {
-      var span = AsSpan();
-      return span[range];
-    }
   }
 
 }
