@@ -167,7 +167,7 @@ public partial struct Int16Array4
 
 会自动生成
 
-```cs title="Pmc400StatusStruct_SbBitConverterStruct.g.cs"
+```cs title="SbBitConverter.Demo.Pmc_Pmc400StatusStruct_SbBitConverterStruct.g.cs"
 // Auto-generated code
 #pragma warning disable
 using System;
@@ -290,7 +290,7 @@ partial struct Pmc400StatusStruct
 #pragma warning restore
 ```
 
-```cs title="Int32Array4_SbBitConverterStruct.g.cs"
+```cs title="SbBitConverter.Demo.Pmc_Int32Array4_SbBitConverterStruct.g.cs"
 // Auto-generated code
 #pragma warning disable
 using System;
@@ -396,7 +396,7 @@ partial struct Int32Array4
 #pragma warning restore
 ```
 
-```cs title="Int16Array4_SbBitConverterStruct.g.cs"
+```cs title="SbBitConverter.Demo.Pmc_Int16Array4_SbBitConverterStruct.g.cs"
 // Auto-generated code
 #pragma warning disable
 using System;
