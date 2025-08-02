@@ -4,7 +4,7 @@ title: Unity-Float3
 
 在 Unity 中，可以自己实现一个 `Float3`，内存布局和 `Vector3` 一样，并且可以直接赋值。
 
-:::waring
+::: warning
 Unity 使用的源生成器版本和 .net 不一样
 :::
 
