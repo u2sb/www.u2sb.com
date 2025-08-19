@@ -2,6 +2,10 @@
 title: Pmc400Status
 ---
 
+::: warning
+本页所示代码仅供参考，随版本更新，生成器也会不断调整。
+:::
+
 某型号的电机控制器，会通过 TCP 发送消息到上位机，在上位机需要解析数据，可以借助 SbBitConverter 实现快速解析
 
 开发快 + 运行更快
@@ -166,6 +170,8 @@ public partial struct Int16Array4
 ```
 
 会自动生成
+
+::: details
 
 ```cs title="SbBitConverter.Demo.Pmc_Pmc400StatusStruct_SbBitConverterStruct.g.cs"
 // Auto-generated code
@@ -501,3 +507,5 @@ partial struct Int16Array4
 }
 #pragma warning restore
 ```
+
+:::

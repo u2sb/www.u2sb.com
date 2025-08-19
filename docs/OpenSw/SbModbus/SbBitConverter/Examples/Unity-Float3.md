@@ -5,6 +5,10 @@ title: Unity-Float3
 在 Unity 中，可以自己实现一个 `Float3`，内存布局和 `Vector3` 一样，并且可以直接赋值。
 
 ::: warning
+本页所示代码仅供参考，随版本更新，生成器也会不断调整。
+:::
+
+::: warning
 Unity 使用的源生成器版本和 .net 不一样
 :::
 
@@ -38,6 +42,8 @@ public partial struct Float3
   }
 }
 ```
+
+::: details
 
 ```cs
 // Auto-generated code
@@ -137,3 +143,5 @@ partial struct Float3
 }
 #pragma warning restore
 ```
+
+:::
