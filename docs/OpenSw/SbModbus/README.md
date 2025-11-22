@@ -23,7 +23,7 @@ dir:
 #### Class 0:
 
 - [x] FC03: ReadHoldingRegisters
-- [x] FC16: WriteMultipleRegisters
+- [x] FC10: WriteMultipleRegisters
 
 #### Class 1:
 
@@ -32,11 +32,6 @@ dir:
 - [x] FC04: ReadInputRegisters
 - [x] FC05: WriteSingleCoil
 - [x] FC06: WriteSingleRegister
-
-#### Class 2:
-
-- [x] FC15: WriteMultipleCoils
-- [x] FC23: ReadWriteMultipleRegisters
 
 ### Slave
 
@@ -52,11 +47,6 @@ dir:
 - [ ] FC04: ReadInputRegisters
 - [ ] FC05: WriteSingleCoil
 - [ ] FC06: WriteSingleRegister
-
-#### Class 2:
-
-- [ ] FC15: WriteMultipleCoils
-- [ ] FC23: ReadWriteMultipleRegisters
 
 ## 注意事项
 
