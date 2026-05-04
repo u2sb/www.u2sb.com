@@ -50,7 +50,7 @@ export default hopeTheme({
       json: true,
       rss: true,
       getter: {
-        content: (page) => page.data.excerpt as string,
+        content: (page) => page.data?.excerpt as string ?? "",
       },
     },
 

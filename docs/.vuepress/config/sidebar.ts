@@ -152,4 +152,5 @@ export default sidebar({
       ],
     },
   ],
+  "/pages/": "structure",
 });

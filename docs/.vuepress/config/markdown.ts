@@ -1,7 +1,7 @@
-import { MarkdownOptions } from "vuepress-theme-hope";
+import { ThemeMarkdownOptions } from "vuepress-theme-hope";
 import shiki from "./plugins/shiki/index.js";
 
-export default <MarkdownOptions>{
+export default <ThemeMarkdownOptions>{
   alert: true,
   hint: true,
   math: {
