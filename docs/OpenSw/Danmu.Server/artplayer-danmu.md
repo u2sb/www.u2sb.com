@@ -107,4 +107,54 @@ redirectFrom:
 一定要把 `danmakuId` 改掉，别 TM 傻逼呵呵的直接用我测试视频的 id 直接就写上去了，自己想办法随便生成一个随机字符串。
 :::
 
-<script type="module" src="./assets/js/artplayerDemo.js" ></script>
+<script setup>
+import { ref, nextTick, onBeforeUnmount } from 'vue'
+
+const art0 = ref(null)
+let art = null
+
+const initPlayer = async () => {
+  await nextTick()
+  if (!art0.value) return
+  
+  // 设置样式
+  art0.value.style.width = '100%'
+  art0.value.style.height = (art0.value.scrollWidth / 16) * 9 + 'px'
+
+  try {
+    const [
+      { default: ArtPlayer },
+      { default: artplayerPluginDanmuku },
+      { getDanMuAsync },
+    ] = await Promise.all([
+      import('artplayer'),
+      import('artplayer-plugin-danmuku'),
+      import('https://danmu.u2sb.com/assets/js/artMsgpackDm.js'),
+    ])
+
+    const danmuApi = 'https://danmu.u2sb.com/api/art/bilibili/v2/BV1JP41167xK'
+    art = new ArtPlayer({
+      fullscreen: true,
+      autoSize: true,
+      setting: true,
+      container: art0.value,
+      url: 'https://danmu.u2sb.com/assets/video/1214946209-1-192.mp4',
+      plugins: [
+        artplayerPluginDanmuku({
+          danmuku: () => getDanMuAsync(danmuApi),
+        }),
+      ],
+    })
+  } catch (error) {
+    console.error('Failed to initialize ArtPlayer:', error)
+  }
+}
+
+initPlayer()
+
+onBeforeUnmount(() => {
+  if (art) {
+    art.destroy()
+  }
+})
+</script>
